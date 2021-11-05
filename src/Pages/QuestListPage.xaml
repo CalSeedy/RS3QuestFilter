@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="RS3QuestFilter.src.Pages.QuestListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="using:System"
+    xmlns:local="using:RS3QuestFilter"
+    xmlns:localsrc="using:RS3QuestFilter.src"
+    xmlns:pages="using:RS3QuestFilter.src.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ext="using:Extensions"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Editors"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    x:Name="PageQuests">
+
+    <Page.Resources>
+        <pages:EnumToStringConverter x:Key="EnumToStringConverter"/>
+    </Page.Resources>
+    
+    <Grid>
+        <!--#region Column definitions-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--#endregion Column definitions-->
+        
+        <!--#region Row definitions-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--#endregion Row definitions-->
+        
+        <controls:DataGrid 
+            x:Name="dgQuests"
+            GridLinesVisibility="Vertical"
+            HeadersVisibility="Column"
+            SelectionMode="Single"
+            AutoGenerateColumns="False"
+            ClipboardCopyMode="ExcludeHeader"
+            SelectionChanged="dgQuests_SelectionChanged"
+            ItemsSource="{Binding QuestList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Grid.Row="0">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="Title" Binding="{Binding Title,  Mode=TwoWay}"  Width="Auto"/>
+                <controls:DataGridComboBoxColumn x:Name="selectedDifficulty" Header="Difficulty" Width="Auto" Binding="{Binding Path=Difficulty, Mode=TwoWay, Converter={StaticResource EnumToStringConverter}}" ItemsSource="{x:Bind difficultySource}"/>
+                <controls:DataGridCheckBoxColumn Header="Members" Binding="{Binding Member, Mode=TwoWay}"/>
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>
+    </Grid>
+</Page>
+
