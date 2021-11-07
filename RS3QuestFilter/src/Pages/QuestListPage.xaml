@@ -49,7 +49,7 @@
             Grid.Row="0">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn Header="Title" Binding="{Binding Title,  Mode=TwoWay}"  Width="Auto"/>
-                <controls:DataGridComboBoxColumn x:Name="selectedDifficulty" Header="Difficulty" Width="Auto" Binding="{Binding Path=Difficulty, Mode=TwoWay, Converter={StaticResource EnumToStringConverter}}" ItemsSource="{x:Bind difficultySource}"/>
+                <!--<controls:DataGridComboBoxColumn x:Name="selectedDifficulty" Header="Difficulty" Width="Auto" Binding="{Binding Path=Difficulty, Mode=TwoWay, Converter={StaticResource EnumToStringConverter}}" ItemsSource="{x:Bind difficultySource}"/>-->
                 <controls:DataGridCheckBoxColumn Header="Members" Binding="{Binding Member, Mode=TwoWay}"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>

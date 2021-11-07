@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -24,52 +14,49 @@ namespace RS3QuestFilter
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        private NavigationViewItem m_PreviousView;
-
         public MainPage()
         {
             this.InitializeComponent();
         }
 
-        private void NavigationView_OnItemInvoked(
-            Windows.UI.Xaml.Controls.NavigationView sender,
-            NavigationViewItemInvokedEventArgs args)
+        #region Events
+
+        #region Navigation
+
+        private void NavView_BackRequested(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewBackRequestedEventArgs args)
         {
-            var item = args.InvokedItemContainer as NavigationViewItem;
-            if (item == null || item == m_PreviousView)
-                return;
-            var clickedView = item.Tag?.ToString() ?? "SettingsView";
-            if (!NavigateToView(clickedView)) return;
-            m_PreviousView = item;
+
         }
 
-        private bool NavigateToView(string clickedView)
+        private void NavView_ItemInvoked(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs args)
         {
-            var view = Assembly.GetExecutingAssembly()
-                .GetType($"NavigationView.Views.{clickedView}");
 
-            if (string.IsNullOrWhiteSpace(clickedView) || view == null)
-            {
-                return false;
-            }
-
-            ContentFrame.Navigate(view, null, new EntranceNavigationTransitionInfo());
-            return true;
         }
 
-        private void ContentFrame_OnNavigationFailed(object sender, NavigationFailedEventArgs e)
+        private void NavView_Loaded(object sender, RoutedEventArgs e)
         {
-            throw new NavigationException(
-                $"Navigation failed {e.Exception.Message} for {e.SourcePageType.FullName}");
+
         }
 
-        private void NavView_OnBackRequested(
-            Windows.UI.Xaml.Controls.NavigationView sender,
-            NavigationViewBackRequestedEventArgs args)
+        private void NavView_SelectionChanged(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs args)
         {
-            if (ContentFrame.CanGoBack)
-                ContentFrame.GoBack();
+
         }
+
+        #endregion Navigation
+
+        #region Frame
+
+        private void ContentFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
+        {
+
+        }
+
+        #endregion Frame
+
+        #endregion Events
+
+        #region Commands
 
         private void SaveCommand_ExecuteRequested(XamlUICommand sender, ExecuteRequestedEventArgs args)
         {
@@ -103,10 +90,7 @@ namespace RS3QuestFilter
 
         private void ExitCommand_ExecuteRequested(XamlUICommand sender, ExecuteRequestedEventArgs args) => App.Current.Exit();
 
-        private void Contentframe_NavigationFailed(object sender, NavigationFailedEventArgs e)
-        {
-
-        }
+        #endregion Commands
 
         public static void ShowAlert(string message)
         {
@@ -115,18 +99,13 @@ namespace RS3QuestFilter
             alert.Content = message;
             alert.CloseButtonText = "Okay";
         }
-
-        private void NavView_Loaded(object sender, RoutedEventArgs e)
-        {
-            ;
-        }
     }
 
     internal class NavigationException : Exception
     {
         public NavigationException(string msg) : base(msg)
         {
-
+            MainPage.ShowAlert(msg);
         }
     }
 }
