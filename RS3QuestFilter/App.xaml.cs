@@ -29,6 +29,7 @@ namespace RS3QuestFilter
         public App()
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("##SyncfusionLicense##");
+            m_ViewModel = new();
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }

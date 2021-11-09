@@ -12,8 +12,13 @@ namespace RS3QuestFilter.src
     public class QuestsViewModel : INotifyPropertyChanged
     {
 
+        private ObservableCollection<Item>? originalReqs = null, originalRews = null;
+
+        private Quest? selectedQuest = null;
+
+
         private QuestLog questLog;
-        public QuestLog QLog
+        public QuestLog QuestLog
         {
             get 
             {
@@ -23,30 +28,10 @@ namespace RS3QuestFilter.src
             }
             set
             {
-                if (!questLog.Equals(value))
+                if (questLog != value)
                 {
                     questLog = value;
-                    NotifyPropertyChanged("QLog");
-                }
-            }
-        }
-
-        public ObservableCollection<Quest> QuestList
-        {
-            get
-            {
-                if (questLog == null)
-                    questLog = new();
-                return questLog.Quests;
-            }
-            set
-            {
-                if (!questLog.Quests.Equals(value))
-                {
-                    questLog.Quests = value;
-                    Console.WriteLine(value);
-                    NotifyPropertyChanged("QuestList");
-                    NotifyPropertyChanged("QLog");
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -54,13 +39,18 @@ namespace RS3QuestFilter.src
         private bool isCumulative;
         public bool IsCumulative
         {
-            get { return isCumulative; }
+            get 
+            { 
+                if (isCumulative == null)
+                    isCumulative = false;
+                return isCumulative;
+            }
             set
             {
                 if (value != isCumulative)
                 {
                     isCumulative = value;
-                    NotifyPropertyChanged("IsCumulative");
+                    NotifyPropertyChanged();
                 }
             }
         }

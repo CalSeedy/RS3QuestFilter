@@ -33,7 +33,7 @@ namespace RS3QuestFilter.src
             set {
                 if (value != null) {
                     name = value;
-                    NotifyPropertyChanged("Name");
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -47,7 +47,7 @@ namespace RS3QuestFilter.src
             set
             {
                 amount = value;
-                NotifyPropertyChanged("Amount");
+                NotifyPropertyChanged();
 
             }
         }
@@ -61,7 +61,7 @@ namespace RS3QuestFilter.src
             set
             {
                 type = value;
-                NotifyPropertyChanged("Type");
+                NotifyPropertyChanged();
             }
         }
 
@@ -74,7 +74,7 @@ namespace RS3QuestFilter.src
             set
             {
                 enabled = value;
-                NotifyPropertyChanged("Enabled");
+                NotifyPropertyChanged();
             }
         }
 

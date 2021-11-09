@@ -7,7 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:muxc="using:Microsoft.UI.Xaml.Controls" 
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
 
     <StackPanel>
         <StackPanel.Resources>
@@ -109,16 +110,21 @@
                         IsTabStop="False"
                         PaneDisplayMode="Top"
                         IsBackEnabled="True"
-                        IsSettingsVisible="True">
+                        IsSettingsVisible="True"
+                        BackRequested="NavView_BackRequested">
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="Home" Content="Home" Tag="Home_Page"/>
                 <NavigationViewItem Icon="List" Content="Quests" Tag="Quests_Page"/>
                 <NavigationViewItem Icon="Admin" Content="Player" Tag="Player_Page"/>
             </NavigationView.MenuItems>
+            <!--
             <NavigationView.PaneFooter>
                 <NavigationViewItem Icon="Save" Tag="Save_Stuff"/>
-            </NavigationView.PaneFooter>
-            <Frame x:Name="ContentFrame"/>
+            </NavigationView.PaneFooter> 
+            -->
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" Navigated="ContentFrame_Navigated"/>
+            </ScrollViewer>
         </NavigationView>
     </StackPanel>
 </Page>

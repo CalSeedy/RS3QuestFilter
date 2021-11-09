@@ -19,7 +19,7 @@ namespace RS3QuestFilter.src
         User
     }
 
-    public class FileHandler
+    public static class FileHandler
     {
         private static StorageFolder LocalFolder = ApplicationData.Current.LocalFolder;
         private static StorageFolder LocalCacheFolder = ApplicationData.Current.LocalCacheFolder;
@@ -30,6 +30,26 @@ namespace RS3QuestFilter.src
         private static ApplicationDataContainer LocalSettings = ApplicationData.Current.LocalSettings;
         private static ApplicationDataContainer RoamingSettings = ApplicationData.Current.RoamingSettings;
 
+        private static bool IsSetup = false;
+
+        private static async Task init()
+        {
+            if (!IsSetup)
+            {
+                await GenerateFolder(ContextType.Local);
+                GenerateSettings(ContextType.Local);
+            }
+            IsSetup = true;
+        }
+
+        private static async Task GenerateFolder(ContextType contextType)
+        {
+            StorageFolder context = GetContextType(contextType);
+
+            await context.CreateFolderAsync("RS3 Quests", CreationCollisionOption.OpenIfExists);
+
+
+        }
 
         public static void GenerateSettings(ContextType contextType)
         {
@@ -50,7 +70,7 @@ namespace RS3QuestFilter.src
 
         }
 
-            private static async Task<StorageFolder?> PickUserFolder()
+        private static async Task<StorageFolder?> PickUserFolder()
         {
             Windows.Storage.Pickers.FolderPicker folderPicker = new();
             folderPicker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.Desktop;
@@ -95,7 +115,7 @@ namespace RS3QuestFilter.src
             if (context != null)
             {
                 StorageFile quests = await context.CreateFileAsync("QuestLog.xml", CreationCollisionOption.ReplaceExisting);
-                await FileIO.WriteTextAsync(quests, MyIO.SerialiseToXML(App.ViewModel.VMQuests.QuestList));
+                await FileIO.WriteTextAsync(quests, MyIO.SerialiseToXML(App.ViewModel.VMQuests.QuestLog.Quests));
 
                 StorageFile player = await context.CreateFileAsync("Player.xml", CreationCollisionOption.ReplaceExisting);
                 await FileIO.WriteTextAsync(player, MyIO.SerialiseToXML(App.ViewModel.VMPlayer.PlayerData));
@@ -373,7 +393,11 @@ namespace RS3QuestFilter.src
         }
 
         public static async Task SaveAll() => await SaveData(ContextType.Local);
+        
         public static async Task Export() => await ExportUserFile();
         
+        public static async Task Import() => await ImportUserFile();
+
+        public static async Task Init() => await init();
     }
 }
