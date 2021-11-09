@@ -12,10 +12,27 @@ namespace RS3QuestFilter.src
     public class QuestsViewModel : INotifyPropertyChanged
     {
 
-        private ObservableCollection<Item>? originalReqs = null, originalRews = null;
+        private ObservableCollection<Item> originalReqs { get; set; }
+        private ObservableCollection<Item> originalRews { get; set; }
 
-        private Quest? selectedQuest = null;
+        private Quest selectedQuest;
 
+        public Quest Selected
+        {
+            get
+            {
+                if (selectedQuest == null)
+                    selectedQuest = new Quest();
+                return selectedQuest;
+            }
+            set
+            {
+                if (selectedQuest != value)
+                {
+                    selectedQuest = value;
+                }
+            }
+        }
 
         private QuestLog questLog;
         public QuestLog QuestLog

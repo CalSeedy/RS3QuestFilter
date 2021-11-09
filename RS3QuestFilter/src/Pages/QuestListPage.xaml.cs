@@ -26,6 +26,7 @@ namespace RS3QuestFilter.src.Pages
     {
         
         public readonly Array difficultySource = Enum.GetValues(typeof(EDifficulty));
+        public readonly Array typeSource = Enum.GetValues(typeof(EType));
 
         public QuestListPage()
         {
@@ -56,6 +57,11 @@ namespace RS3QuestFilter.src.Pages
                     (DataContext as QuestsViewModel).QuestLog = await FileHandler.GetQuestLog();
                 }
                 catch (FileNotFoundException e)
+                {
+                    Console.WriteLine($"Unable to deserialize 'QuestLog.xml'. Reason: {e.Message}\nUsing default initialisers instead...");
+                    (DataContext as QuestsViewModel).QuestLog = new();
+                }
+                catch (FileLoadException e)
                 {
                     Console.WriteLine($"Unable to deserialize 'QuestLog.xml'. Reason: {e.Message}\nUsing default initialisers instead...");
                     (DataContext as QuestsViewModel).QuestLog = new();
