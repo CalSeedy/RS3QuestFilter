@@ -1,31 +1,16 @@
-﻿<Page x:Class="RS3QuestFilter.MainPage"
+﻿<Page
+    x:Class="RS3QuestFilter.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RS3QuestFilter"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls" 
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-    Width="1920"
-    Height="1080"
-    x:Name="ShellPage">
+    Loaded="Page_Loaded">
 
-    <StackPanel Orientation="Vertical">
-<!--
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup>
-                <VisualState>
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="{x:Bind NavView.CompactModeThresholdWidth}" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="NavView.PaneDisplayMode" Value="Top" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
--->        
+    <StackPanel>
         <StackPanel.Resources>
             <XamlUICommand x:Name="SaveFileCommand" 
                        ExecuteRequested="SaveCommand_ExecuteRequested"
@@ -33,15 +18,6 @@
                        Label="Save">
                 <XamlUICommand.KeyboardAccelerators>
                     <KeyboardAccelerator Key="S" Modifiers="Control"/>
-                </XamlUICommand.KeyboardAccelerators>
-            </XamlUICommand>
-
-            <XamlUICommand x:Name="SaveAsFileCommand" 
-                       ExecuteRequested="SaveAsCommand_ExecuteRequested"
-                       Description="Saves selected file" 
-                       Label="Save As...">
-                <XamlUICommand.KeyboardAccelerators>
-                    <KeyboardAccelerator Key="S" Modifiers="Control,Shift"/>
                 </XamlUICommand.KeyboardAccelerators>
             </XamlUICommand>
 
@@ -86,32 +62,67 @@
                 </XamlUICommand.KeyboardAccelerators>
             </XamlUICommand>
         </StackPanel.Resources>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{x:Bind NavView.CompactModeThresholdWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="NavView.PaneDisplayMode" Value="Top" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups >
 
         <MenuBar Height="20">
-            <MenuBarItem Title="File">
-                <MenuFlyoutItem Text="New" Command="{x:Bind NewFileCommand}"/>
-                    <MenuFlyoutItem Text="Open..." Command="{x:Bind OpenFileCommand}"/>
-                    <MenuFlyoutSeparator />
-                    <MenuFlyoutItem Text="Save" Command="{x:Bind SaveFileCommand}"/>
-                    <MenuFlyoutItem Text="Save As..." Command="{x:Bind SaveAsFileCommand}"/>
-                    <MenuFlyoutSeparator />
-                    <MenuFlyoutItem Text="Import..." Command="{x:Bind ImportFileCommand}"/>
-                    <MenuFlyoutItem Text="Export..." Command="{x:Bind ExportFileCommand}"/>
-                    <MenuFlyoutItem Text="Exit" Command="{x:Bind ExitFileCommand}"/>
-            </MenuBarItem>
-            <MenuBarItem Title="Edit"/>
+            <MenuBar.Items>
+                <MenuBarItem Title="File">
+                    <MenuBarItem.Items>
+                        <MenuFlyoutItem Text="New" Command="{x:Bind NewFileCommand}"/>
+                        <MenuFlyoutItem Text="Open..." Command="{x:Bind OpenFileCommand}"/>
+                        <MenuFlyoutSeparator />
+                        <MenuFlyoutItem Text="Save" Command="{x:Bind SaveFileCommand}"/>
+                        <MenuFlyoutSeparator />
+                        <MenuFlyoutItem Text="Import..." Command="{x:Bind ImportFileCommand}"/>
+                        <MenuFlyoutItem Text="Export..." Command="{x:Bind ExportFileCommand}"/>
+                        <MenuFlyoutItem Text="Exit" Command="{x:Bind ExitFileCommand}"/>
+                    </MenuBarItem.Items>
+                </MenuBarItem>
+                <MenuBarItem Title="Edit">
+                    <MenuBarItem.Items>
+                        <MenuFlyoutSubItem Text="Add">
+                            <MenuFlyoutItem Text="Quest"/>
+                            <MenuFlyoutItem Text="Requirement" IsEnabled="{Binding src.ViewModel.IsQuestPage}"/>
+                            <MenuFlyoutItem Text="Reward"/>
+                        </MenuFlyoutSubItem>
+                    </MenuBarItem.Items>
+                </MenuBarItem>
+            </MenuBar.Items>
         </MenuBar>
-        <muxc:NavigationView x:Name="NavView"
-                             BackRequested="NavView_BackRequested"
-                             ItemInvoked="NavView_ItemInvoked"
-                             Loaded="NavView_Loaded" 
-                             SelectionChanged="NavView_SelectionChanged">
-            <muxc:NavigationView.MenuItems>
-                <muxc:NavigationViewItem Content="Home" Icon="Home" ToolTipService.ToolTip="Home"/>
-                <muxc:NavigationViewItem Content="Quests" Icon="ViewAll" ToolTipService.ToolTip="Quests"/>
-                <muxc:NavigationViewItem Content="Player" Icon="Admin" ToolTipService.ToolTip="Player"/>
-            </muxc:NavigationView.MenuItems>
-        </muxc:NavigationView>
-        <Frame x:Name="ContentFrame" NavigationFailed="ContentFrame_NavigationFailed"/>
+
+        <NavigationView x:Name="NavView"
+                        SelectionChanged="NavView_SelectionChanged"
+                        Loaded="NavView_Loaded"
+                        ItemInvoked="NavView_ItemInvoked"
+                        IsTabStop="False"
+                        PaneDisplayMode="Top"
+                        IsBackEnabled="True"
+                        IsSettingsVisible="True"
+                        BackRequested="NavView_BackRequested">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Home" Content="Home" Tag="Home_Page"/>
+                <NavigationViewItem Icon="List" Content="Quests" Tag="Quests_Page"/>
+                <NavigationViewItem Icon="Admin" Content="Player" Tag="Player_Page"/>
+            </NavigationView.MenuItems>
+            <!--
+            <NavigationView.PaneFooter>
+                <NavigationViewItem Icon="Save" Tag="Save_Stuff"/>
+            </NavigationView.PaneFooter> 
+            -->
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame" Navigated="ContentFrame_Navigated"/>
+            </ScrollViewer>
+        </NavigationView>
     </StackPanel>
 </Page>

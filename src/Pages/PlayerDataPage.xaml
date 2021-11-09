@@ -11,6 +11,6 @@
     x:Name="PagePlayer">
 
     <Grid>
-        <ToggleButton/>
+        <TextBlock>Player Data goes here!</TextBlock>
     </Grid>
 </Page>

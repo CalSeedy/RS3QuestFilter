@@ -1,4 +1,3 @@
-using RS3QuestFilter.src;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -30,11 +29,8 @@ namespace RS3QuestFilter
         public App()
         {
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("##SyncfusionLicense##");
-
-            this.InitializeComponent();
-
             m_ViewModel = new();
-
+            this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
 
@@ -103,17 +99,10 @@ namespace RS3QuestFilter
             deferral.Complete();
         }
 
-        private static ViewModel m_ViewModel;
-        public static ViewModel ViewModel
+        private static src.ViewModel m_ViewModel;
+        public static src.ViewModel ViewModel
         {
-            get 
-            {
-                if (m_ViewModel is null) 
-                {
-                    m_ViewModel = new ViewModel();
-                }
-                return m_ViewModel;
-            }
+            get { return m_ViewModel ?? new(); }
         }
     }
 }

@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml.Controls;
@@ -23,22 +24,13 @@ namespace RS3QuestFilter.src.Pages
     /// </summary>
     public sealed partial class QuestListPage : Page
     {
-        private ObservableCollection<Item>? originalReqs, originalRews;
-
-        private Quest? selectedQuest;
-
+        
         public readonly Array difficultySource = Enum.GetValues(typeof(EDifficulty));
+        public readonly Array typeSource = Enum.GetValues(typeof(EType));
 
         public QuestListPage()
         {
             this.InitializeComponent();
-
-            selectedQuest = null;
-            originalReqs = null;
-            originalRews = null;
-
-
-            OnLoad();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -53,22 +45,38 @@ namespace RS3QuestFilter.src.Pages
 
         }
 
-        private async void OnLoad()
+        private async Task OnLoad()
         {
-            try
-            {
-                if (DataContext == null)
-                    DataContext = App.ViewModel.VMQuests;
+            if (DataContext == null)
+                DataContext = App.ViewModel.VMQuests;
 
-                (DataContext as QuestsViewModel).QLog = await FileHandler.GetQuestLog();
-            }
-            catch (FileNotFoundException e)
+            if ((DataContext as QuestsViewModel).QuestLog.Quests.Count == 0)
             {
-                Console.WriteLine($"Unable to deserialize 'QuestLog.xml'. Reason: {e.Message}\nUsing default initialisers instead...");
-                (DataContext as QuestsViewModel).QLog.Quests = new();
-                dgQuests.ItemsSource = (DataContext as QuestsViewModel).QLog.Quests;
+                try
+                {
+                    (DataContext as QuestsViewModel).QuestLog = await FileHandler.GetQuestLog();
+                }
+                catch (FileNotFoundException e)
+                {
+                    Console.WriteLine($"Unable to deserialize 'QuestLog.xml'. Reason: {e.Message}\nUsing default initialisers instead...");
+                    (DataContext as QuestsViewModel).QuestLog = new();
+                }
+                catch (FileLoadException e)
+                {
+                    Console.WriteLine($"Unable to deserialize 'QuestLog.xml'. Reason: {e.Message}\nUsing default initialisers instead...");
+                    (DataContext as QuestsViewModel).QuestLog = new();
+                }
             }
-            CreateTestLog();
+            if ((DataContext as QuestsViewModel).QuestLog.Quests.Count == 0)
+            {
+                CreateTestLog();
+            }
+        }
+
+        private async void PageQuests_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            await OnLoad();
+            src.ViewModel.IsQuestPage = true;
         }
 
         public void CreateTestLog()
@@ -89,7 +97,7 @@ namespace RS3QuestFilter.src.Pages
                 rews.Add(rw2);
 
                 Quest q1 = new Quest("Biohazard", EDifficulty.Novice, true, reqs, rews);
-                (DataContext as QuestsViewModel).QLog.AddQuest(q1);
+                App.ViewModel.VMQuests.QuestLog.AddQuest(q1);
                 // End of Biohazard
             }
             {
@@ -118,12 +126,12 @@ namespace RS3QuestFilter.src.Pages
                 rews.Add(rw3);
 
                 Quest q2 = new("Plague City", EDifficulty.Novice, true, reqs, rews);
-                (DataContext as QuestsViewModel).QLog.AddQuest(q2);
+                App.ViewModel.VMQuests.QuestLog.AddQuest(q2);
             }
         }
     }
 
-    public class EnumToArrayConverter
+    public class EnumToArrayConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
@@ -153,13 +161,10 @@ namespace RS3QuestFilter.src.Pages
             if (attrib != null)
                 description = attrib.Name;
 
-            Console.WriteLine(description);
-
             return description;
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter,
-            string language)
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
             throw new NotImplementedException();
         }

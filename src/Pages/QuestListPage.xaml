@@ -12,12 +12,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
-    x:Name="PageQuests">
+    x:Name="PageQuests"
+    Loaded="PageQuests_Loaded">
 
     <Page.Resources>
-        <!--<pages:EnumToStringConverter x:Key="EnumToStringConverter"/>-->
+        <pages:EnumToArrayConverter x:Key="EnumToArrayConverter"/>
     </Page.Resources>
-    
+
     <Grid>
         <!--#region Column definitions-->
         <Grid.ColumnDefinitions>
@@ -35,6 +36,9 @@
         </Grid.RowDefinitions>
         <!--#endregion Row definitions-->
         
+        <!--#region DataGrids-->
+        
+        <!--#region Quests-->
         <controls:DataGrid 
             x:Name="dgQuests"
             GridLinesVisibility="Vertical"
@@ -43,16 +47,62 @@
             AutoGenerateColumns="False"
             ClipboardCopyMode="ExcludeHeader"
             SelectionChanged="dgQuests_SelectionChanged"
-            ItemsSource="{Binding QuestList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            ItemsSource="{Binding QuestLog.Quests, Mode=TwoWay}"
             Grid.Column="1"
             Grid.ColumnSpan="3"
-            Grid.Row="0">
+            Grid.Row="0"
+            MaxHeight="500"
+            Margin="0, 0, 0, 20">
             <controls:DataGrid.Columns>
                 <controls:DataGridTextColumn Header="Title" Binding="{Binding Title,  Mode=TwoWay}"  Width="Auto"/>
-                <controls:DataGridComboBoxColumn x:Name="selectedDifficulty" Header="Difficulty" Width="Auto" Binding="{Binding Path=Difficulty, Mode=TwoWay, Converter={StaticResource EnumToStringConverter}}" ItemsSource="{x:Bind difficultySource}"/>
+                <controls:DataGridComboBoxColumn Header="Difficulty" Width="Auto" Binding="{Binding Path=Difficulty, Mode=TwoWay}" ItemsSource="{x:Bind difficultySource}"/>
                 <controls:DataGridCheckBoxColumn Header="Members" Binding="{Binding Member, Mode=TwoWay}"/>
+                <controls:DataGridCheckBoxColumn Header="Completed" Binding="{Binding Completed, Mode=TwoWay}"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
+        <!--#endregion Quests-->
+
+        <!--#region Requirements-->
+
+        <controls:DataGrid x:Name="dgReqs" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+                           ItemsSource="{Binding ElementName=dgQuests, Path=SelectedItem.Requirements}"
+                           GridLinesVisibility="Vertical"
+                           HeadersVisibility="Column"
+                           SelectionMode="Single"
+                           AutoGenerateColumns="False"
+                           ClipboardCopyMode="ExcludeHeader"
+                           MaxHeight="500"
+                           Margin="0, 0, 0, 20">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=TwoWay}"/>
+                <controls:DataGridTextColumn Header="Amount" Binding="{Binding Amount, Mode=TwoWay}"/>
+                <controls:DataGridComboBoxColumn Header="Type" Binding="{Binding Path=Type, Mode=TwoWay}" ItemsSource="{x:Bind typeSource}"/>
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>
+        
+        <!--#endregion Requirements-->
+
+        <!--#region Rewards-->
+
+        <controls:DataGrid x:Name="dgRews" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1"
+                           ItemsSource="{Binding ElementName=dgQuests, Path=SelectedItem.Rewards}"
+                           GridLinesVisibility="Vertical"
+                           HeadersVisibility="Column"
+                           SelectionMode="Single"
+                           AutoGenerateColumns="False"
+                           ClipboardCopyMode="ExcludeHeader"
+                           MaxHeight="500"
+                           Margin="0, 0, 0, 20">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=TwoWay}"/>
+                <controls:DataGridTextColumn Header="Amount" Binding="{Binding Amount, Mode=TwoWay}"/>
+                <controls:DataGridComboBoxColumn Header="Type" Binding="{Binding Path=Type, Mode=TwoWay}" ItemsSource="{x:Bind typeSource}"/>
+            </controls:DataGrid.Columns>
+        </controls:DataGrid>
+        
+        <!--#endregion Rewards-->
+
+        <!--#endregion DataGrids-->
     </Grid>
 </Page>
 

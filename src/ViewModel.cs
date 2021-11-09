@@ -11,6 +11,20 @@ namespace RS3QuestFilter.src
 {
     public class ViewModel
     {
+        private static bool isQuestPage = false;
+        public static bool IsQuestPage
+        {
+            get
+            {
+                return isQuestPage;
+            }
+            set
+            {
+                if (value != isQuestPage)
+                    isQuestPage = value;
+            }
+        }
+
         private QuestsViewModel quests;
         public QuestsViewModel VMQuests
         { 

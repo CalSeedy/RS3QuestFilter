@@ -11,5 +11,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     x:Name="PageHome">
 
-    <Grid></Grid>
+    <Grid>
+        <TextBlock>Home</TextBlock>
+    </Grid>
 </Page>

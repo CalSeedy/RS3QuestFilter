@@ -38,7 +38,7 @@ namespace RS3QuestFilter.src
                 if (value != null)
                 {
                     title = value;
-                    NotifyPropertyChanged("Title");
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -51,9 +51,11 @@ namespace RS3QuestFilter.src
 
             set
             {
-                difficulty = value;
-                NotifyPropertyChanged("Difficulty");
-
+                if (value != null)
+                {
+                    difficulty = value;
+                    NotifyPropertyChanged();
+                }
             }
         }
 
@@ -66,7 +68,7 @@ namespace RS3QuestFilter.src
             set
             {
                 member = value;
-                NotifyPropertyChanged("Member");
+                NotifyPropertyChanged();
             }
         }
 
@@ -81,7 +83,7 @@ namespace RS3QuestFilter.src
                 if (value != null)
                 {
                     requirements = value;
-                    NotifyPropertyChanged("Requirements");
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -97,7 +99,7 @@ namespace RS3QuestFilter.src
                 if (value != null)
                 {
                     rewards = value;
-                    NotifyPropertyChanged("Rewards");
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -111,7 +113,7 @@ namespace RS3QuestFilter.src
             set
             {
                 completed = value;
-                NotifyPropertyChanged("Completed");
+                NotifyPropertyChanged();
             }
         }
 

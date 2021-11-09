@@ -6,14 +6,35 @@ using System.Text;
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
 namespace RS3QuestFilter.src
 {
     [XmlType("QuestLog"), XmlRoot("QuestLog")]
-    public class QuestLog
+    public class QuestLog : INotifyPropertyChanged
     {
+
+        private ObservableCollection<Quest> quests;
+
         [XmlElement("Quests")]
-        public ObservableCollection<Quest> Quests = new();
+        public ObservableCollection<Quest> Quests
+        { 
+            get 
+            {
+                if (quests == null)
+                    quests = new();
+                return quests;
+            }
+            set
+            {
+                if (quests != value)
+                {
+                    quests = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
 
         public void AddQuest(Quest quest)
         {
@@ -75,5 +96,11 @@ namespace RS3QuestFilter.src
             return false;
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }

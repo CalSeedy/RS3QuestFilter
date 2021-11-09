@@ -12,8 +12,30 @@ namespace RS3QuestFilter.src
     public class QuestsViewModel : INotifyPropertyChanged
     {
 
+        private ObservableCollection<Item> originalReqs { get; set; }
+        private ObservableCollection<Item> originalRews { get; set; }
+
+        private Quest selectedQuest;
+
+        public Quest Selected
+        {
+            get
+            {
+                if (selectedQuest == null)
+                    selectedQuest = new Quest();
+                return selectedQuest;
+            }
+            set
+            {
+                if (selectedQuest != value)
+                {
+                    selectedQuest = value;
+                }
+            }
+        }
+
         private QuestLog questLog;
-        public QuestLog QLog
+        public QuestLog QuestLog
         {
             get 
             {
@@ -23,30 +45,10 @@ namespace RS3QuestFilter.src
             }
             set
             {
-                if (!questLog.Equals(value))
+                if (questLog != value)
                 {
                     questLog = value;
-                    NotifyPropertyChanged("QLog");
-                }
-            }
-        }
-
-        public ObservableCollection<Quest> QuestList
-        {
-            get
-            {
-                if (questLog == null)
-                    questLog = new();
-                return questLog.Quests;
-            }
-            set
-            {
-                if (!questLog.Quests.Equals(value))
-                {
-                    questLog.Quests = value;
-                    Console.WriteLine(value);
-                    NotifyPropertyChanged("QuestList");
-                    NotifyPropertyChanged("QLog");
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -54,13 +56,18 @@ namespace RS3QuestFilter.src
         private bool isCumulative;
         public bool IsCumulative
         {
-            get { return isCumulative; }
+            get 
+            { 
+                if (isCumulative == null)
+                    isCumulative = false;
+                return isCumulative;
+            }
             set
             {
                 if (value != isCumulative)
                 {
                     isCumulative = value;
-                    NotifyPropertyChanged("IsCumulative");
+                    NotifyPropertyChanged();
                 }
             }
         }

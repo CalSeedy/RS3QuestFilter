@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QuestLog>
+  <Quests Title="Biohazard" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="Plague City" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Priest Gown (top)" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Priest Gown (bottom)" Type="Level" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner (Lv. 33)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>1250</Amount>
+    </Rewards>
+    <Rewards Name="Combat Training Camp" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Plague City" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="Dwellberries" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Chocolate Dust" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Snape Grass" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bucket of Milk" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bucket of Water" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>2425</Amount>
+    </Rewards>
+    <Rewards Name="Gas Mask" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="A magic scroll" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="West Ardougne" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can make Ardougne teletab" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="All Fired Up" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>45</Amount>
+    </Requirements>
+    <Requirements Name="Priest in Peril" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>43</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>5500</Amount>
+    </Rewards>
+    <Rewards Name="Access to All Fired Up Minigame" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Priest in Peril" Difficulty="Novice">
+    <Member>false</Member>
+    <Requirements Name="Rune Essence" Type="Item" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Bucket" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Cerberus (Lv. 33)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Monk of Zamorak (Lv. 23)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="Lamp" Enabled="false">
+      <Amount>1406</Amount>
+    </Rewards>
+    <Rewards Name="Wolfbane" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Talk to Historian Milas to Receive 5 Kudos" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Animal Magnetism" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Ernest the Chicken" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Priest in Peril" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Restless Ghost" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>19</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Slayer" Type="Level" Enabled="false">
+      <Amount>18</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>15</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>35</Amount>
+    </Requirements>
+    <Requirements Name="Mithril hatchet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Iron bar" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Ghostspeak amulet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Holy symbol" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Polished buttons" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Hard leather" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Eco-token" Type="Item" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>1050</Amount>
+    </Rewards>
+    <Rewards Name="Fletching" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Slayer" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Woodcutting" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Blessed hatchet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ava's device" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Access to Ava's Odds and Ends" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Ernest the Chicken" Difficulty="Novice">
+    <Member>false</Member>
+    <Requirements Name="Skeleton (Lv. 11)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>4</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>3000</Amount>
+    </Rewards>
+    <Rewards Name="Egg" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Rewards>
+    <Rewards Name="Feather" Type="Item" Enabled="false">
+      <Amount>300</Amount>
+    </Rewards>
+    <Rewards Name="Killerwatt plane" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="The Restless Ghost" Difficulty="Novice">
+    <Member>false</Member>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="Lamp" Enabled="false">
+      <Amount>125</Amount>
+    </Rewards>
+    <Rewards Name="Ancient bones" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Ghostspeak amulet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Access to Gravestone upgrades via Father Aereck" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Another Slice of H.A.M." Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Death to the Dorgeshuun" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Dig Site" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Giant Dwarf" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Attack" Type="Level" Enabled="false">
+      <Amount>15</Amount>
+    </Requirements>
+    <Requirements Name="Prayer" Type="Level" Enabled="false">
+      <Amount>25</Amount>
+    </Requirements>
+    <Requirements Name="Light source" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. Mage (Lv. 28)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. Ranger (Lv. 28)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sigmund (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>3000</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="XP" Enabled="false">
+      <Amount>3000</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-kaan sphere" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ancient mace" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can buy Goblin Village teleport orbs" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-Kaan - Keldagrim Train System" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Death to the Dorgeshuun" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>46</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>60</Amount>
+    </Requirements>
+    <Requirements Name="The Lost Tribe" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. hood" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. shirt" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. robe" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. gloves" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. boots" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. cloak" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. logo" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Light source" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Guard (Lv. 36)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Sigmund (Lv. 42)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Combat" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="H.A.M. Storerooms" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-Kaan" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-Kaan South Dungeon" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Watermill tunnel" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can use Cave Goblim Technology" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="The Giant Dwarf" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>12</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>16</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>33</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>14</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>10000</Amount>
+    </Requirements>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Coal" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Iron bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Law rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Air rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sapphire" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Redberry pie" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Myriad ores and bars from Clay to Mithril" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Smithing" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Mine cart system" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can work for company selected in quest" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Keldagrim" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can use members' Gravestones" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="The Dig Site" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="herblore" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Vial" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Opal" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Herblore" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>15300</Amount>
+    </Rewards>
+    <Rewards Name="Gold bar" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Varrock Museum specimen cleaning" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Codex Ultimatus" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Teddy" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can make Frozen Key" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="The Lost Tribe" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>13</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>37</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>13</Amount>
+    </Requirements>
+    <Requirements Name="Light source" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Goblin Diplomacy" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>3000</Amount>
+    </Rewards>
+    <Rewards Name="Ring of life" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-Kaan Mines" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Goblin bow emote" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Goblin salute emote" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Nardok's Bone Weapons" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Goblin Diplomacy" Difficulty="Novice">
+    <Member>false</Member>
+    <Requirements Name="Goblin mail" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Woad leaf" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>10015</Amount>
+    </Requirements>
+    <Requirements Name="Redberry" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Onion" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Gold bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="Lamp" Enabled="false">
+      <Amount>200</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="As a First Resort" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>51</Amount>
+    </Requirements>
+    <Requirements Name="Hunter" Type="Level" Enabled="false">
+      <Amount>48</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>58</Amount>
+    </Requirements>
+    <Requirements Name="Zogre Flesh Eaters" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Box trap" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bird snare" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Teasing stick" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Spear" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Eucalyptus logs" Type="Item" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Achey tree logs" Type="Item" Enabled="false">
+      <Amount>8</Amount>
+    </Requirements>
+    <Requirements Name="Raw chompy" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Stripy feather" Type="Item" Enabled="false">
+      <Amount>8</Amount>
+    </Requirements>
+    <Requirements Name="Wolf bones" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Larupia fur" Type="Item" Enabled="false">
+      <Amount>8</Amount>
+    </Requirements>
+    <Requirements Name="Fever grass" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Lavender" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Primweed" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Stinkbloom" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Tansymum" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="Hunter" Type="XP" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="Woodcutting" Type="XP" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="Oyster" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Casket" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Oo'glog spa" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Oo'glog bank" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Oo'glog hunter area" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can summon platypus" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Fresh Meat" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Gift Shop" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can create Robust and Crystal glass" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Zogre Flesh Eaters" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Big Chompy Bird Hunters" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Jungle Potion" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zombie (Lv. 36)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Slash Bash (Lv. 58)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ourg bones" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Zogre bones" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Fletching" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Herblore" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Jiggig" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can equip Inoculation brace" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can fletch Composite ogre bow" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can claim 2000/5000 gp from giving the Black prism to Zavistic Rarve/Yanni Salika" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Gain access to Uglug Nar's shop when selling them a Relicym's balm" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Access Uglug Nar's shop when selling them a Relicym's balm" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Big Chompy Bird Hunters" Difficulty="Intermediate">
+    <Member>false</Member>
+    <Requirements Name="Cooking" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Fletching" Type="Level" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Wolf bones" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Feather" Type="Item" Enabled="false">
+      <Amount>100</Amount>
+    </Requirements>
+    <Requirements Name="Chompy bird (Lv. 2)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Cooking" Type="XP" Enabled="false">
+      <Amount>1470</Amount>
+    </Rewards>
+    <Rewards Name="Fletching" Type="XP" Enabled="false">
+      <Amount>262</Amount>
+    </Rewards>
+    <Rewards Name="Ranged" Type="XP" Enabled="false">
+      <Amount>735</Amount>
+    </Rewards>
+    <Rewards Name="Ogre bow" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can fletch Ogre arrows" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can cook Chompy birds" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+  <Quests Title="Jungle Potion" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Herblore" Type="Level" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Herblore" Type="Lamp" Enabled="false">
+      <Amount>775</Amount>
+    </Rewards>
+    <Rewards Name="Tai Bwo Wannai Cleanup" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Rionasta for Parcel sending" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can use gardener for Calquat trees" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+  </Quests>
+</QuestLog>

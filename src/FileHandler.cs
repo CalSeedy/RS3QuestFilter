@@ -19,7 +19,7 @@ namespace RS3QuestFilter.src
         User
     }
 
-    public class FileHandler
+    public static class FileHandler
     {
         private static StorageFolder LocalFolder = ApplicationData.Current.LocalFolder;
         private static StorageFolder LocalCacheFolder = ApplicationData.Current.LocalCacheFolder;
@@ -30,6 +30,25 @@ namespace RS3QuestFilter.src
         private static ApplicationDataContainer LocalSettings = ApplicationData.Current.LocalSettings;
         private static ApplicationDataContainer RoamingSettings = ApplicationData.Current.RoamingSettings;
 
+        private static bool IsSetup = false;
+
+        private static async Task init()
+        {
+            if (!IsSetup)
+            {
+                await GenerateFolder(ContextType.Local);
+                GenerateSettings(ContextType.Local);
+            }
+            IsSetup = true;
+        }
+
+        private static async Task GenerateFolder(ContextType contextType)
+        {
+            StorageFolder context = GetContextType(contextType);
+
+            await context.CreateFolderAsync("RS3 Quests", CreationCollisionOption.OpenIfExists);
+
+        }
 
         public static void GenerateSettings(ContextType contextType)
         {
@@ -45,12 +64,12 @@ namespace RS3QuestFilter.src
                 default:
                     throw new InvalidOperationException("Unable to generate settings: Invalid context.");
             }
-            context.Values.TryAdd("UserSaveFolder", null);
-            context.Values.TryAdd("PlayerDataPath", null);
+            context.Values.TryAdd("UserSaveFolder", "");
+            context.Values.TryAdd("PlayerDataPath", "");
 
         }
 
-            private static async Task<StorageFolder?> PickUserFolder()
+        private static async Task<StorageFolder?> PickUserFolder()
         {
             Windows.Storage.Pickers.FolderPicker folderPicker = new();
             folderPicker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.Desktop;
@@ -95,13 +114,38 @@ namespace RS3QuestFilter.src
             if (context != null)
             {
                 StorageFile quests = await context.CreateFileAsync("QuestLog.xml", CreationCollisionOption.ReplaceExisting);
-                await FileIO.WriteTextAsync(quests, MyIO.SerialiseToXML(App.ViewModel.VMQuests.QuestList));
+                string questXML = MyIO.SerialiseToXML(App.ViewModel.VMQuests.QuestLog);
+                await FileIO.WriteTextAsync(quests, questXML);
 
+
+                string playerdatapath = GetSetting<string>("PlayerDataPath", contextType);
                 StorageFile player = await context.CreateFileAsync("Player.xml", CreationCollisionOption.ReplaceExisting);
                 await FileIO.WriteTextAsync(player, MyIO.SerialiseToXML(App.ViewModel.VMPlayer.PlayerData));
 
             }
 
+        }
+
+        private static T GetSetting<T>(string key, ContextType contextType)
+        {
+            ApplicationDataContainer settings = null;
+
+            switch (contextType)
+            {
+                case ContextType.Local:
+                    settings = LocalSettings;
+                    break;
+                case ContextType.Roaming:
+                    settings = RoamingSettings;
+                    break;
+                default:
+                    throw new InvalidOperationException($"Unknown context {contextType.ToString()}. Expected either Local or Roaming.");
+            }
+
+            if (settings.Values.ContainsKey(key))
+                return (T)Convert.ChangeType(settings.Values[key], typeof(T));
+            
+            throw new KeyNotFoundException("Key not found in settings: " + key);
         }
 
         private static async Task<StorageFile?> ExportUserFile()
@@ -363,7 +407,7 @@ namespace RS3QuestFilter.src
 
         public static async Task<QuestLog> GetQuestLog()
         {
-           return await LoadData<QuestLog>(ContextType.LocalShared);
+           return await LoadData<QuestLog>(ContextType.Local);
         }
 
         public static async Task<Player> GetPlayerData()
@@ -373,7 +417,13 @@ namespace RS3QuestFilter.src
         }
 
         public static async Task SaveAll() => await SaveData(ContextType.Local);
+        
         public static async Task Export() => await ExportUserFile();
         
+        public static async Task Import() => await ImportUserFile();
+
+        public static async Task Init() => await init();
+
+        public static string GetPlayerDataPath() => GetSetting<string>("PlayerDataPath", ContextType.Local);
     }
 }
