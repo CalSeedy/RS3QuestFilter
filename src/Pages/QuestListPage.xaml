@@ -58,7 +58,8 @@
             Grid.Row="0"
             MaxHeight="500"
             Margin="0, 0, 0, 20"
-            MinHeight="100">
+            MinHeight="100"
+            IsReadOnly="{Binding IsCumulative}">
             <controls:DataGrid.ContextFlyout>
                 <muxc:CommandBarFlyout x:Name="emptyQuestsFlyout" AlwaysExpanded="True">
                     <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="questAddEmpty"/>
@@ -98,7 +99,7 @@
                            MaxHeight="500"
                            Margin="0, 0, 0, 20"
                            MinHeight="100"
-                           Height="150">
+                           IsReadOnly="{Binding IsCumulative}">
             <controls:DataGrid.ContextFlyout>
                 <muxc:CommandBarFlyout x:Name="emptyReqsFlyout" AlwaysExpanded="True">
                     <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="reqAddEmpty"/>
@@ -138,7 +139,7 @@
                            MaxHeight="500"
                            Margin="0, 0, 0, 20"
                            MinHeight="100"
-                           Height="150">
+                           IsReadOnly="{Binding IsCumulative}">
             <controls:DataGrid.ContextFlyout>
                 <muxc:CommandBarFlyout x:Name="emptyRewsFlyout" AlwaysExpanded="True">
                     <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="rewAddEmpty"/>

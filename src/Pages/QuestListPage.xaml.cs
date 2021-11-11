@@ -42,16 +42,7 @@ namespace RS3QuestFilter.src.Pages
             DataContext = App.ViewModel.VMQuests;
         }
 
-        private void dgQuests_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if ((sender as DataGrid).SelectedItem == null)
-                App.ViewModel.IsQuestSelected = false;
-            else
-                App.ViewModel.IsQuestSelected = true;
-
-            App.ViewModel.IsSubDatagridEditable = App.ViewModel.IsQuestSelected && App.ViewModel.IsQuestPage;
-
-        }
+        private void dgQuests_SelectionChanged(object sender, SelectionChangedEventArgs e) => App.ViewModel.VMQuests.DG_OnSelectionChange(sender);
 
         private async Task OnLoad()
         {
@@ -244,7 +235,23 @@ namespace RS3QuestFilter.src.Pages
 
         private void cumulativeSwitch_Toggled(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
+            App.ViewModel.VMQuests.IsCumulative = !App.ViewModel.VMQuests.IsCumulative;
 
+            if (dgQuests.SelectedItem != null)
+            {
+                if (App.ViewModel.VMQuests.IsCumulative)
+                {
+                    App.ViewModel.VMQuests.originalReqs = new((dgQuests.SelectedItem as src.Quest).Requirements);
+                    App.ViewModel.VMQuests.originalRews = new((dgQuests.SelectedItem as src.Quest).Rewards);
+
+                    App.ViewModel.VMQuests.CalculateCumulatives();
+                }
+                else
+                {
+                    (dgQuests.SelectedItem as src.Quest).Requirements = new(App.ViewModel.VMQuests.originalReqs);
+                    (dgQuests.SelectedItem as src.Quest).Rewards = new(App.ViewModel.VMQuests.originalRews);
+                }
+            }
         }
     }
 

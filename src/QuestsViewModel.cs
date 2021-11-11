@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using System.Runtime.CompilerServices;
 using System.Diagnostics;
+using Microsoft.Toolkit.Uwp.UI.Controls;
 
 namespace RS3QuestFilter.src
 {
     public class QuestsViewModel : INotifyPropertyChanged
     {
         private bool isCumulative { get; set; }
-        private ObservableCollection<Item> originalReqs { get; set; }
-        private ObservableCollection<Item> originalRews { get; set; }
+        public ObservableCollection<Item> originalReqs { get; set; }
+        public ObservableCollection<Item> originalRews { get; set; }
 
         private Quest selectedQuest;
 
@@ -71,7 +72,6 @@ namespace RS3QuestFilter.src
             }
         }
 
-#if false
         private (ObservableCollection<src.Item>, ObservableCollection<src.Item>) ScanQuestForItems(ObservableCollection<src.Item> requirements, ObservableCollection<src.Item> rewards, src.Quest quest, ObservableCollection<src.Quest> searched)
         {
             Debug.WriteLine($"Scanning Quest: {quest.Title}\n# of Requirements: {quest.Requirements.Count}\n# of Rewards: {quest.Rewards.Count}");
@@ -163,24 +163,87 @@ namespace RS3QuestFilter.src
             return (requirements, rewards);
         }
 
-        private void CalculateCumulatives()
+        public void CalculateCumulatives()
         {
             Debug.WriteLine("Calculating now...");
 
             ObservableCollection<src.Item> reqs = new();
             ObservableCollection<src.Item> rews = new();
-            src.Quest quest = new(selectedQuest);
+            src.Quest quest = new(Selected);
             ObservableCollection<src.Quest> searchedQuests = new();
 
             (reqs, rews) = ScanQuestForItems(reqs, rews, quest, searchedQuests);
 
-            selectedQuest.Requirements = reqs;
-            selectedQuest.Rewards = rews;
+            Selected.Requirements = reqs;
+            Selected.Rewards = rews;
         }
-#endif
+
+        private void RestoreQuestDataAndResetOriginals()
+        {
+            if (selectedQuest == null)
+                throw new NullReferenceException("Cannot restore quest data when there is no selection!");
+
+            Trace.WriteLine($"Finding quest: {selectedQuest.Title}");
+            var quest = QuestLog.Quests.FirstOrDefault(q => q.Title.Equals(selectedQuest.Title));
+
+            if (quest != null)
+            {
+                Trace.WriteLine("Found quest! Resetting values..");
+                quest.Requirements = originalReqs;
+                quest.Rewards = originalRews;
+                Selected = null;
+                originalReqs = new();
+                originalRews = new();
+            }
+            else
+            {
+                Trace.WriteLine("Could not find quest! That's strange...");
+            }
+        }
+
+        public void DG_OnSelectionChange(object sender)
+        {
+            if (!isCumulative)
+            {
+                if ((sender as DataGrid).SelectedItem == null)
+                    App.ViewModel.IsQuestSelected = false;
+                else
+                    App.ViewModel.IsQuestSelected = true;
+            }
+            App.ViewModel.IsSubDatagridEditable = App.ViewModel.IsQuestSelected && App.ViewModel.IsQuestPage && !isCumulative;
+
+            DataGrid dg = (DataGrid)sender;
+
+            bool oldSelection = Selected != null;
+            bool newSelection = dg.SelectedItem != null;
+            if (Selected == (dg.SelectedItem as src.Quest))
+            {
+                return;
+            }
+
+            Trace.WriteLine($"Old: {oldSelection}\nNew: {newSelection}\nCumulative: {IsCumulative}");
+
+            if (oldSelection)
+                RestoreQuestDataAndResetOriginals();
 
 
+            if (newSelection)
+            {
+                Selected = (src.Quest)dg.SelectedItem;
+                originalReqs = Selected.Requirements;
+                originalRews = Selected.Rewards;
 
+                if (IsCumulative)
+                    CalculateCumulatives();
+            }
+            else
+            {
+                Selected = null;
+                originalReqs = null;
+                originalRews = null;
+            }
+        }
+        
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
