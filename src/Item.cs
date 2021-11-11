@@ -94,7 +94,7 @@ namespace RS3QuestFilter.src
             Enabled = enabled;
         }
 
-        internal Item()
+        public Item()
         {
             Name = "";
             Amount = 0;

@@ -3,9 +3,9 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RS3QuestFilter"
+    xmlns:localsrc="using:RS3QuestFilter.src"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:muxc="using:Microsoft.UI.Xaml.Controls" 
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="Page_Loaded">
@@ -92,9 +92,9 @@
                 <MenuBarItem Title="Edit">
                     <MenuBarItem.Items>
                         <MenuFlyoutSubItem Text="Add">
-                            <MenuFlyoutItem Text="Quest"/>
-                            <MenuFlyoutItem Text="Requirement" IsEnabled="{Binding src.ViewModel.IsQuestPage}"/>
-                            <MenuFlyoutItem Text="Reward"/>
+                            <MenuFlyoutItem x:Name="add_Quest" Text="Quest" IsEnabled="{Binding IsQuestPage, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <MenuFlyoutItem x:Name="add_Req" Text="Requirement" IsEnabled="{Binding IsSubDatagridEditable, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
+                            <MenuFlyoutItem x:Name="add_Rew" Text="Reward" IsEnabled="{Binding IsSubDatagridEditable, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
                         </MenuFlyoutSubItem>
                     </MenuBarItem.Items>
                 </MenuBarItem>

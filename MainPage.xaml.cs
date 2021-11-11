@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -26,6 +29,7 @@ namespace RS3QuestFilter
         public MainPage()
         {
             this.InitializeComponent();
+            DataContext = App.ViewModel;
         }
 
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
@@ -116,9 +120,12 @@ namespace RS3QuestFilter
             else
             {
                 if (navItemTag.Equals("Quests_Page"))
-                    src.ViewModel.IsQuestPage = true;
+                {
+                    App.ViewModel.IsQuestPage = true;
+                }
                 else
-                    src.ViewModel.IsQuestPage = false;
+                    App.ViewModel.IsQuestPage = false;
+                
                 var item = _pages.FirstOrDefault(p => p.Tag.Equals(navItemTag));
                 _page = item.Page;
             }
@@ -127,7 +134,7 @@ namespace RS3QuestFilter
             var preNavPageType = ContentFrame.CurrentSourcePageType;
 
             // Only navigate if the selected page isn't currently loaded.
-            if (!(_page is null) && !Type.Equals(preNavPageType, _page))
+            if (_page is not null && !Type.Equals(preNavPageType, _page))
             {
                 ContentFrame.Navigate(_page, null, transitionInfo);
             }
@@ -188,17 +195,19 @@ namespace RS3QuestFilter
 
         #endregion
 
-        public static void ShowAlert(string message)
+        public static async Task ShowAlert(string message)
         {
             ContentDialog alert = new();
 
             alert.Content = message;
             alert.CloseButtonText = "Okay";
+            await alert.ShowAsync();
         }
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             await src.FileHandler.Init();
         }
+
     }
 }

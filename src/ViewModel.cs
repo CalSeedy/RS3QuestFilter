@@ -9,22 +9,8 @@ using System.Threading.Tasks;
 
 namespace RS3QuestFilter.src
 {
-    public class ViewModel
+    public class ViewModel : INotifyPropertyChanged
     {
-        private static bool isQuestPage = false;
-        public static bool IsQuestPage
-        {
-            get
-            {
-                return isQuestPage;
-            }
-            set
-            {
-                if (value != isQuestPage)
-                    isQuestPage = value;
-            }
-        }
-
         private QuestsViewModel quests;
         public QuestsViewModel VMQuests
         { 
@@ -47,5 +33,38 @@ namespace RS3QuestFilter.src
             }
         }
 
+        public bool IsQuestPage
+        {
+            get { return State.isQuestPage; }
+            set { State.isQuestPage = value; NotifyPropertyChanged(); }
+        }
+
+        public bool IsQuestSelected
+        {
+            get { return State.isQuestSelected; }
+            set { State.isQuestSelected = value; NotifyPropertyChanged(); }
+        }
+
+        public bool IsSubDatagridEditable
+        {
+            get
+            {
+                return State.isQuestPage && State.isQuestSelected;
+            }
+            set { State.isQuestPage = value; NotifyPropertyChanged(); }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+
+    public static class State
+    {
+        public static bool isQuestPage = false;
+        public static bool isQuestSelected = false;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Toolkit.Uwp.UI.Controls;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Navigation;
 
@@ -42,6 +44,12 @@ namespace RS3QuestFilter.src.Pages
 
         private void dgQuests_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if ((sender as DataGrid).SelectedItem == null)
+                App.ViewModel.IsQuestSelected = false;
+            else
+                App.ViewModel.IsQuestSelected = true;
+
+            App.ViewModel.IsSubDatagridEditable = App.ViewModel.IsQuestSelected && App.ViewModel.IsQuestPage;
 
         }
 
@@ -76,7 +84,6 @@ namespace RS3QuestFilter.src.Pages
         private async void PageQuests_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             await OnLoad();
-            src.ViewModel.IsQuestPage = true;
         }
 
         public void CreateTestLog()
@@ -128,6 +135,116 @@ namespace RS3QuestFilter.src.Pages
                 Quest q2 = new("Plague City", EDifficulty.Novice, true, reqs, rews);
                 App.ViewModel.VMQuests.QuestLog.AddQuest(q2);
             }
+        }
+
+        private void DG_AddRow<T>(ObservableCollection<T> target) where T : class, new()
+        {
+            target.Add(new T());
+        }
+
+        private void DG_DelRow<T>(ObservableCollection<T> target, int idx) where T : class, new()
+        {
+            if (target.Count == 1)
+            {
+                target.Clear();
+                return;
+            }
+            target.RemoveAt(idx);
+        }
+
+        private async void AppBarButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            AppBarButton button = sender as AppBarButton;
+            string tag = button.Tag as string;
+
+            Microsoft.UI.Xaml.Controls.CommandBarFlyout flyout = null;
+            if (tag != null)
+            {
+                switch (tag)
+                {
+                    case "questAdd":
+                        flyout = questDGCommandFlyout;
+                        goto case "questAddDef";
+
+                    case "questAddEmpty":
+                        flyout = emptyQuestsFlyout;
+                        goto case "questAddDef";
+
+                    case "questAddDef":
+                        DG_AddRow(App.ViewModel.VMQuests.QuestLog.Quests);
+                        dgQuests.SelectedIndex = App.ViewModel.VMQuests.QuestLog.Quests.Count - 1;
+                        App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex].Requirements.Add(new());
+                        App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex].Rewards.Add(new());
+                        dgQuests.ScrollIntoView(App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex], null);
+                        break;
+
+                    case "questDel":
+                        DG_DelRow(App.ViewModel.VMQuests.QuestLog.Quests, dgQuests.SelectedIndex);
+                        flyout = questDGCommandFlyout;
+                        break;
+
+                    case "reqAdd":
+                        flyout = reqsDGCommandFlyout;
+                        goto case "reqAddDef";
+
+                    case "reqAddEmpty":
+                        flyout = emptyReqsFlyout;
+                        goto case "reqAddDef";
+
+                    case "reqAddDef":
+                        if (dgQuests.SelectedItem is not null)
+                        {
+                            DG_AddRow((dgQuests.SelectedItem as Quest).Requirements);
+                            dgReqs.SelectedIndex = (dgQuests.SelectedItem as Quest).Requirements.Count - 1;
+                            dgReqs.ScrollIntoView((dgQuests.SelectedItem as Quest).Requirements[dgReqs.SelectedIndex], null);
+                        }
+                        else 
+                        {
+                            await MainPage.ShowAlert("You need to select a quest before you try to add a requirement!");
+                        }
+                        break;
+
+                    case "reqDel":
+                        DG_DelRow((dgQuests.SelectedItem as Quest).Requirements, dgReqs.SelectedIndex);
+                        flyout = reqsDGCommandFlyout;
+                        break;
+
+                    case "rewAdd":
+                        flyout = rewsDGCommandFlyout;
+                        goto case "rewAddDef";
+                    case "rewAddEmpty":
+                        flyout = emptyRewsFlyout;
+                        goto case "rewAddDef";
+
+                    case "rewAddDef":
+                        if (dgQuests.SelectedItem is not null)
+                        {
+                            DG_AddRow((dgQuests.SelectedItem as Quest).Rewards);
+                            dgRews.SelectedIndex = (dgQuests.SelectedItem as Quest).Rewards.Count - 1;
+                            dgRews.ScrollIntoView((dgQuests.SelectedItem as Quest).Rewards[dgRews.SelectedIndex], null);
+                        }
+                        else
+                        {
+                            await MainPage.ShowAlert("You need to select a quest before you try to add a reward!");
+                        }
+                        break;
+
+                    case "rewDel":
+                        DG_DelRow((dgQuests.SelectedItem as Quest).Rewards, dgRews.SelectedIndex);
+                        flyout = rewsDGCommandFlyout;
+                        break;
+                }
+
+                if (flyout != null)
+                    flyout.Hide();
+            }
+
+
+        }
+
+        private void cumulativeSwitch_Toggled(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+
         }
     }
 
