@@ -34,7 +34,7 @@ namespace RS3QuestFilter.src
             get 
             {
                 if (name == null)
-                    name = "Unknown";
+                    name = "";
                 return name;
             }
             set
@@ -153,7 +153,7 @@ namespace RS3QuestFilter.src
         public Player()
         {
             Skills = CreateSkills();
-            Name = "Unknown";
+            Name = "";
         }
 
         public Player(ObservableDictionary<string, Skill> skills, PlayerFlags flags)
@@ -161,7 +161,7 @@ namespace RS3QuestFilter.src
             Skills = skills;
             PrepareSerialisable();
             Flags = flags;
-            Name = "Unknown";
+            Name = "";
         }
 
         public Player(Player player)
@@ -177,7 +177,7 @@ namespace RS3QuestFilter.src
             Skills = new();
             PrepareSkills();
             Flags = flags;
-            Name = "Unknown";
+            Name = "";
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

@@ -18,6 +18,190 @@
 
     <Page.Resources>
         <local:SkillToLevelConverter x:Key="SkillConverter"/>
+        <local:SkillToEnabledConverter x:Key="EnabledConverter"/>
+        <Style TargetType="ToggleButton">
+            <Setter Property="Background" Value="{ThemeResource ToggleButtonBackground}"/>
+            <Setter Property="BackgroundSizing" Value="OuterBorderEdge"/>
+            <Setter Property="Foreground" Value="{ThemeResource ToggleButtonForeground}"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource ToggleButtonBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource ToggleButtonBorderThemeThickness}"/>
+            <Setter Property="Padding" Value="{StaticResource ButtonPadding}"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+            <Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}"/>
+            <Setter Property="FocusVisualMargin" Value="-3"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <ContentPresenter x:Name="ContentPresenter" AutomationProperties.AccessibilityView="Raw" Background="{TemplateBinding Background}" BackgroundSizing="{TemplateBinding BackgroundSizing}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" ContentTemplate="{TemplateBinding ContentTemplate}" CornerRadius="{TemplateBinding CornerRadius}" Content="{TemplateBinding Content}" ContentTransitions="{TemplateBinding ContentTransitions}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" Padding="{TemplateBinding Padding}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <Storyboard>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Checked">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="#209F10"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundChecked}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushChecked}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="CheckedPointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundCheckedPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushCheckedPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundCheckedPointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="CheckedPressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundCheckedPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundCheckedPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushCheckedPressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="CheckedDisabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundCheckedDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundCheckedDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushCheckedDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Indeterminate">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundIndeterminate}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundIndeterminate}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushIndeterminate}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="IndeterminatePointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundIndeterminatePointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushIndeterminatePointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundIndeterminatePointerOver}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerUpThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="IndeterminatePressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundIndeterminatePressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushIndeterminatePressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundIndeterminatePressed}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <PointerDownThemeAnimation Storyboard.TargetName="ContentPresenter"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="IndeterminateDisabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Background">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBackgroundIndeterminateDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonForegroundIndeterminateDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ToggleButtonBorderBrushIndeterminateDisabled}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </ContentPresenter>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Page.Resources>
 
     <Grid>
@@ -36,7 +220,7 @@
         <!--#endregion Column Definitions-->
 
         <!--#region Skills-->
-        <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Margin="15,25,5,25">
+        <Grid Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Margin="15,25,5,25" x:Name="skillGrid">
             <!--#region Column Definitions-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" MinWidth="200"/>
@@ -60,24 +244,23 @@
             </Grid.RowDefinitions>
             <!--#endregion Row Definitions-->
 
-
             <!--#region Row 1: Attack, Constitution, Mining-->
             <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnAttack" Tag="Attack" Click="skill_Click" ToolTipService.ToolTip="Attack" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnAttack" Tag="Attack" Click="skill_Click" ToolTipService.ToolTip="Attack" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Attack}">
                     <Image Source="ms-appx:///Assets/images/Skills/Attack.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Attack}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Attack"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnConstitution" Tag="Constitution" Click="skill_Click" ToolTipService.ToolTip="Constitution" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnConstitution" Tag="Constitution" Click="skill_Click" ToolTipService.ToolTip="Constitution" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Constitution}">
                     <Image Source="ms-appx:///Assets/images/Skills/Constitution.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Constitution}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Constitution"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnMining" Tag="Mining" Click="skill_Click" ToolTipService.ToolTip="Mining" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnMining" Tag="Mining" Click="skill_Click" ToolTipService.ToolTip="Mining" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Mining}">
                     <Image Source="ms-appx:///Assets/images/Skills/Mining.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Mining}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Mining"/>
@@ -86,21 +269,21 @@
 
             <!--#region Row 2: Strength, Agility, Smithing-->
             <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnStrength" Tag="Strength" Click="skill_Click" ToolTipService.ToolTip="Strength" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnStrength" Tag="Strength" Click="skill_Click" ToolTipService.ToolTip="Strength" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Strength}">
                     <Image Source="ms-appx:///Assets/images/Skills/Strength.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Strength}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Strength"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnAgility" Tag="Agility" Click="skill_Click" ToolTipService.ToolTip="Agility" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnAgility" Tag="Agility" Click="skill_Click" ToolTipService.ToolTip="Agility" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Agility}">
                     <Image Source="ms-appx:///Assets/images/Skills/Agility.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Agility}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Agility"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnSmithing" Tag="Smithing" Click="skill_Click" ToolTipService.ToolTip="Smithing" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnSmithing" Tag="Smithing" Click="skill_Click" ToolTipService.ToolTip="Smithing" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Smithing}">
                     <Image Source="ms-appx:///Assets/images/Skills/Smithing.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Smithing}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Smithing"/>
@@ -109,7 +292,7 @@
 
             <!--#region Row 3: Defence, Herblore, Fishing-->
             <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnDefence" Tag="Defence" Click="skill_Click" ToolTipService.ToolTip="Defence" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnDefence" Tag="Defence" Click="skill_Click" ToolTipService.ToolTip="Defence" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Defence}">
                     <Image Source="ms-appx:///Assets/images/Skills/Defence.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -118,7 +301,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnHerblore" Tag="Herblore" Click="skill_Click" ToolTipService.ToolTip="Herblore" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnHerblore" Tag="Herblore" Click="skill_Click" ToolTipService.ToolTip="Herblore" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Herblore}">
                     <Image Source="ms-appx:///Assets/images/Skills/Herblore.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -127,7 +310,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnFishing" Tag="Fishing" Click="skill_Click" ToolTipService.ToolTip="Fishing" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnFishing" Tag="Fishing" Click="skill_Click" ToolTipService.ToolTip="Fishing" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Fishing}">
                     <Image Source="ms-appx:///Assets/images/Skills/Fishing.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -138,7 +321,7 @@
 
             <!--#region Row 4: Ranged, Thieving, Cooking-->
             <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnRanged" Tag="Ranged" Click="skill_Click" ToolTipService.ToolTip="Ranged" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnRanged" Tag="Ranged" Click="skill_Click" ToolTipService.ToolTip="Ranged" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Ranged}">
                     <Image Source="ms-appx:///Assets/images/Skills/Ranged.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -147,7 +330,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnThieving" Tag="Thieving" Click="skill_Click" ToolTipService.ToolTip="Thieving" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnThieving" Tag="Thieving" Click="skill_Click" ToolTipService.ToolTip="Thieving" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Thieving}">
                     <Image Source="ms-appx:///Assets/images/Skills/Thieving.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -156,7 +339,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnCooking" Tag="Cooking" Click="skill_Click" ToolTipService.ToolTip="Cooking" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnCooking" Tag="Cooking" Click="skill_Click" ToolTipService.ToolTip="Cooking" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Cooking}">
                     <Image Source="ms-appx:///Assets/images/Skills/Cooking.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -167,7 +350,7 @@
 
             <!--#region Row 5: Prayer, Crafting, Firemaking-->
             <StackPanel Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnPrayer" Tag="Prayer" Click="skill_Click" ToolTipService.ToolTip="Prayer" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnPrayer" Tag="Prayer" Click="skill_Click" ToolTipService.ToolTip="Prayer" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Prayer}">
                     <Image Source="ms-appx:///Assets/images/Skills/Prayer.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -176,7 +359,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnCrafting" Tag="Crafting" Click="skill_Click" ToolTipService.ToolTip="Crafting" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnCrafting" Tag="Crafting" Click="skill_Click" ToolTipService.ToolTip="Crafting" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Crafting}">
                     <Image Source="ms-appx:///Assets/images/Skills/Crafting.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -185,7 +368,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnFiremaking" Tag="Firemaking" Click="skill_Click" ToolTipService.ToolTip="Firemaking" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnFiremaking" Tag="Firemaking" Click="skill_Click" ToolTipService.ToolTip="Firemaking" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Firemaking}">
                     <Image Source="ms-appx:///Assets/images/Skills/Firemaking.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -196,7 +379,7 @@
 
             <!--#region Row 6: Magic, Fletching, Woodcutting-->
             <StackPanel Orientation="Horizontal" Grid.Row="5" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnMagic" Tag="Magic" Click="skill_Click" ToolTipService.ToolTip="Magic" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnMagic" Tag="Magic" Click="skill_Click" ToolTipService.ToolTip="Magic" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Magic}">
                     <Image Source="ms-appx:///Assets/images/Skills/Magic.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -205,7 +388,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnFletching" Tag="Fletching" Click="skill_Click" ToolTipService.ToolTip="Fletching" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnFletching" Tag="Fletching" Click="skill_Click" ToolTipService.ToolTip="Fletching" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Fletching}">
                     <Image Source="ms-appx:///Assets/images/Skills/Fletching.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -214,7 +397,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnWoodcutting" Tag="Woodcutting" Click="skill_Click" ToolTipService.ToolTip="Woodcutting" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnWoodcutting" Tag="Woodcutting" Click="skill_Click" ToolTipService.ToolTip="Woodcutting" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Woodcutting}">
                     <Image Source="ms-appx:///Assets/images/Skills/Woodcutting.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -225,7 +408,7 @@
 
             <!--#region Row 7: Runecrafting, Slayer, Farming-->
             <StackPanel Orientation="Horizontal" Grid.Row="6" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnRunecrafting" Tag="Runecrafting" Click="skill_Click" ToolTipService.ToolTip="Runecrafting" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnRunecrafting" Tag="Runecrafting" Click="skill_Click" ToolTipService.ToolTip="Runecrafting" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Runecrafting}">
                     <Image Source="ms-appx:///Assets/images/Skills/Runecrafting.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -234,7 +417,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnSlayer" Tag="Slayer" Click="skill_Click" ToolTipService.ToolTip="Slayer" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnSlayer" Tag="Slayer" Click="skill_Click" ToolTipService.ToolTip="Slayer" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Slayer}">
                     <Image Source="ms-appx:///Assets/images/Skills/Slayer.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -243,7 +426,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnFarming" Tag="Farming" Click="skill_Click" ToolTipService.ToolTip="Farming" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnFarming" Tag="Farming" Click="skill_Click" ToolTipService.ToolTip="Farming" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Farming}">
                     <Image Source="ms-appx:///Assets/images/Skills/Farming.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -254,7 +437,7 @@
 
             <!--#region Row 8: Construction, Hunter, Summoning-->
             <StackPanel Orientation="Horizontal" Grid.Row="7" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnConstruction" Tag="Construction" Click="skill_Click" ToolTipService.ToolTip="Construction" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnConstruction" Tag="Construction" Click="skill_Click" ToolTipService.ToolTip="Construction" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Construction}">
                     <Image Source="ms-appx:///Assets/images/Skills/Construction.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -263,7 +446,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnHunter" Tag="Hunter" Click="skill_Click" ToolTipService.ToolTip="Hunter" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnHunter" Tag="Hunter" Click="skill_Click" ToolTipService.ToolTip="Hunter" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Hunter}">
                     <Image Source="ms-appx:///Assets/images/Skills/Hunter.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -272,7 +455,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnSummoning" Tag="Summoning" Click="skill_Click" ToolTipService.ToolTip="Summoning" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnSummoning" Tag="Summoning" Click="skill_Click" ToolTipService.ToolTip="Summoning" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Summoning}">
                     <Image Source="ms-appx:///Assets/images/Skills/Summoning.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -283,7 +466,7 @@
 
             <!--#region Row 9: Dungeoneering, Divination, Invention-->
             <StackPanel Orientation="Horizontal" Grid.Row="8" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnDungeoneering" Tag="Dungeoneering" Click="skill_Click" ToolTipService.ToolTip="Dungeoneering" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnDungeoneering" Tag="Dungeoneering" Click="skill_Click" ToolTipService.ToolTip="Dungeoneering" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Dungeoneering}">
                     <Image Source="ms-appx:///Assets/images/Skills/Dungeoneering.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -292,7 +475,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnDivination" Tag="Divination" Click="skill_Click" ToolTipService.ToolTip="Divination" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnDivination" Tag="Divination" Click="skill_Click" ToolTipService.ToolTip="Divination" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Divination}">
                     <Image Source="ms-appx:///Assets/images/Skills/Divination.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -301,7 +484,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="8" Grid.Column="2" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnInvention" Tag="Invention" Click="skill_Click" ToolTipService.ToolTip="Invention" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnInvention" Tag="Invention" Click="skill_Click" ToolTipService.ToolTip="Invention" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Invention}">
                     <Image Source="ms-appx:///Assets/images/Skills/Invention.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -312,7 +495,7 @@
 
             <!--#region Row 10: Archaeology-->
             <StackPanel Orientation="Horizontal" Grid.Row="9" HorizontalAlignment="Center" Width="222">
-                <ToggleButton x:Name="btnArchaeology" Tag="Archaeology" Click="skill_Click" ToolTipService.ToolTip="Archaeology" Margin="0, 0, 20, 0">
+                <ToggleButton x:Name="btnArchaeology" Tag="Archaeology" Click="skill_Click" ToolTipService.ToolTip="Archaeology" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Archaeology}">
                     <Image Source="ms-appx:///Assets/images/Skills/Archaeology.png" Width="50" Height="50"/>
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
@@ -325,17 +508,35 @@
         <!--#endregion Skills-->
 
         <!--#region Player Details-->
-        <StackPanel Grid.Column="1">
-            <StackPanel Orientation="Horizontal" Margin="5, 35, 0, 0">
-                <TextBlock FontSize="24" FontWeight="Bold">In-game Name</TextBlock>
-                <TextBox x:Name="playerName" Height="50" Width="250" Margin="20,0,0,0" Text="{Binding Path=PlayerData.Name, Mode=TwoWay}"/>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Margin="5, 35, 0, 0" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
+                <TextBlock FontSize="24" FontWeight="Bold" VerticalAlignment="Center">In-game Name</TextBlock>
+                <TextBox x:Name="playerName" Height="20" MinWidth="100" MaxWidth="250" Margin="20,0,0,0" Text="{Binding Path=PlayerData.Name, Mode=TwoWay}" VerticalContentAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" PlaceholderText="Enter Name" FontSize="18" FontWeight="SemiBold"/>
             </StackPanel>
-            <CheckBox x:Name="ironCheck" Margin="20, 25, 0, 0" Content="Ironman" Click="Checkbox_Click" Tag="ironman"/>
-            <CheckBox x:Name="hcCheck" Margin="20, 0,0,0" Content="Hardcore" IsEnabled="{Binding ElementName=ironCheck, Path=IsChecked}" Click="Checkbox_Click" Tag="hardcore"/>
-            <CheckBox x:Name="osatCheck" Margin="20, 20, 0, 0" Content="OSAT (One Skill at a Time)" Click="Checkbox_Click" Tag="osat"/>
-            <CheckBox x:Name="skillerCheck" Margin="20, 20, 0, 0" Content="Skiller" Click="Checkbox_Click" Tag="skiller"/>
-            <CheckBox x:Name="memberCheck" Margin="20, 20, 0, 0" Content="Member" Click="Checkbox_Click" Tag="member"/>
-        </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.Row="1">
+                <Button x:Name="btnLookup" Content="Lookup" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0, 30, 0, 0" CornerRadius="8" Width="100" Click="btnLookup_Click"/>
+                <Button x:Name="btnResetStats" Content="Reset" HorizontalAlignment="left" VerticalAlignment="Center" Margin="0, 30, 0, 0" CornerRadius="8" Width="100" Click="btnResetStats_Click"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <CheckBox x:Name="ironCheck" Margin="20, 25, 0, 0" Content="Ironman" Click="Checkbox_Click" Tag="ironman"/>
+                <CheckBox x:Name="hcCheck" Margin="20, 0,0,0" Content="Hardcore" IsEnabled="{Binding ElementName=ironCheck, Path=IsChecked}" Click="Checkbox_Click" Tag="hardcore"/>
+                <CheckBox x:Name="osatCheck" Margin="20, 20, 0, 0" Content="OSAT (One Skill at a Time)" Click="Checkbox_Click" Tag="osat"/>
+                <CheckBox x:Name="skillerCheck" Margin="20, 20, 0, 0" Content="Skiller" Click="Checkbox_Click" Tag="skiller"/>
+                <CheckBox x:Name="memberCheck" Margin="20, 20, 0, 0" Content="Member" Click="Checkbox_Click" Tag="member"/>
+            </StackPanel>
+        </Grid>
         <!--#endregion Player Details-->
     </Grid>
 </Page>

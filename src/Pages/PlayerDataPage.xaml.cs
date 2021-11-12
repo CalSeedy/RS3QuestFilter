@@ -64,12 +64,37 @@ namespace RS3QuestFilter.src.Pages
             if (DataContext == null)
                 DataContext = App.ViewModel.VMPlayer;
 
+            #region Checkboxes/Flags
+
             ironCheck.IsChecked = App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Ironman);
             hcCheck.IsChecked = App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Hardcore);
             osatCheck.IsChecked = App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Osaat);
             skillerCheck.IsChecked = App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Skiller);
             memberCheck.IsChecked = App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Member);
 
+            #endregion
+
+            /*
+            #region Skill Toggles
+
+            foreach (StackPanel sp in skillGrid.Children)
+            {
+                ToggleButton tb = (ToggleButton)sp.Children.First(b => b is ToggleButton);
+
+                if (tb == null)
+                    break;
+
+                if (tb.Tag == null)
+                    break;
+
+                if (App.ViewModel.VMPlayer.PlayerData.Skills.ContainsKey(tb.Tag as string))
+                {
+                    tb.IsChecked = App.ViewModel.VMPlayer.PlayerData.Skills[tb.Tag as string].Enabled;
+                }
+            }
+            #endregion
+            
+             */
         }
 
         private void PagePlayer_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
@@ -164,6 +189,37 @@ namespace RS3QuestFilter.src.Pages
 
             App.ViewModel.VMPlayer.PlayerData.Flags = flags;
         }
+
+        private void btnLookup_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnResetStats_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            App.ViewModel.VMPlayer.PlayerData = new();
+        }
+    }
+
+    public class SkillToEnabledConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            if (value == null)
+                return null;
+
+            if (parameter == null)
+                return null;
+
+            ObservableDictionary<string, Skill> skills = value as ObservableDictionary<string, Skill>;
+            string key = parameter as string;
+            return skills[key].Enabled;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class SkillToLevelConverter : IValueConverter
@@ -178,7 +234,7 @@ namespace RS3QuestFilter.src.Pages
 
             ObservableDictionary<string, Skill> skills = value as ObservableDictionary<string, Skill>; 
             string key = parameter as string;
-            return skills[key].Level;
+            return (double)skills[key].Level;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
