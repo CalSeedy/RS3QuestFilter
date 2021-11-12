@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
@@ -18,19 +20,80 @@ namespace RS3QuestFilter.src
         Ironman = 1,
         Hardcore = 2,
         Osaat = 4,
-        Skiller = 8
+        Skiller = 8,
+        Member = 16
     }
 
-    public class Player
+    public class Player : INotifyPropertyChanged
     {
+        private string name { get; set; }
+
+        [XmlAttribute]
+        public string Name
+        {
+            get 
+            {
+                if (name == null)
+                    name = "Unknown";
+                return name;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    if (value != name)
+                    {
+                        name = value;
+                        NotifyPropertyChanged();
+                    }
+                }
+            }
+        }
+
         [XmlAttribute("PlayerFlags")]
-        public PlayerFlags Flags { get; set; }
+        private PlayerFlags flags { get; set; }
+        public PlayerFlags Flags 
+        {
+            get
+            {
+                if (flags == null)
+                    flags = new();
+                return flags;
+            }
+            set
+            {
+                if (value != flags)
+                {
+                    flags = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
 
         [XmlElement("Skills", IsNullable = false)]
         public SerializableDictionary<string, Skill> serialisableSkills { get; set; }
 
         [XmlIgnore]
-        public ObservableDictionary<string, Skill> Skills { get; set; }
+        private ObservableDictionary<string, Skill> skills { get; set; }
+        
+        [XmlIgnore]
+        public ObservableDictionary<string, Skill> Skills 
+        {
+            get
+            {
+                if (skills == null)
+                    skills = new();
+                return skills;
+            }
+            set
+            {
+                if (value != skills)
+                {
+                    skills = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
 
         public ObservableDictionary<string, Skill> CreateSkills()
         {
@@ -69,7 +132,7 @@ namespace RS3QuestFilter.src
             return skills;
         }
 
-        private void PrepareSkills()
+        public void PrepareSkills()
         {
             Skills = new();
             foreach (string key in serialisableSkills.Keys)
@@ -81,16 +144,16 @@ namespace RS3QuestFilter.src
         public void PrepareSerialisable()
         {
             serialisableSkills = new();
-            foreach (string key in Skills.Keys)
+            foreach (string key in skills.Keys)
             {
-                serialisableSkills.Add(key, Skills[key]);
+                serialisableSkills.Add(key, skills[key]);
             }
         }
 
         public Player()
         {
             Skills = CreateSkills();
-            PrepareSerialisable();
+            Name = "Unknown";
         }
 
         public Player(ObservableDictionary<string, Skill> skills, PlayerFlags flags)
@@ -98,6 +161,7 @@ namespace RS3QuestFilter.src
             Skills = skills;
             PrepareSerialisable();
             Flags = flags;
+            Name = "Unknown";
         }
 
         public Player(Player player)
@@ -105,6 +169,7 @@ namespace RS3QuestFilter.src
             Skills = new(player.Skills);
             PrepareSerialisable();
             Flags = player.Flags;
+            Name = player.Name;
         }
 
         public Player(SerializableDictionary<string, Skill> skills, PlayerFlags flags)
@@ -112,40 +177,87 @@ namespace RS3QuestFilter.src
             Skills = new();
             PrepareSkills();
             Flags = flags;
+            Name = "Unknown";
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
     }
 
-    public class Skill
+    public class Skill : INotifyPropertyChanged
     {
         [XmlAttribute("Name")]
-        public string Name { get; set; }
+        private string name { get; set; }
+
+        public string Name { get { return name; } }
 
         [XmlAttribute("Level")]
-        public int Level { get; set; }
+        private int level { get; set; }
+        public int Level 
+        {
+            get
+            {
+               return level;
+            }
+            set
+            {
+                if (value != null && value >= 0)
+                {
+                    level = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
 
         [XmlAttribute("Enabled")]
-        public bool Enabled { get; set; }
+        private bool enabled { get; set; }
+        public bool Enabled 
+        {
+            get
+            {
+                return enabled;
+            }
+            set
+            {
+                if (value != enabled)
+                {
+                    enabled = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
 
         public Skill(string name, int level, bool enabled)
         {
-            Name = name;
+            this.name = name;
             Level = level;
             Enabled = enabled;
         }
 
         public Skill(Skill skill)
         {
-            Name = skill.Name;
+            this.name = skill.Name;
             Level = skill.Level;
             Enabled = skill.Enabled;
         }
 
         public Skill()
         {
-            Name = "Unknown Skill";
+            this.name = "Unknown Skill";
             Level = 0;
             Enabled = false;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

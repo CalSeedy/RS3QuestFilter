@@ -42,7 +42,7 @@
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
       <Extensions>
-        <uap:Extension Category="windows.fileOpenPicker" StartPage="MainPage">
+        <uap:Extension Category="windows.fileOpenPicker" >
           <uap:FileOpenPicker>
             <uap:SupportedFileTypes>
               <uap:FileType>.xml</uap:FileType>
@@ -56,12 +56,13 @@
             </uap:SupportedFileTypes>
           </uap:FileSavePicker>
         </uap:Extension>
+        <uap:Extension Category="windows.cachedFileUpdater"/>
       </Extensions>
     </Application>
   </Applications>
 
   <Capabilities>
     <Capability Name="internetClient" />
-    <rescap:Capability Name="broadFileSystemAccess" />
+	<rescap:Capability Name="broadFileSystemAccess" />
   </Capabilities>
 </Package>

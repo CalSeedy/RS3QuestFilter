@@ -27,6 +27,7 @@ namespace RS3QuestFilter.src
     [XmlRoot("Quest"), XmlType("Quest")]
     public class Quest : INotifyPropertyChanged
     {
+        [XmlIgnore]
         private string title;
         [XmlAttribute]
         public string Title
@@ -42,7 +43,7 @@ namespace RS3QuestFilter.src
                 }
             }
         }
-
+        [XmlIgnore]
         private EDifficulty difficulty;
         [XmlAttribute]
         public EDifficulty Difficulty
@@ -58,7 +59,7 @@ namespace RS3QuestFilter.src
                 }
             }
         }
-
+        [XmlIgnore]
         private bool? member;
         [XmlElement(IsNullable = true)]
         public bool? Member
@@ -71,7 +72,7 @@ namespace RS3QuestFilter.src
                 NotifyPropertyChanged();
             }
         }
-
+        [XmlIgnore]
         private ObservableCollection<Item> requirements;
         [XmlElement]
         public ObservableCollection<Item> Requirements
@@ -87,7 +88,7 @@ namespace RS3QuestFilter.src
                 }
             }
         }
-
+        [XmlIgnore]
         private ObservableCollection<Item> rewards;
         [XmlElement]
         public ObservableCollection<Item> Rewards
@@ -103,7 +104,7 @@ namespace RS3QuestFilter.src
                 }
             }
         }
-
+        [XmlIgnore]
         private bool? completed;
         [XmlElement(IsNullable = true)]
         public bool? Completed

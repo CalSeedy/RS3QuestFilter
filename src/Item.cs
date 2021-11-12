@@ -23,6 +23,7 @@ namespace RS3QuestFilter.src
 
     public class Item : INotifyPropertyChanged, IEquatable<Item>
     {
+        [XmlIgnore]
         private string name;
 
         [XmlAttribute]
@@ -38,6 +39,7 @@ namespace RS3QuestFilter.src
             }
         }
 
+        [XmlIgnore]
         private int amount;
         [XmlElement]
         public int Amount
@@ -51,7 +53,7 @@ namespace RS3QuestFilter.src
 
             }
         }
-
+        [XmlIgnore]
         private EType type;
         [XmlAttribute]
         public EType Type
@@ -64,7 +66,7 @@ namespace RS3QuestFilter.src
                 NotifyPropertyChanged();
             }
         }
-
+        [XmlIgnore]
         private bool enabled;
         [XmlAttribute]
         public bool Enabled

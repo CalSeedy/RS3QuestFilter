@@ -10,24 +10,22 @@ namespace RS3QuestFilter.src
 {
     public class PlayerDataViewModel : INotifyPropertyChanged
     {
-        public static object dataContext;
-
-        public PlayerDataViewModel() {
-            dataContext = this;
-        }
-
-
-        private Player playerData = new();
+        private Player playerData { get; set; }
 
         public Player PlayerData
         {
-            get { return playerData; }
+            get 
+            {
+                if (playerData == null)
+                    playerData = new Player();
+                return playerData;
+            }
             set
             {
-                if (!playerData.Equals(value))
+                if (playerData != value)
                 {
                     playerData = value;
-                    NotifyPropertyChanged("PlayerData");
+                    NotifyPropertyChanged();
                 }
             }
         }
@@ -39,4 +37,5 @@ namespace RS3QuestFilter.src
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+
 }

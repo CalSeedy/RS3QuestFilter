@@ -26,8 +26,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Plague City" Difficulty="Novice">
     <Member>true</Member>
     <Requirements Name="Dwellberries" Type="Item" Enabled="false">
@@ -69,8 +69,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="All Fired Up" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Logs" Type="Item" Enabled="false">
@@ -97,8 +97,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Priest in Peril" Difficulty="Novice">
     <Member>false</Member>
     <Requirements Name="Rune Essence" Type="Item" Enabled="false">
@@ -128,8 +128,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Animal Magnetism" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Ernest the Chicken" Type="Quest" Enabled="false">
@@ -207,8 +207,8 @@
     <Rewards Name="Access to Ava's Odds and Ends" Type="Literal" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Ernest the Chicken" Difficulty="Novice">
     <Member>false</Member>
     <Requirements Name="Skeleton (Lv. 11)" Type="Combat" Enabled="false">
@@ -232,8 +232,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="The Restless Ghost" Difficulty="Novice">
     <Member>false</Member>
     <Rewards Name="Quest Points" Type="QP" Enabled="false">
@@ -254,8 +254,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Another Slice of H.A.M." Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Death to the Dorgeshuun" Type="Quest" Enabled="false">
@@ -312,8 +312,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Death to the Dorgeshuun" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Agility" Type="Level" Enabled="false">
@@ -382,8 +382,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="The Giant Dwarf" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Crafting" Type="Level" Enabled="false">
@@ -467,8 +467,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="The Dig Site" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Agility" Type="Level" Enabled="false">
@@ -516,8 +516,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="The Lost Tribe" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Agility" Type="Level" Enabled="false">
@@ -559,8 +559,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Goblin Diplomacy" Difficulty="Novice">
     <Member>false</Member>
     <Requirements Name="Goblin mail" Type="Item" Enabled="false">
@@ -590,8 +590,8 @@
     <Rewards Name="Crafting" Type="Lamp" Enabled="false">
       <Amount>200</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="As a First Resort" Difficulty="Experienced">
     <Member>true</Member>
     <Requirements Name="Firemaking" Type="Level" Enabled="false">
@@ -696,8 +696,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Zogre Flesh Eaters" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Big Chompy Bird Hunters" Type="Quest" Enabled="false">
@@ -748,10 +748,10 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Big Chompy Bird Hunters" Difficulty="Intermediate">
-    <Member>false</Member>
+    <Member>true</Member>
     <Requirements Name="Cooking" Type="Level" Enabled="false">
       <Amount>30</Amount>
     </Requirements>
@@ -794,8 +794,8 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
   <Quests Title="Jungle Potion" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Herblore" Type="Level" Enabled="false">
@@ -819,6 +819,6 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
-  </Quests>
+  <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+</Quests>
 </QuestLog>

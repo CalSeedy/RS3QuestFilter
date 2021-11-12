@@ -14,7 +14,7 @@ namespace RS3QuestFilter.src
     [XmlType("QuestLog"), XmlRoot("QuestLog")]
     public class QuestLog : INotifyPropertyChanged
     {
-
+        [XmlIgnore]
         private ObservableCollection<Quest> quests;
 
         [XmlElement("Quests")]
@@ -94,6 +94,57 @@ namespace RS3QuestFilter.src
                     return true;
             }
             return false;
+        }
+
+        public void CreateTestLog()
+        {
+            //Trace.WriteLine("Creating Quest Log...");
+            {
+                // Creating Biohazard
+                Item rq = new("Plague City", 1, EType.Quest);
+                Item rw1 = new("Quest Points", 3, EType.QP);
+                Item rw2 = new("Thieving", 1250, EType.XP);
+
+                ObservableCollection<Item> reqs = new();
+                ObservableCollection<Item> rews = new();
+
+                reqs.Add(rq);
+
+                rews.Add(rw1);
+                rews.Add(rw2);
+
+                Quest q1 = new Quest("Biohazard", EDifficulty.Novice, true, reqs, rews);
+                AddQuest(q1);
+                // End of Biohazard
+            }
+            {
+                // Creating Plague City
+                Item rq1 = new("Dwellberries", 1, EType.Item);
+                Item rq2 = new("Rope", 1, EType.Item);
+                Item rq3 = new("Chocolate Dust", 1, EType.Item);
+                Item rq4 = new("Snape Grass", 1, EType.Item);
+                Item rq5 = new("Bucket of Milk", 1, EType.Item);
+
+                Item rw1 = new("Quest Points", 1, EType.QP);
+                Item rw2 = new("Mining", 2425, EType.XP);
+                Item rw3 = new("Gas Mask", 1, EType.Item);
+
+                ObservableCollection<Item> reqs = new();
+                ObservableCollection<Item> rews = new();
+
+                reqs.Add(rq1);
+                reqs.Add(rq2);
+                reqs.Add(rq3);
+                reqs.Add(rq4);
+                reqs.Add(rq5);
+
+                rews.Add(rw1);
+                rews.Add(rw2);
+                rews.Add(rw3);
+
+                Quest q2 = new("Plague City", EDifficulty.Novice, true, reqs, rews);
+                AddQuest(q2);
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

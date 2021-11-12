@@ -207,6 +207,44 @@ namespace RS3QuestFilter
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             await src.FileHandler.Init();
+
+            try
+            {
+                App.ViewModel.VMPlayer.PlayerData = await src.FileHandler.GetPlayerData();
+                DataContext = App.ViewModel.VMPlayer;
+            }
+            catch (FileNotFoundException ex)
+            {
+                Console.WriteLine($"Unable to deserialize 'PlayerData.xml'. Reason: {ex.Message}\nUsing default initialisers instead...");
+                App.ViewModel.VMPlayer.PlayerData = new();
+            }
+            catch (FileLoadException ex)
+            {
+                Console.WriteLine($"Unable to deserialize 'PlayerData.xml'. Reason: {ex.Message}\nUsing default initialisers instead...");
+                App.ViewModel.VMPlayer.PlayerData = new();
+            }
+
+            if (App.ViewModel.VMQuests.QuestLog.Quests.Count == 0)
+            {
+                try
+                {
+                    App.ViewModel.VMQuests.QuestLog = await src.FileHandler.GetQuestLog();
+                }
+                catch (FileNotFoundException ex)
+                {
+                    Console.WriteLine($"Unable to deserialize 'QuestLog.xml'. Reason: {ex.Message}\nUsing default initialisers instead...");
+                    App.ViewModel.VMQuests.QuestLog = new();
+                }
+                catch (FileLoadException ex)
+                {
+                    Console.WriteLine($"Unable to deserialize 'QuestLog.xml'. Reason: {ex.Message}\nUsing default initialisers instead...");
+                    App.ViewModel.VMQuests.QuestLog = new();
+                }
+            }
+            if (App.ViewModel.VMQuests.QuestLog.Quests.Count == 0)
+            {
+                App.ViewModel.VMQuests.QuestLog.CreateTestLog();
+            }
         }
 
     }

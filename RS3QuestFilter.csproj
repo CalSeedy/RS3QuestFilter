@@ -159,6 +159,34 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\images\Skills\Agility.png" />
+    <Content Include="Assets\images\Skills\Archaeology.png" />
+    <Content Include="Assets\images\Skills\Attack.png" />
+    <Content Include="Assets\images\Skills\Constitution.png" />
+    <Content Include="Assets\images\Skills\Construction.png" />
+    <Content Include="Assets\images\Skills\Cooking.png" />
+    <Content Include="Assets\images\Skills\Crafting.png" />
+    <Content Include="Assets\images\Skills\Defence.png" />
+    <Content Include="Assets\images\Skills\Divination.png" />
+    <Content Include="Assets\images\Skills\Dungeoneering.png" />
+    <Content Include="Assets\images\Skills\Farming.png" />
+    <Content Include="Assets\images\Skills\Firemaking.png" />
+    <Content Include="Assets\images\Skills\Fishing.png" />
+    <Content Include="Assets\images\Skills\Fletching.png" />
+    <Content Include="Assets\images\Skills\Herblore.png" />
+    <Content Include="Assets\images\Skills\Hunter.png" />
+    <Content Include="Assets\images\Skills\Invention.png" />
+    <Content Include="Assets\images\Skills\Magic.png" />
+    <Content Include="Assets\images\Skills\Mining.png" />
+    <Content Include="Assets\images\Skills\Prayer.png" />
+    <Content Include="Assets\images\Skills\Ranged.png" />
+    <Content Include="Assets\images\Skills\Runecrafting.png" />
+    <Content Include="Assets\images\Skills\Slayer.png" />
+    <Content Include="Assets\images\Skills\Smithing.png" />
+    <Content Include="Assets\images\Skills\Strength.png" />
+    <Content Include="Assets\images\Skills\Summoning.png" />
+    <Content Include="Assets\images\Skills\Thieving.png" />
+    <Content Include="Assets\images\Skills\Woodcutting.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -201,6 +229,9 @@
     <PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls">
       <Version>7.1.1</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Uwp.Managed">
+      <Version>2.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Licensing">
       <Version>19.3.0.43</Version>
     </PackageReference>
@@ -208,6 +239,11 @@
   <ItemGroup>
     <None Include="RS3QuestFilter_TemporaryKey.pfx" />
     <None Include="SyncfusionLicenseRegister.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Syncfusion Controls for UWP XAML, Version=19.3.0.43">
+      <Name>Syncfusion Controls for UWP XAML</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

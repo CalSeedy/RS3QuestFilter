@@ -119,7 +119,8 @@ namespace RS3QuestFilter.src
 
 
                 string playerdatapath = GetSetting<string>("PlayerDataPath", contextType);
-                StorageFile player = await context.CreateFileAsync("Player.xml", CreationCollisionOption.ReplaceExisting);
+                StorageFile player = await context.CreateFileAsync("PlayerData.xml", CreationCollisionOption.ReplaceExisting);
+                App.ViewModel.VMPlayer.PlayerData.PrepareSerialisable();
                 await FileIO.WriteTextAsync(player, MyIO.SerialiseToXML(App.ViewModel.VMPlayer.PlayerData));
 
             }
@@ -153,7 +154,7 @@ namespace RS3QuestFilter.src
             Windows.Storage.Pickers.FileSavePicker savePicker = new()
             {
                 SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.DocumentsLibrary,
-                SuggestedFileName = "UserData"
+                SuggestedFileName = "PlayerData"
             };
             
             savePicker.FileTypeChoices.Add("Player Data File", new List<string>() { ".xml" });
@@ -169,8 +170,8 @@ namespace RS3QuestFilter.src
                 Windows.Storage.Provider.FileUpdateStatus status = await CachedFileManager.CompleteUpdatesAsync(file);
                 if (status == Windows.Storage.Provider.FileUpdateStatus.Complete)
                 {
-                    StorageFolder userStore = await file.GetParentAsync();
-                    UpdateOrAddSetting("UserSaveFolder", userStore.Path.ToString(), ContextType.Local);
+                    //StorageFolder userStore = await StorageFolder.GetFolderFromPathAsync(file.Path);
+                    //UpdateOrAddSetting("UserSaveFolder", userStore.Path.ToString(), ContextType.Local);
                     UpdateOrAddSetting("PlayerDataPath", file.Path.ToString(), ContextType.Local);
                     Debug.WriteLine("Successfully saved file: " + file.Path);
                     return file;
@@ -205,7 +206,7 @@ namespace RS3QuestFilter.src
                 }
                 catch (Exception e)
                 {
-                    MainPage.ShowAlert(e.Message);
+                    await MainPage.ShowAlert(e.Message);
                     throw;
                 }
 
@@ -219,7 +220,7 @@ namespace RS3QuestFilter.src
                 {
                     return null;
                 }
-            }
+            }   
             else
             {
                 return null;
@@ -247,7 +248,7 @@ namespace RS3QuestFilter.src
                             }
                             catch (Exception e)
                             {
-                                MainPage.ShowAlert(e.Message);
+                                await MainPage.ShowAlert(e.Message);
                             }
                             if (log != null)
                             {
@@ -263,7 +264,14 @@ namespace RS3QuestFilter.src
 
                     if (LocalSettings.Values.ContainsKey("PlayerDataPath"))
                     {
-                        file = await StorageFile.GetFileFromPathAsync((string)LocalSettings.Values["PlayerDataPath"]);
+                        if (!LocalSettings.Values["PlayerDataPath"].Equals(""))
+                        {
+                            file = await StorageFile.GetFileFromPathAsync((string)LocalSettings.Values["PlayerDataPath"]);
+                        }
+                        else
+                        {
+                            file = await context.GetFileAsync("PlayerData.xml");
+                        }
                     }
                     else
                     {
@@ -276,16 +284,18 @@ namespace RS3QuestFilter.src
                         try
                         {
                             player = MyIO.DeserialiseFromXML<Player>(file.Path.ToString()) as T;
+                            //(player as Player).Skills = (player as Player).serialisableSkills;
                         }
                         catch (Exception e)
                         {
-                            MainPage.ShowAlert(e.Message);
+                            await MainPage.ShowAlert(e.Message);
                         }
 
                         if (player != null)
                         {
                             UpdateLocalSetting("UserSaveFolder", (await file.GetParentAsync()).Path.ToString());
-                            UpdateLocalSetting("PlayerDataPath", file.Name);
+                            UpdateLocalSetting("PlayerDataPath", file.Path);
+                            (player as Player).PrepareSkills();
                             return player;
                         }
                         else
@@ -412,8 +422,7 @@ namespace RS3QuestFilter.src
 
         public static async Task<Player> GetPlayerData()
         {
-            ContextType t = ContextType.Local;
-            return await LoadData<Player>(t);
+            return await LoadData<Player>(ContextType.Local);
         }
 
         public static async Task SaveAll() => await SaveData(ContextType.Local);
