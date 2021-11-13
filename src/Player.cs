@@ -24,7 +24,7 @@ namespace RS3QuestFilter.src
         Member = 16
     }
 
-    public class Player : INotifyPropertyChanged
+    public class Player : Editable
     {
         private string name { get; set; }
 
@@ -97,39 +97,37 @@ namespace RS3QuestFilter.src
 
         public ObservableDictionary<string, Skill> CreateSkills()
         {
-            ObservableDictionary<string, Skill> skills = new();
-            skills.Add("Agility", new("Agility", 1, false));
-            skills.Add("Archaeology", new("Archaeology", 1, false));
-            skills.Add("Attack", new("Attack", 1, false));
-            skills.Add("Constitution", new("Constitution", 1, false));
-            skills.Add("Construction", new("Construction", 1, false));
-            skills.Add("Cooking", new("Cooking", 1, false));
-            skills.Add("Crafting", new("Crafting", 1, false));
-            skills.Add("Defence", new("Defence", 1, false));
-            skills.Add("Divination", new("Divination", 1, false));
-            skills.Add("Dungeoneering", new("Dungeoneering", 1, false));
-            skills.Add("Farming", new("Farming", 1, false));
-            skills.Add("Firemaking", new("Firemaking", 1, false));
-            skills.Add("Fishing", new("Fishing", 1, false));
-            skills.Add("Fletching", new("Fletching", 1, false));
-            skills.Add("Herblore", new("Herblore", 1, false));
-            skills.Add("Hunter", new("Hunter", 1, false));
-            skills.Add("Invention", new("Invention", 1, false));
-            skills.Add("Magic", new("Magic", 1, false));
-            skills.Add("Mining", new("Mining", 1, false));
-            skills.Add("Prayer", new("Prayer", 1, false));
-            skills.Add("Ranged", new("Ranged", 1, false));
-            skills.Add("Runecrafting", new("Runecrafting", 1, false));
-            skills.Add("Slayer", new("Slayer", 1, false));
-            skills.Add("Smithing", new("Smithing", 1, false));
-            skills.Add("Strength", new("Strength", 1, false));
-            skills.Add("Summoning", new("Summoning", 1, false));
-            skills.Add("Thieving", new("Thieving", 1, false));
-            skills.Add("Woodcutting", new("Woodcutting", 1, false));
-            
-            skills["Constitution"].Level = 10;
+            ObservableDictionary<string, Skill> tmp = new();
+            tmp.Add("Agility", new("Agility", 1, false));
+            tmp.Add("Archaeology", new("Archaeology", 1, false));
+            tmp.Add("Attack", new("Attack", 1, false));
+            tmp.Add("Constitution", new("Constitution", 10, false));
+            tmp.Add("Construction", new("Construction", 1, false));
+            tmp.Add("Cooking", new("Cooking", 1, false));
+            tmp.Add("Crafting", new("Crafting", 1, false));
+            tmp.Add("Defence", new("Defence", 1, false));
+            tmp.Add("Divination", new("Divination", 1, false));
+            tmp.Add("Dungeoneering", new("Dungeoneering", 1, false));
+            tmp.Add("Farming", new("Farming", 1, false));
+            tmp.Add("Firemaking", new("Firemaking", 1, false));
+            tmp.Add("Fishing", new("Fishing", 1, false));
+            tmp.Add("Fletching", new("Fletching", 1, false));
+            tmp.Add("Herblore", new("Herblore", 1, false));
+            tmp.Add("Hunter", new("Hunter", 1, false));
+            tmp.Add("Invention", new("Invention", 1, false));
+            tmp.Add("Magic", new("Magic", 1, false));
+            tmp.Add("Mining", new("Mining", 1, false));
+            tmp.Add("Prayer", new("Prayer", 1, false));
+            tmp.Add("Ranged", new("Ranged", 1, false));
+            tmp.Add("Runecrafting", new("Runecrafting", 1, false));
+            tmp.Add("Slayer", new("Slayer", 1, false));
+            tmp.Add("Smithing", new("Smithing", 1, false));
+            tmp.Add("Strength", new("Strength", 1, false));
+            tmp.Add("Summoning", new("Summoning", 1, false));
+            tmp.Add("Thieving", new("Thieving", 1, false));
+            tmp.Add("Woodcutting", new("Woodcutting", 1, false));
 
-            return skills;
+            return tmp;
         }
 
         public void PrepareSkills()
@@ -147,6 +145,17 @@ namespace RS3QuestFilter.src
             foreach (string key in skills.Keys)
             {
                 serialisableSkills.Add(key, skills[key]);
+            }
+        }
+
+        public void SelfCheckup()
+        {
+            foreach (string k in Skills.Keys)
+            {
+                if (Skills[k].Name == "Unknown Skill")
+                {
+                    Skills[k].Name = k;
+                }
             }
         }
 
@@ -180,21 +189,14 @@ namespace RS3QuestFilter.src
             Name = "";
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
     }
 
-    public class Skill : INotifyPropertyChanged
+    public class Skill : Editable
     {
         [XmlAttribute("Name")]
         private string name { get; set; }
 
-        public string Name { get { return name; } }
+        public string Name { set { name = value ?? "Unknown Skill"; }  get { return name; } }
 
         [XmlAttribute("Level")]
         private int level { get; set; }
@@ -251,13 +253,6 @@ namespace RS3QuestFilter.src
             this.name = "Unknown Skill";
             Level = 0;
             Enabled = false;
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

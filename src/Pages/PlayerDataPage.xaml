@@ -256,7 +256,7 @@
                 <ToggleButton x:Name="btnConstitution" Tag="Constitution" Click="skill_Click" ToolTipService.ToolTip="Constitution" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Constitution}">
                     <Image Source="ms-appx:///Assets/images/Skills/Constitution.png" Width="50" Height="50"/>
                 </ToggleButton>
-                <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Constitution}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Constitution"/>
+                <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Constitution}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="10" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Constitution"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" Width="222">
@@ -291,13 +291,11 @@
             <!--#endregion Row 2-->
 
             <!--#region Row 3: Defence, Herblore, Fishing-->
-            <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" Width="222">
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" Width="222">
                 <ToggleButton x:Name="btnDefence" Tag="Defence" Click="skill_Click" ToolTipService.ToolTip="Defence" Margin="0, 0, 20, 0" IsChecked="{Binding Path=PlayerData.Skills, Converter={StaticResource EnabledConverter}, ConverterParameter=Defence}">
                     <Image Source="ms-appx:///Assets/images/Skills/Defence.png" Width="50" Height="50"/>
                 </ToggleButton>
-                <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
-                                    Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Defence}" Height="50" 
-                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Defence"/>
+                <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Defence}" Height="50" MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Defence"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Width="222">
@@ -306,7 +304,7 @@
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
                                     Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Herblore}" Height="50" 
-                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Herblore"/>
+                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="120" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Herblore"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Width="222">
@@ -422,7 +420,7 @@
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
                                     Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Slayer}" Height="50" 
-                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Slayer"/>
+                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="120" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Slayer"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="2" HorizontalAlignment="Center" Width="222">
@@ -431,7 +429,7 @@
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
                                     Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Farming}" Height="50" 
-                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Farming"/>
+                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="120" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Farming"/>
             </StackPanel>
             <!--#endregion Row 7-->
 
@@ -471,7 +469,7 @@
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
                                     Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Dungeoneering}" Height="50" 
-                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Dungeoneering"/>
+                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="120" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Dungeoneering"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Center" Width="222">
@@ -489,7 +487,7 @@
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
                                     Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Invention}" Height="50" 
-                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Invention"/>
+                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="120" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Invention"/>
             </StackPanel>
             <!--#endregion Row 9-->
 
@@ -500,7 +498,7 @@
                 </ToggleButton>
                 <my:SfNumericUpDown AllowNull="False" AllowSpinOnMouseWheel="True" 
                                     Value="{Binding Path=PlayerData.Skills, Converter={StaticResource SkillConverter}, ConverterParameter=Archaeology}" Height="50" 
-                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="99" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Archaeology"/>
+                                    MinWidth="100" MaximumNumberDecimalDigits="0" Maximum="120" Minimum="1" ValueChanged="SfNumericUpDown_ValueChanged" Tag="Archaeology"/>
             </StackPanel>
             <!--#endregion Row 10-->
 

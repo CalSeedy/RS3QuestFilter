@@ -25,7 +25,7 @@ namespace RS3QuestFilter.src
     }
 
     [XmlRoot("Quest"), XmlType("Quest")]
-    public class Quest : INotifyPropertyChanged
+    public class Quest : Editable
     {
         [XmlIgnore]
         private string title;
@@ -164,13 +164,6 @@ namespace RS3QuestFilter.src
                 default:
                     throw new ArgumentException("Invalid Difficulty.");
             }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

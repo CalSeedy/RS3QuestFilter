@@ -21,7 +21,7 @@ namespace RS3QuestFilter.src
         XP
     }
 
-    public class Item : INotifyPropertyChanged, IEquatable<Item>
+    public class Item : Editable, IEquatable<Item>
     {
         [XmlIgnore]
         private string name;
@@ -157,14 +157,6 @@ namespace RS3QuestFilter.src
 
             return "Invalid type!";
         }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
         public override bool Equals(object? obj) => this.Equals(obj as Item);
 
         public bool Equals(Item? other)

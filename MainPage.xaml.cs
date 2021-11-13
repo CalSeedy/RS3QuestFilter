@@ -208,10 +208,12 @@ namespace RS3QuestFilter
         {
             await src.FileHandler.Init();
 
+            src.PlayerLookup.init();
+
             try
             {
                 App.ViewModel.VMPlayer.PlayerData = await src.FileHandler.GetPlayerData();
-                DataContext = App.ViewModel.VMPlayer;
+                App.ViewModel.VMPlayer.PlayerData.SelfCheckup();
             }
             catch (FileNotFoundException ex)
             {

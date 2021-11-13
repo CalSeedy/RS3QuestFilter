@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RS3QuestFilter.src
 {
-    public class ViewModel : INotifyPropertyChanged
+    public class ViewModel : Editable
     {
         private QuestsViewModel quests;
         public QuestsViewModel VMQuests

@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 namespace RS3QuestFilter.src
 {
     [XmlType("QuestLog"), XmlRoot("QuestLog")]
-    public class QuestLog : INotifyPropertyChanged
+    public class QuestLog : Editable
     {
         [XmlIgnore]
         private ObservableCollection<Quest> quests;
@@ -145,13 +145,6 @@ namespace RS3QuestFilter.src
                 Quest q2 = new("Plague City", EDifficulty.Novice, true, reqs, rews);
                 AddQuest(q2);
             }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

@@ -146,6 +146,7 @@
     </Compile>
     <Compile Include="src\Player.cs" />
     <Compile Include="src\PlayerDataViewModel.cs" />
+    <Compile Include="src\PlayerLookup.cs" />
     <Compile Include="src\Quest.cs" />
     <Compile Include="src\QuestLog.cs" />
     <Compile Include="src\QuestsViewModel.cs" />
@@ -223,6 +224,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack">
+      <Version>1.11.38</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.13</Version>
     </PackageReference>

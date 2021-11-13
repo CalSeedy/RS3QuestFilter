@@ -3,6 +3,7 @@ using Syncfusion.UI.Xaml.Controls.Input;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -55,7 +56,7 @@ namespace RS3QuestFilter.src.Pages
             if (sender is not null)
             {
                 SfNumericUpDown obj = (SfNumericUpDown)sender;
-                App.ViewModel.VMPlayer.PlayerData.Skills[obj.Tag as string].Level = (int)(double)e.NewValue;
+                App.ViewModel.VMPlayer.PlayerData.Skills[obj.Tag as string].Level = Convert.ToInt32(e.NewValue);
             }
         }
 
@@ -190,9 +191,54 @@ namespace RS3QuestFilter.src.Pages
             App.ViewModel.VMPlayer.PlayerData.Flags = flags;
         }
 
-        private void btnLookup_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private async void btnLookup_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
+            if (playerName.Text is not null)
+            {
+                if (playerName.Text != "")
+                {
+                    Player? p = null;
+                    try
+                    {
+                        p = await PlayerLookup.Lookup(playerName.Text);
+                        /*
+                        App.ViewModel.VMPlayer.PlayerData.Flags = p.Flags;
+                        App.ViewModel.VMPlayer.PlayerData.Name = p.Name;
+                        foreach (string k in App.ViewModel.VMPlayer.PlayerData.Skills.Keys)
+                        {
+                            //Debug.WriteLine($"{k}: {App.ViewModel.VMPlayer.PlayerData.Skills[k]} | {p.Skills[k]}");
+                            App.ViewModel.VMPlayer.PlayerData.Skills[k].Level = p.Skills[k].Level;
+                            App.ViewModel.VMPlayer.PlayerData.Skills[k].Enabled = p.Skills[k].Enabled;
+                        }
+                        */
+                    }
+                    catch (Exception ex)
+                    {
+                        await MainPage.ShowAlert($"Encountered error while looking up {playerName.Text}:\n\t{ex.Message}");
+                    }
 
+
+                    if (p != null)
+                    {
+                        foreach (StackPanel sp in skillGrid.Children)
+                        {
+                            SfNumericUpDown x = (SfNumericUpDown)sp.Children.First(child => child is SfNumericUpDown);
+                            if (x.Tag is not null)
+                                if (p.Skills.ContainsKey(x.Tag as string))
+                                {
+                                    int lvl = p.Skills[x.Tag as string].Level;
+                                    if (lvl >= x.Minimum && lvl <= x.Maximum)
+                                        x.Value = p.Skills[x.Tag as string].Level;
+                                    else if (lvl > x.Maximum)
+                                        x.Value = x.Maximum;
+                                    else
+                                        x.Value = x.Minimum;
+                                }
+                        }
+                    }
+                    
+                }
+            }
         }
 
         private void btnResetStats_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)

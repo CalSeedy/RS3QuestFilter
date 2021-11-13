@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RS3QuestFilter.src
 {
-    public class PlayerDataViewModel : INotifyPropertyChanged
+    public class PlayerDataViewModel : Editable
     {
         private Player playerData { get; set; }
 
@@ -28,13 +28,6 @@ namespace RS3QuestFilter.src
                     NotifyPropertyChanged();
                 }
             }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 

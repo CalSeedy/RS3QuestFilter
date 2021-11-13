@@ -11,7 +11,7 @@ using Microsoft.Toolkit.Uwp.UI.Controls;
 
 namespace RS3QuestFilter.src
 {
-    public class QuestsViewModel : INotifyPropertyChanged
+    public class QuestsViewModel : Editable
     {
         private bool isCumulative { get; set; }
         public ObservableCollection<Item> originalReqs { get; set; }
@@ -242,13 +242,6 @@ namespace RS3QuestFilter.src
                 originalReqs = null;
                 originalRews = null;
             }
-        }
-        
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

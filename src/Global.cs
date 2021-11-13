@@ -1,11 +1,17 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Windows.UI.Xaml.Markup;
 
 namespace RS3QuestFilter.src
 {
-    public class Global
+    public class Editable : INotifyPropertyChanged
     {
-
+        public event PropertyChangedEventHandler PropertyChanged = delegate { };
+        protected void NotifyPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 
     public class DisplayAttribute : Attribute
