@@ -40,6 +40,9 @@ namespace RS3QuestFilter.src.Pages
             base.OnNavigatedTo(e);
             DataContext = null;
             DataContext = App.ViewModel.VMQuests;
+
+            if (filterSwitch.IsOn)
+                App.ViewModel.VMQuests.FilterQuests(true);
         }
 
         private void dgQuests_SelectionChanged(object sender, SelectionChangedEventArgs e) => App.ViewModel.VMQuests.DG_OnSelectionChange(sender);
@@ -162,8 +165,6 @@ namespace RS3QuestFilter.src.Pages
 
         private void cumulativeSwitch_Toggled(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
-            App.ViewModel.VMQuests.IsCumulative = !App.ViewModel.VMQuests.IsCumulative;
-
             if (dgQuests.SelectedItem != null)
             {
                 if (App.ViewModel.VMQuests.IsCumulative)
@@ -179,6 +180,16 @@ namespace RS3QuestFilter.src.Pages
                     (dgQuests.SelectedItem as src.Quest).Rewards = new(App.ViewModel.VMQuests.originalRews);
                 }
             }
+        }
+
+        private void filterSwitch_Toggled(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            if (sender is null)
+                return;
+
+            ToggleSwitch ts = (sender as ToggleSwitch);
+
+            App.ViewModel.VMQuests.FilterQuests(ts.IsOn);
         }
     }
 

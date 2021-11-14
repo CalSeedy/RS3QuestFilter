@@ -14,6 +14,7 @@ namespace RS3QuestFilter.src
     public class QuestsViewModel : Editable
     {
         private bool isCumulative { get; set; }
+
         public ObservableCollection<Item> originalReqs { get; set; }
         public ObservableCollection<Item> originalRews { get; set; }
 
@@ -36,12 +37,13 @@ namespace RS3QuestFilter.src
             }
         }
 
+        private QuestLog originalQuestLog;
         private QuestLog questLog;
         public QuestLog QuestLog
         {
-            get 
+            get
             {
-                if(questLog == null)
+                if (questLog == null)
                     questLog = new();
                 return questLog;
             }
@@ -56,21 +58,44 @@ namespace RS3QuestFilter.src
         }
         public bool IsCumulative
         {
-            get 
-            { 
-                if (isCumulative == null)
-                    isCumulative = false;
+            get
+            {
                 return isCumulative;
             }
             set
             {
-                if (value != isCumulative)
+                if (isCumulative != value)
                 {
                     isCumulative = value;
                     NotifyPropertyChanged();
                 }
             }
         }
+
+        private bool isFiltered;
+        public bool IsFiltered
+        {
+            get
+            {
+                return isFiltered;
+            }
+            set
+            {
+                if (isFiltered != value)
+                {
+                    isFiltered = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
+        private bool isIron { get { return App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Ironman); } }
+        private bool isHardcore { get { return App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Hardcore); } }
+        private bool isOsat { get { return App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Osaat); } }
+        private bool isSkiller { get { return App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Skiller); } }
+        private bool isMember { get { return App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Member); } }
+        private bool canCombat { get { return App.ViewModel.VMPlayer.PlayerData.Skills["Constitution"].Enabled && App.ViewModel.VMPlayer.PlayerData.Skills["Magic"].Enabled; } }
+
 
         private (ObservableCollection<src.Item>, ObservableCollection<src.Item>) ScanQuestForItems(ObservableCollection<src.Item> requirements, ObservableCollection<src.Item> rewards, src.Quest quest, ObservableCollection<src.Quest> searched)
         {
@@ -242,6 +267,107 @@ namespace RS3QuestFilter.src
                 originalReqs = null;
                 originalRews = null;
             }
+        }
+
+        public void FilterQuests(bool shouldFilter = true)
+        {
+            if (shouldFilter)
+            {
+                if (originalQuestLog is null)
+                {
+                    originalQuestLog = new();
+                    originalQuestLog.Quests = new(QuestLog.Quests);
+                }
+                else
+                {
+                    QuestLog.Quests = new(originalQuestLog.Quests);
+                }
+                QuestLog.Quests = new((QuestLog.Quests.ToList()).Where(QueryQuest).ToList());
+            }
+            else
+            {
+                if (originalQuestLog != null)
+                    QuestLog.Quests = originalQuestLog.Quests;
+            }
+        }
+
+        private bool QueryQuest(Quest quest)
+        {
+
+            if (!isMember && (quest.Member ?? false))
+                return false;
+
+            if (isOsat)
+            {
+                bool reqsGood = quest.Requirements.All(req =>
+                {
+                    switch (req.Type)
+                    {
+                        case EType.Level:
+                            return (req.Amount <= App.ViewModel.VMPlayer.PlayerData.Skills[req.Name].Level) && App.ViewModel.VMPlayer.PlayerData.Skills[req.Name].Enabled;
+
+                        case EType.Combat:
+                            return canCombat;
+
+                        case EType.Quest:
+                            return QueryQuest(questLog.Quests.FirstOrDefault(q => q.Title.Equals(req.Name)));
+
+                    }
+                    return true;
+                });
+
+                bool rewsGood = quest.Rewards.All(rew =>
+                {
+                    if (rew.Type == EType.Level)
+                        return App.ViewModel.VMPlayer.PlayerData.Skills[rew.Name].Enabled;
+                    
+                    return true;
+                });
+
+                if (rewsGood && reqsGood)
+                    return true;
+                
+                return false;
+            }
+
+            if (isSkiller)
+            {
+                bool reqsGood = quest.Requirements.All(req =>
+                {
+                    switch (req.Type)
+                    {
+                        case EType.Level:
+                            {
+                                bool x = (req.Amount <= App.ViewModel.VMPlayer.PlayerData.Skills[req.Name].Level) && App.ViewModel.VMPlayer.PlayerData.Skills[req.Name].Enabled;
+                                bool y = req.Name == "Attack" || req.Name == "Constitution" || req.Name == "Strength" || req.Name == "Defence" || req.Name == "Prayer" || req.Name == "Summoning" || req.Name == "Ranged" || req.Name == "Magic";
+                                return x && !y;
+                            }
+                        case EType.Combat:
+                            return false;
+
+                        case EType.Quest:
+                            return QueryQuest(questLog.Quests.FirstOrDefault(q => q.Title.Equals(req.Name)));
+                    }
+                    return true;
+                });
+
+                bool rewsGood = quest.Rewards.All(rew =>
+                {
+                    if (rew.Type == EType.Level)
+                    {
+                        bool y = rew.Name == "Attack" || rew.Name == "Constitution" || rew.Name == "Strength" || rew.Name == "Defence" || rew.Name == "Prayer" || rew.Name == "Summoning" || rew.Name == "Ranged" || rew.Name == "Magic";
+                        return !y;
+                    }
+                    
+                    return true;
+                });
+
+                if (rewsGood && reqsGood)
+                    return true;
+
+                return false;
+            }
+            return true;
         }
     }
 }

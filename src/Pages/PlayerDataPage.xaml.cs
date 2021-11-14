@@ -214,7 +214,7 @@ namespace RS3QuestFilter.src.Pages
                     }
                     catch (Exception ex)
                     {
-                        await MainPage.ShowAlert($"Encountered error while looking up {playerName.Text}:\n\t{ex.Message}");
+                        await MainPage.ShowAlert($"Encountered error while looking up {playerName.Text}:\n{ex.Message}");
                     }
 
 
@@ -235,6 +235,12 @@ namespace RS3QuestFilter.src.Pages
                                         x.Value = x.Minimum;
                                 }
                         }
+
+                        ironCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Ironman);
+                        hcCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Hardcore);
+                        skillerCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Skiller);
+                        osatCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Osaat);
+                        memberCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Member);
                     }
                     
                 }

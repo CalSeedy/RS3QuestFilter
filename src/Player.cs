@@ -21,7 +21,8 @@ namespace RS3QuestFilter.src
         Hardcore = 2,
         Osaat = 4,
         Skiller = 8,
-        Member = 16
+        Member = 16,
+        AreaLocked = 32 // suggested by: "88warm2396"
     }
 
     public class Player : Editable

@@ -38,7 +38,10 @@
         <!--#endregion Row definitions-->
         
         <!--#region Controls-->
-        <ToggleSwitch x:Name="cumulativeSwitch" Grid.Column="0" Grid.Row="0" OffContent="Single" OnContent="Cumulative" Toggled="cumulativeSwitch_Toggled"/>
+        <StackPanel Margin="0,100,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <ToggleSwitch x:Name="cumulativeSwitch" Grid.Column="0" Grid.Row="0" OffContent="Single" OnContent="Cumulative" Toggled="cumulativeSwitch_Toggled" Margin="10, 0" IsOn="{Binding IsCumulative, Mode=TwoWay}"/>
+            <ToggleSwitch x:Name="filterSwitch" Grid.Column="0" Grid.Row="0" OffContent="Non-Filtered" OnContent="Filtered" Margin="10, 100" Toggled="filterSwitch_Toggled" IsOn="{Binding IsFiltered, Mode=TwoWay}"/>
+        </StackPanel>
         <!--#endregion Controls-->
         
         <!--#region DataGrids-->
@@ -56,9 +59,9 @@
             Grid.Column="1"
             Grid.ColumnSpan="3"
             Grid.Row="0"
-            MaxHeight="500"
             Margin="0, 0, 0, 20"
             MinHeight="100"
+            MaxHeight="450"
             IsReadOnly="{Binding IsCumulative}">
             <controls:DataGrid.ContextFlyout>
                 <muxc:CommandBarFlyout x:Name="emptyQuestsFlyout" AlwaysExpanded="True">
@@ -88,17 +91,18 @@
         <!--#endregion Quests-->
 
         <!--#region Requirements-->
-
-        <controls:DataGrid x:Name="dgReqs" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1"
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1">
+        <TextBlock Text="Requirements"/>
+        <controls:DataGrid x:Name="dgReqs"
                            ItemsSource="{Binding ElementName=dgQuests, Path=SelectedItem.Requirements}"
                            GridLinesVisibility="Vertical"
                            HeadersVisibility="Column"
                            SelectionMode="Single"
                            AutoGenerateColumns="False"
                            ClipboardCopyMode="ExcludeHeader"
-                           MaxHeight="500"
                            Margin="0, 0, 0, 20"
                            MinHeight="100"
+                           MaxHeight="350"
                            IsReadOnly="{Binding IsCumulative}">
             <controls:DataGrid.ContextFlyout>
                 <muxc:CommandBarFlyout x:Name="emptyReqsFlyout" AlwaysExpanded="True">
@@ -124,47 +128,48 @@
                 <controls:DataGridComboBoxColumn Header="Type" Binding="{Binding Path=Type, Mode=TwoWay}" ItemsSource="{x:Bind typeSource}"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
-        
+        </StackPanel>
         <!--#endregion Requirements-->
 
         <!--#region Rewards-->
-
-        <controls:DataGrid x:Name="dgRews" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1"
+        <StackPanel Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1">
+            <TextBlock Text="Rewards"/>
+            <controls:DataGrid x:Name="dgRews"
                            ItemsSource="{Binding ElementName=dgQuests, Path=SelectedItem.Rewards}"
                            GridLinesVisibility="Vertical"
                            HeadersVisibility="Column"
                            SelectionMode="Single"
                            AutoGenerateColumns="False"
                            ClipboardCopyMode="ExcludeHeader"
-                           MaxHeight="500"
                            Margin="0, 0, 0, 20"
                            MinHeight="100"
+                           MaxHeight="450"
                            IsReadOnly="{Binding IsCumulative}">
-            <controls:DataGrid.ContextFlyout>
-                <muxc:CommandBarFlyout x:Name="emptyRewsFlyout" AlwaysExpanded="True">
-                    <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="rewAddEmpty"/>
-                    <AppBarButton Label="Delete" Icon="Delete" ToolTipService.ToolTip="Delete" IsEnabled="False"/>
-                </muxc:CommandBarFlyout>
-            </controls:DataGrid.ContextFlyout>
-            <controls:DataGrid.RowStyle>
-                <Style TargetType="controls:DataGridRow">
-                    <Setter Property="controls:DataGridRow.ContextFlyout">
-                        <Setter.Value>
-                            <muxc:CommandBarFlyout x:Name="rewsDGCommandFlyout" AlwaysExpanded="True">
-                                <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="rewAdd"/>
-                                <AppBarButton Label="Delete" Icon="Delete" ToolTipService.ToolTip="Delete" Click="AppBarButton_Click" Tag="rewDel"/>
-                            </muxc:CommandBarFlyout>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </controls:DataGrid.RowStyle>
-            <controls:DataGrid.Columns>
-                <controls:DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=TwoWay}"/>
-                <controls:DataGridTextColumn Header="Amount" Binding="{Binding Amount, Mode=TwoWay}"/>
-                <controls:DataGridComboBoxColumn Header="Type" Binding="{Binding Path=Type, Mode=TwoWay}" ItemsSource="{x:Bind typeSource}"/>
-            </controls:DataGrid.Columns>
-        </controls:DataGrid>
-        
+                <controls:DataGrid.ContextFlyout>
+                    <muxc:CommandBarFlyout x:Name="emptyRewsFlyout" AlwaysExpanded="True">
+                        <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="rewAddEmpty"/>
+                        <AppBarButton Label="Delete" Icon="Delete" ToolTipService.ToolTip="Delete" IsEnabled="False"/>
+                    </muxc:CommandBarFlyout>
+                </controls:DataGrid.ContextFlyout>
+                <controls:DataGrid.RowStyle>
+                    <Style TargetType="controls:DataGridRow">
+                        <Setter Property="controls:DataGridRow.ContextFlyout">
+                            <Setter.Value>
+                                <muxc:CommandBarFlyout x:Name="rewsDGCommandFlyout" AlwaysExpanded="True">
+                                    <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="rewAdd"/>
+                                    <AppBarButton Label="Delete" Icon="Delete" ToolTipService.ToolTip="Delete" Click="AppBarButton_Click" Tag="rewDel"/>
+                                </muxc:CommandBarFlyout>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </controls:DataGrid.RowStyle>
+                <controls:DataGrid.Columns>
+                    <controls:DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=TwoWay}"/>
+                    <controls:DataGridTextColumn Header="Amount" Binding="{Binding Amount, Mode=TwoWay}"/>
+                    <controls:DataGridComboBoxColumn Header="Type" Binding="{Binding Path=Type, Mode=TwoWay}" ItemsSource="{x:Bind typeSource}"/>
+                </controls:DataGrid.Columns>
+            </controls:DataGrid>
+        </StackPanel>
         <!--#endregion Rewards-->
 
         <!--#endregion DataGrids-->

@@ -507,26 +507,43 @@
 
         <!--#region Player Details-->
         <Grid Grid.Column="1">
+            <!--#region Column Definitions-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
+            <!--#endregion Column Definitions-->
 
+            <!--#region Row Definitions-->
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
+            <!--#endregion Row Definitions-->
 
+            <!--#region Player Name-->
             <StackPanel Orientation="Horizontal" Margin="5, 35, 0, 0" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
                 <TextBlock FontSize="24" FontWeight="Bold" VerticalAlignment="Center">In-game Name</TextBlock>
                 <TextBox x:Name="playerName" Height="20" MinWidth="100" MaxWidth="250" Margin="20,0,0,0" Text="{Binding Path=PlayerData.Name, Mode=TwoWay}" VerticalContentAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" PlaceholderText="Enter Name" FontSize="18" FontWeight="SemiBold"/>
             </StackPanel>
+            <!--#endregion Player Name-->
 
+            <!--#region Buttons-->
             <StackPanel Grid.Column="1" Grid.Row="1">
                 <Button x:Name="btnLookup" Content="Lookup" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0, 30, 0, 0" CornerRadius="8" Width="100" Click="btnLookup_Click"/>
-                <Button x:Name="btnResetStats" Content="Reset" HorizontalAlignment="left" VerticalAlignment="Center" Margin="0, 30, 0, 0" CornerRadius="8" Width="100" Click="btnResetStats_Click"/>
+                <Button x:Name="btnResetStats" Content="Reset" HorizontalAlignment="left" VerticalAlignment="Center" Margin="0, 30, 0, 0" CornerRadius="8" Width="100" Click="btnResetStats_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Style.Setters>
+                                <Setter Property="Background" Value="#AF1030"/>
+                            </Style.Setters>
+                        </Style>
+                    </Button.Style>
+                </Button>
             </StackPanel>
-            
+            <!--#endregion Buttons-->
+
+            <!--#region Checkboxes-->
             <StackPanel Grid.Column="0" Grid.Row="1">
                 <CheckBox x:Name="ironCheck" Margin="20, 25, 0, 0" Content="Ironman" Click="Checkbox_Click" Tag="ironman"/>
                 <CheckBox x:Name="hcCheck" Margin="20, 0,0,0" Content="Hardcore" IsEnabled="{Binding ElementName=ironCheck, Path=IsChecked}" Click="Checkbox_Click" Tag="hardcore"/>
@@ -534,6 +551,7 @@
                 <CheckBox x:Name="skillerCheck" Margin="20, 20, 0, 0" Content="Skiller" Click="Checkbox_Click" Tag="skiller"/>
                 <CheckBox x:Name="memberCheck" Margin="20, 20, 0, 0" Content="Member" Click="Checkbox_Click" Tag="member"/>
             </StackPanel>
+            <!--#endregion Checkboxes-->
         </Grid>
         <!--#endregion Player Details-->
     </Grid>
