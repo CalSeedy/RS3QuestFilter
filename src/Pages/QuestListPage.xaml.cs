@@ -198,12 +198,16 @@ namespace RS3QuestFilter.src.Pages
             {
                 if (e.Column.SortDirection == null || e.Column.SortDirection == DataGridSortDirection.Descending)
                 {
-                    App.ViewModel.VMQuests.QuestLog.Quests = new(App.ViewModel.VMQuests.QuestLog.Quests.OrderBy(x => x.Title));
+                    App.ViewModel.VMQuests.QuestLog.Quests = new(App.ViewModel.VMQuests.QuestLog.Quests.OrderBy(x =>
+                    x.Title.StartsWith("A ", StringComparison.OrdinalIgnoreCase) || x.Title.StartsWith("The ", StringComparison.OrdinalIgnoreCase) ?
+                    x.Title.Substring(x.Title.IndexOf(" ") + 1) : x.Title));
                     e.Column.SortDirection = DataGridSortDirection.Ascending;
                 }
                 else
                 {
-                    App.ViewModel.VMQuests.QuestLog.Quests = new(App.ViewModel.VMQuests.QuestLog.Quests.OrderByDescending(x => x.Title));
+                    App.ViewModel.VMQuests.QuestLog.Quests = new(App.ViewModel.VMQuests.QuestLog.Quests.OrderByDescending(x =>
+                    x.Title.StartsWith("A ", StringComparison.OrdinalIgnoreCase) || x.Title.StartsWith("The ", StringComparison.OrdinalIgnoreCase) ?
+                    x.Title.Substring(x.Title.IndexOf(" ") + 1) : x.Title));
                     e.Column.SortDirection = DataGridSortDirection.Descending;
                 }
             }
