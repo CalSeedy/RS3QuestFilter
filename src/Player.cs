@@ -83,7 +83,7 @@ namespace RS3QuestFilter.src
             get
             {
                 if (skills == null)
-                    skills = new();
+                    skills = CreateSkills();
                 return skills;
             }
             set
@@ -143,9 +143,9 @@ namespace RS3QuestFilter.src
         public void PrepareSerialisable()
         {
             serialisableSkills = new();
-            foreach (string key in skills.Keys)
+            foreach (string key in Skills.Keys)
             {
-                serialisableSkills.Add(key, skills[key]);
+                serialisableSkills.Add(key, Skills[key]);
             }
         }
 

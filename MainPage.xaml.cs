@@ -248,6 +248,5 @@ namespace RS3QuestFilter
                 App.ViewModel.VMQuests.QuestLog.CreateTestLog();
             }
         }
-
     }
 }

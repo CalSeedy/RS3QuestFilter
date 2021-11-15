@@ -13,6 +13,7 @@ using Windows.Foundation.Collections;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
 
 // To learn more about WinUI, the WinUI project structure,
@@ -220,20 +221,36 @@ namespace RS3QuestFilter.src.Pages
 
                     if (p != null)
                     {
+                        App.ViewModel.VMPlayer.PlayerData = new();
+
                         foreach (StackPanel sp in skillGrid.Children)
                         {
                             SfNumericUpDown x = (SfNumericUpDown)sp.Children.First(child => child is SfNumericUpDown);
+                            ToggleButton tb = (ToggleButton)sp.Children.First(child => child is ToggleButton);
                             if (x.Tag is not null)
                                 if (p.Skills.ContainsKey(x.Tag as string))
                                 {
                                     int lvl = p.Skills[x.Tag as string].Level;
                                     if (lvl >= x.Minimum && lvl <= x.Maximum)
+                                    {
                                         x.Value = p.Skills[x.Tag as string].Level;
+                                        if (Convert.ToInt32(x.Value) > x.Minimum)
+                                            tb.IsChecked = true;
+                                        else
+                                            tb.IsChecked = false;
+                                    }
                                     else if (lvl > x.Maximum)
+                                    {
                                         x.Value = x.Maximum;
+                                        tb.IsChecked = true;
+                                    }
                                     else
+                                    {
                                         x.Value = x.Minimum;
+                                        tb.IsChecked= false;
+                                    }
                                 }
+                            
                         }
 
                         ironCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Ironman);
@@ -241,8 +258,15 @@ namespace RS3QuestFilter.src.Pages
                         skillerCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Skiller);
                         osatCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Osaat);
                         memberCheck.IsChecked = p.Flags.HasFlag(PlayerFlags.Member);
+
+                        App.ViewModel.VMPlayer.PlayerData.Skills = new(p.Skills);
+                        App.ViewModel.VMPlayer.PlayerData.PrepareSerialisable();
+                        App.ViewModel.VMPlayer.PlayerData.SelfCheckup();
+                        App.ViewModel.VMPlayer.PlayerData.Flags = p.Flags;
+                        App.ViewModel.VMPlayer.PlayerData.Name = p.Name;
+
                     }
-                    
+
                 }
             }
         }
@@ -250,6 +274,16 @@ namespace RS3QuestFilter.src.Pages
         private void btnResetStats_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             App.ViewModel.VMPlayer.PlayerData = new();
+        }
+
+        private void playerName_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter)
+                if (playerName.FocusState != Windows.UI.Xaml.FocusState.Unfocused)
+                {
+                    btnLookup_Click(playerName, null);
+                    btnLookup.Focus(Windows.UI.Xaml.FocusState.Programmatic);
+                }
         }
     }
 
