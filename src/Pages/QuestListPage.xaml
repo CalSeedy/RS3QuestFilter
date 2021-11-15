@@ -62,7 +62,9 @@
             Margin="0, 0, 0, 20"
             MinHeight="100"
             MaxHeight="450"
-            IsReadOnly="{Binding IsCumulative}">
+            IsReadOnly="{Binding IsCumulative}"
+            Tag="Quests"
+            Sorting="dgQuests_Sorting">
             <controls:DataGrid.ContextFlyout>
                 <muxc:CommandBarFlyout x:Name="emptyQuestsFlyout" AlwaysExpanded="True">
                     <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="questAddEmpty"/>
@@ -82,10 +84,10 @@
                 </Style>
             </controls:DataGrid.RowStyle>
             <controls:DataGrid.Columns>
-                <controls:DataGridTextColumn Header="Title" Binding="{Binding Title,  Mode=TwoWay}"  Width="Auto"/>
-                <controls:DataGridComboBoxColumn Header="Difficulty" Width="Auto" Binding="{Binding Path=Difficulty, Mode=TwoWay}" ItemsSource="{x:Bind difficultySource}"/>
-                <controls:DataGridCheckBoxColumn Header="Members" Binding="{Binding Member, Mode=TwoWay}"/>
-                <controls:DataGridCheckBoxColumn Header="Completed" Binding="{Binding Completed, Mode=TwoWay}"/>
+                <controls:DataGridTextColumn Header="Title" Binding="{Binding Title,  Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"  Width="Auto" Tag="Title"/>
+                <controls:DataGridComboBoxColumn Header="Difficulty" Width="Auto" Binding="{Binding Path=Difficulty, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{x:Bind difficultySource}" Tag="Difficulity"/>
+                <controls:DataGridCheckBoxColumn Header="Members" Binding="{Binding Member, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Tag="Members"/>
+                <controls:DataGridCheckBoxColumn Header="Completed" Binding="{Binding Completed, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Tag="Completed"/>
             </controls:DataGrid.Columns>
         </controls:DataGrid>
         <!--#endregion Quests-->
@@ -103,7 +105,8 @@
                            Margin="0, 0, 0, 20"
                            MinHeight="100"
                            MaxHeight="350"
-                           IsReadOnly="{Binding IsCumulative}">
+                           IsReadOnly="{Binding IsCumulative}"
+                           Tag="Reqs">
             <controls:DataGrid.ContextFlyout>
                 <muxc:CommandBarFlyout x:Name="emptyReqsFlyout" AlwaysExpanded="True">
                     <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="reqAddEmpty"/>
@@ -135,16 +138,17 @@
         <StackPanel Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1">
             <TextBlock Text="Rewards"/>
             <controls:DataGrid x:Name="dgRews"
-                           ItemsSource="{Binding ElementName=dgQuests, Path=SelectedItem.Rewards}"
-                           GridLinesVisibility="Vertical"
-                           HeadersVisibility="Column"
-                           SelectionMode="Single"
-                           AutoGenerateColumns="False"
-                           ClipboardCopyMode="ExcludeHeader"
-                           Margin="0, 0, 0, 20"
-                           MinHeight="100"
-                           MaxHeight="450"
-                           IsReadOnly="{Binding IsCumulative}">
+                               ItemsSource="{Binding ElementName=dgQuests, Path=SelectedItem.Rewards}"
+                               GridLinesVisibility="Vertical"
+                               HeadersVisibility="Column"
+                               SelectionMode="Single"
+                               AutoGenerateColumns="False"
+                               ClipboardCopyMode="ExcludeHeader"
+                               Margin="0, 0, 0, 20"
+                               MinHeight="100"
+                               MaxHeight="450"
+                               IsReadOnly="{Binding IsCumulative}"
+                               Tag="Rewards">
                 <controls:DataGrid.ContextFlyout>
                     <muxc:CommandBarFlyout x:Name="emptyRewsFlyout" AlwaysExpanded="True">
                         <AppBarButton Label="Add" Icon="Add" ToolTipService.ToolTip="Add" Click="AppBarButton_Click" Tag="rewAddEmpty"/>

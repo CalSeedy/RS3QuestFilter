@@ -191,6 +191,31 @@ namespace RS3QuestFilter.src.Pages
 
             App.ViewModel.VMQuests.FilterQuests(ts.IsOn);
         }
+
+        private void dgQuests_Sorting(object sender, DataGridColumnEventArgs e)
+        {
+            if (e.Column.Tag.ToString() == "Title")
+            {
+                if (e.Column.SortDirection == null || e.Column.SortDirection == DataGridSortDirection.Descending)
+                {
+                    App.ViewModel.VMQuests.QuestLog.Quests = new(App.ViewModel.VMQuests.QuestLog.Quests.OrderBy(x => x.Title));
+                    e.Column.SortDirection = DataGridSortDirection.Ascending;
+                }
+                else
+                {
+                    App.ViewModel.VMQuests.QuestLog.Quests = new(App.ViewModel.VMQuests.QuestLog.Quests.OrderByDescending(x => x.Title));
+                    e.Column.SortDirection = DataGridSortDirection.Descending;
+                }
+            }
+
+            foreach (var dgColumn in dgQuests.Columns)
+            {
+                if (dgColumn.Tag.ToString() != e.Column.Tag.ToString())
+                {
+                    dgColumn.SortDirection = null;
+                }
+            }
+        }
     }
 
     public class EnumToArrayConverter : IValueConverter
