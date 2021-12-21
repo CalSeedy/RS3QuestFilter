@@ -18,6 +18,7 @@
 
     <Page.Resources>
         <pages:EnumToArrayConverter x:Key="EnumToArrayConverter"/>
+        <pages:StringConverter x:Key="StringFormatConverter"/>
     </Page.Resources>
 
     <Grid>
@@ -39,6 +40,7 @@
         
         <!--#region Controls-->
         <StackPanel Margin="0,100,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="questsNumbers" Grid.Column="0" Grid.Row="0" Margin="0, 10" Height="50" Text="{Binding Number, Converter={StaticResource StringFormatConverter}, ConverterParameter='{}{0} / 425'}"/>
             <ToggleSwitch x:Name="cumulativeSwitch" Grid.Column="0" Grid.Row="0" OffContent="Single" OnContent="Cumulative" Toggled="cumulativeSwitch_Toggled" Margin="10, 0" IsOn="{Binding IsCumulative, Mode=TwoWay}"/>
             <ToggleSwitch x:Name="filterSwitch" Grid.Column="0" Grid.Row="0" OffContent="Non-Filtered" OnContent="Filtered" Margin="10, 100" Toggled="filterSwitch_Toggled" IsOn="{Binding IsFiltered, Mode=TwoWay}"/>
         </StackPanel>
@@ -104,7 +106,7 @@
                            ClipboardCopyMode="ExcludeHeader"
                            Margin="0, 0, 0, 20"
                            MinHeight="100"
-                           MaxHeight="350"
+                           MaxHeight="400"
                            IsReadOnly="{Binding IsCumulative}"
                            Tag="Reqs">
             <controls:DataGrid.ContextFlyout>
@@ -146,7 +148,7 @@
                                ClipboardCopyMode="ExcludeHeader"
                                Margin="0, 0, 0, 20"
                                MinHeight="100"
-                               MaxHeight="450"
+                               MaxHeight="400"
                                IsReadOnly="{Binding IsCumulative}"
                                Tag="Rewards">
                 <controls:DataGrid.ContextFlyout>

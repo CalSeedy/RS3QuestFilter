@@ -26,13 +26,14 @@ namespace RS3QuestFilter.src.Pages
     /// </summary>
     public sealed partial class QuestListPage : Page
     {
-        
+
         public readonly Array difficultySource = Enum.GetValues(typeof(EDifficulty));
         public readonly Array typeSource = Enum.GetValues(typeof(EType));
 
         public QuestListPage()
         {
             this.InitializeComponent();
+            App.ViewModel.VMQuests.Number = -1;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -41,8 +42,24 @@ namespace RS3QuestFilter.src.Pages
             DataContext = null;
             DataContext = App.ViewModel.VMQuests;
 
+            App.ViewModel.VMQuests.Number = CalculateTotalQP();
+
             if (filterSwitch.IsOn)
                 App.ViewModel.VMQuests.FilterQuests(true);
+
+        }
+
+        private int CalculateTotalQP()
+        {
+            int total = 0;
+            foreach (Quest q in App.ViewModel.VMQuests.QuestLog.Quests)
+            {
+                int? a = q.Rewards.FirstOrDefault(x => x.Type == EType.QP)?.Amount;
+                if (a.HasValue)
+                    total += a.Value;
+            }
+
+            return (total >= 0) ? total : -1;
         }
 
         private void dgQuests_SelectionChanged(object sender, SelectionChangedEventArgs e) => App.ViewModel.VMQuests.DG_OnSelectionChange(sender);
@@ -97,11 +114,13 @@ namespace RS3QuestFilter.src.Pages
                         App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex].Requirements.Add(new());
                         App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex].Rewards.Add(new());
                         dgQuests.ScrollIntoView(App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex], null);
+                        App.ViewModel.VMQuests.Number++;
                         break;
 
                     case "questDel":
                         DG_DelRow(App.ViewModel.VMQuests.QuestLog.Quests, dgQuests.SelectedIndex);
                         flyout = questDGCommandFlyout;
+                        App.ViewModel.VMQuests.Number--;
                         break;
 
                     case "reqAdd":
@@ -116,8 +135,11 @@ namespace RS3QuestFilter.src.Pages
                         if (dgQuests.SelectedItem is not null)
                         {
                             DG_AddRow((dgQuests.SelectedItem as Quest).Requirements);
-                            dgReqs.SelectedIndex = (dgQuests.SelectedItem as Quest).Requirements.Count - 1;
-                            dgReqs.ScrollIntoView((dgQuests.SelectedItem as Quest).Requirements[dgReqs.SelectedIndex], null);
+                            if (dgReqs.SelectedItem as Item is not null)
+                            {
+                                dgReqs.SelectedIndex = (dgQuests.SelectedItem as Quest).Requirements.Count - 1;
+                                dgReqs.ScrollIntoView((dgQuests.SelectedItem as Quest).Requirements[dgReqs.SelectedIndex], null);
+                            }
                         }
                         else 
                         {
@@ -141,8 +163,11 @@ namespace RS3QuestFilter.src.Pages
                         if (dgQuests.SelectedItem is not null)
                         {
                             DG_AddRow((dgQuests.SelectedItem as Quest).Rewards);
-                            dgRews.SelectedIndex = (dgQuests.SelectedItem as Quest).Rewards.Count - 1;
-                            dgRews.ScrollIntoView((dgQuests.SelectedItem as Quest).Rewards[dgRews.SelectedIndex], null);
+                            if (dgRews.SelectedItem is not null)
+                            {
+                                dgRews.SelectedIndex = (dgQuests.SelectedItem as Quest).Rewards.Count - 1;
+                                dgRews.ScrollIntoView((dgQuests.SelectedItem as Quest).Rewards[dgRews.SelectedIndex], null);
+                            }
                         }
                         else
                         {
@@ -226,7 +251,7 @@ namespace RS3QuestFilter.src.Pages
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            if (value == null || !(value is Enum))
+            if (value == null || value is not Enum)
                 return null;
 
             return Enum.GetValues(targetType);
@@ -242,7 +267,7 @@ namespace RS3QuestFilter.src.Pages
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            if (value == null || !(value is Enum))
+            if (value == null || value is not Enum)
                 return null;
 
             var @enum = value as Enum;
@@ -263,6 +288,25 @@ namespace RS3QuestFilter.src.Pages
         private T GetAttribute<T>(Enum enumValue) where T : Attribute
         {
             return enumValue.GetType().GetTypeInfo().GetDeclaredField(enumValue.ToString()).GetCustomAttribute<T>();
+        }
+    }
+
+    public class StringConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            if (value is null)
+                return "Error";
+
+            if (parameter is null)
+                return (string)value;
+
+            return String.Format((string)parameter, value);
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
         }
     }
 

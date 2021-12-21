@@ -8,12 +8,24 @@ using System.Collections.ObjectModel;
 using System.Runtime.CompilerServices;
 using System.Diagnostics;
 using Microsoft.Toolkit.Uwp.UI.Controls;
+using DrWPF.Windows.Data;
 
 namespace RS3QuestFilter.src
 {
     public class QuestsViewModel : Editable
     {
-        private static List<string> cbt = new List<string> { "Attack", "Strength", "Defence", "Constitution", "Ranged", "Prayer", "Magic", "Summoning" };
+        private static List<string> cbt = new() { "Attack", "Strength", "Defence", "Constitution", "Ranged", "Prayer", "Magic", "Summoning" };
+
+        private int questNumber;
+        public int Number
+        {
+            get { return questNumber; }
+            set {
+                if (questNumber != value)
+                    questNumber = value;
+                NotifyPropertyChanged();
+            }
+        }
 
         private bool isCumulative { get; set; }
 
@@ -98,7 +110,6 @@ namespace RS3QuestFilter.src
         private bool isMember { get { return App.ViewModel.VMPlayer.PlayerData.Flags.HasFlag(PlayerFlags.Member); } }
         private bool canCombat { get { return App.ViewModel.VMPlayer.PlayerData.Skills["Constitution"].Enabled && App.ViewModel.VMPlayer.PlayerData.Skills["Magic"].Enabled; } }
 
-
         private (ObservableCollection<Item>, ObservableCollection<Item>) ScanQuestForItems(ObservableCollection<Item> requirements, ObservableCollection<Item> rewards, Quest quest, ObservableCollection<Quest> searched)
         {
             Debug.WriteLine($"Scanning Quest: {quest.Title}\n# of Requirements: {quest.Requirements.Count}\n# of Rewards: {quest.Rewards.Count}");
@@ -136,10 +147,12 @@ namespace RS3QuestFilter.src
                         case EType.Quest:
                             break;
                         case EType.Level:
+                            if (found.Amount < i.Amount) found.Amount = i.Amount;
+                            break;
                         case EType.Item:
                         case EType.QP:
                         case EType.XP:
-                        case EType.None:
+                        case EType.Default:
                         case EType.Literal:
                             {
                                 found.Amount += i.Amount;   // just add the amounts
@@ -175,7 +188,7 @@ namespace RS3QuestFilter.src
                         case EType.Level:
                         case EType.Item:
                         case EType.QP:
-                        case EType.None:
+                        case EType.Default:
                         case EType.Literal:
                             {
                                 found.Amount += i.Amount;   // just add the amounts
@@ -291,17 +304,26 @@ namespace RS3QuestFilter.src
                 {
                     QuestLog.Quests = new(originalQuestLog.Quests);
                 }
-                QuestLog.Quests = new((QuestLog.Quests.ToList()).Where(QueryQuest).ToList());
+                ObservableCollection<Quest> newLog = new(QuestLog.Quests.ToList().Where(QueryQuest));
+                QuestLog.Quests = new();
+                QuestLog.Quests = newLog;
             }
             else
             {
                 if (originalQuestLog != null)
+                {
+                    QuestLog.Quests = new();
                     QuestLog.Quests = originalQuestLog.Quests;
+                    originalQuestLog = null;
+                }
             }
         }
 
         private bool QueryQuest(Quest quest)
         {
+            {
+                return quest.Rewards.FirstOrDefault(x => x.Type == EType.QP) is null;
+            }
 
             if (!isMember && (quest.Member ?? false))
                 return false;
