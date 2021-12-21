@@ -26,7 +26,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Animal Magnetism" Difficulty="Intermediate">
     <Member>true</Member>
@@ -105,7 +105,7 @@
     <Rewards Name="Access to Ava's Odds and Ends" Type="Literal" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Another Slice of H.A.M." Difficulty="Intermediate">
     <Member>true</Member>
@@ -163,7 +163,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="As a First Resort" Difficulty="Experienced">
     <Member>true</Member>
@@ -269,9 +269,9 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Azzandra's Quest" Difficulty="Experienced">
+  <Quests Title="Azzanadra's Quest" Difficulty="Experienced">
     <Member>true</Member>
     <Requirements Name="The Vault of Shadows" Type="Quest" Enabled="false">
       <Amount>1</Amount>
@@ -312,7 +312,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Back to my Roots" Difficulty="Master">
     <Member>true</Member>
@@ -449,7 +449,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Bar Crawl" Difficulty="Miniquest">
     <Member>true</Member>
@@ -459,7 +459,7 @@
     <Rewards Name="Barbarian Outpost Agility Course" Type="Area" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Battle of the Monolith" Difficulty="Miniquest">
     <Member>true</Member>
@@ -496,7 +496,7 @@
     <Rewards Name="Shard of Erebus" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Beneath Cursed Tides" Difficulty="Intermediate">
     <Member>false</Member>
@@ -548,7 +548,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Between a Rock..." Difficulty="Experienced">
     <Member>true</Member>
@@ -600,7 +600,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Big Chompy Bird Hunting" Difficulty="Intermediate">
     <Member>true</Member>
@@ -646,7 +646,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Biohazard" Difficulty="Novice">
     <Member>true</Member>
@@ -674,7 +674,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Birthright of the Dwarves" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -738,7 +738,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Blood Pact" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -772,7 +772,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Blood Runs Deep" Difficulty="Master">
     <Member>true</Member>
@@ -830,7 +830,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Branches of Darkmeyer" Difficulty="Master">
     <Member>true</Member>
@@ -912,7 +912,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Bringing Home the Bacon" Difficulty="Novice">
     <Member>true</Member>
@@ -952,7 +952,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Brink of Extinction" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -1004,7 +1004,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Broken Home" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1023,7 +1023,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Buyers and Cellars" Difficulty="Novice">
     <Member>true</Member>
@@ -1048,7 +1048,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Cabin Fever" Difficulty="Experienced">
     <Member>true</Member>
@@ -1097,7 +1097,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Call of the Ancestors" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1116,7 +1116,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Carnillean Rising" Difficulty="Intermediate">
     <Member>true</Member>
@@ -1171,7 +1171,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Catapult Construction" Difficulty="Master">
     <Member>true</Member>
@@ -1220,7 +1220,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Chef's Assistant" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1266,7 +1266,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Children of Mah" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -1309,7 +1309,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Chosen Commander" Difficulty="Experienced">
     <Member>true</Member>
@@ -1376,11 +1376,11 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="City of Senntisten" Difficulty="Master">
     <Member>true</Member>
-    <Requirements Name="Azzandra's Quest" Type="Quest" Enabled="false">
+    <Requirements Name="Azzanadra's Quest" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
     <Requirements Name="Battle of the Monolith" Type="Quest" Enabled="false">
@@ -1434,7 +1434,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Clock Tower" Difficulty="Novice">
     <Member>true</Member>
@@ -1450,7 +1450,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Clockwork Syringe" Difficulty="Master">
     <Member>true</Member>
@@ -1511,7 +1511,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Cold War" Difficulty="Intermediate">
     <Member>true</Member>
@@ -1596,7 +1596,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Contact!" Difficulty="Master">
     <Member>true</Member>
@@ -1630,7 +1630,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Cook's Assistant" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -1655,9 +1655,9 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Creature of Frankenstrain" Difficulty="Intermediate">
+  <Quests Title="Creature of Fenkenstrain" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Priest in Peril" Type="Quest" Enabled="false">
       <Amount>1</Amount>
@@ -1713,7 +1713,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Crocodile Tears" Difficulty="Master">
     <Member>true</Member>
@@ -1783,7 +1783,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Curse of Arrav" Difficulty="Master">
     <Member>true</Member>
@@ -1796,7 +1796,7 @@
     <Requirements Name="Shades of Mor'ton" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="The Tale of Muspah" Type="Quest" Enabled="false">
+    <Requirements Name="The Tale of the Muspah" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
     <Requirements Name="Troll Romance" Type="Quest" Enabled="false">
@@ -1880,7 +1880,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Curse of the Black Stone" Difficulty="Master">
     <Member>true</Member>
@@ -1938,7 +1938,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Darkness of Hallowvale" Difficulty="Intermediate">
     <Member>true</Member>
@@ -2005,7 +2005,7 @@
     <Rewards Name="Treasure hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Deadliest Catch" Difficulty="Master">
     <Member>true</Member>
@@ -2045,7 +2045,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Dealing with Scabaras" Difficulty="Master">
     <Member>true</Member>
@@ -2115,7 +2115,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Death of Chivalry" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -2164,7 +2164,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Death Plateau" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -2189,7 +2189,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Death to the Dorgeshuun" Difficulty="Intermediate">
     <Member>true</Member>
@@ -2259,7 +2259,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Defender of Varrock" Difficulty="Experienced">
     <Member>true</Member>
@@ -2338,7 +2338,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Demon Slayer" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -2369,7 +2369,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Desert Treasure" Difficulty="Master">
     <Member>true</Member>
@@ -2499,7 +2499,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Desperate Measures" Difficulty="Intermediate">
     <Member>true</Member>
@@ -2545,7 +2545,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Desperate Times" Difficulty="Intermediate">
     <Member>true</Member>
@@ -2600,7 +2600,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Devious Minds" Difficulty="Experienced">
     <Member>true</Member>
@@ -2649,7 +2649,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Diamond in the Rough" Difficulty="Novice">
     <Member>true</Member>
@@ -2698,7 +2698,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Dig Site" Difficulty="Intermediate">
     <Member>true</Member>
@@ -2747,23 +2747,23 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Dimensions of Disaster" Difficulty="Special">
+  <Quests Title="Dimension of Disaster" Difficulty="Special">
     <Member>true</Member>
-    <Requirements Name="Dimensions of Disaster: Shield of Arrav" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Shield of Arrav" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="Dimensions of Disaster: Demon Slayer" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Demon Slayer" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="Dimensions of Disaster: Defender of Varrock" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Defender of Varrock" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="Dimensions of Disaster: Curse of Arrav" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Curse of Arrav" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="Dimensions of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
     <Rewards Name="Cosmetic overrides to be used in replays" Type="Literal" Enabled="false">
@@ -2778,9 +2778,9 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Dimensions of Disaster: Coin of the Realm" Difficulty="Special">
+  <Quests Title="Dimension of Disaster: Coin of the Realm" Difficulty="Special">
     <Member>true</Member>
     <Requirements Name="GP" Type="Item" Enabled="false">
       <Amount>1</Amount>
@@ -2797,20 +2797,20 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Dimensions of Disaster: Curse of Arrav" Difficulty="Master">
+  <Quests Title="Dimension of Disaster: Curse of Arrav" Difficulty="Master">
     <Member>true</Member>
-    <Requirements Name="Dimensions of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="Dimensions of Disaster: Shield of Arrav" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Shield of Arrav" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="Dimensions of Disaster: Demon Slayer" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Demon Slayer" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Requirements Name="Dimensions of Disaster: Defender of Varrock" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Defender of Varrock" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
     <Requirements Name="The Curse of Arrav" Type="Quest" Enabled="false">
@@ -2897,11 +2897,11 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Dimensions of Disaster: Defender of Varrock" Difficulty="Experienced">
+  <Quests Title="Dimension of Disaster: Defender of Varrock" Difficulty="Experienced">
     <Member>true</Member>
-    <Requirements Name="Dimensions of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
     <Requirements Name="Defender of Varrock" Type="Quest" Enabled="false">
@@ -2949,11 +2949,11 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Dimensions of Disaster: Demon Slayer" Difficulty="Intermediate">
+  <Quests Title="Dimension of Disaster: Demon Slayer" Difficulty="Intermediate">
     <Member>true</Member>
-    <Requirements Name="Dimensions of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
     <Requirements Name="Shadow of the Storm" Type="Quest" Enabled="false">
@@ -3004,11 +3004,11 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Dimensions of Disaster: Shield of Arrav" Difficulty="Novice">
+  <Quests Title="Dimension of Disaster: Shield of Arrav" Difficulty="Novice">
     <Member>true</Member>
-    <Requirements Name="Dimensions of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
+    <Requirements Name="Deminsion of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
     <Requirements Name="Shield of Arrav" Type="Quest" Enabled="false">
@@ -3041,7 +3041,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Dishonour among Thieves" Difficulty="Intermediate">
     <Member>true</Member>
@@ -3123,7 +3123,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Do No Evil" Difficulty="Master">
     <Member>true</Member>
@@ -3286,7 +3286,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Dragon Slayer" Difficulty="Experienced">
     <Member>false</Member>
@@ -3423,7 +3423,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Druidic Ritual" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -3445,7 +3445,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Dwarf Cannon" Difficulty="Novice">
     <Member>true</Member>
@@ -3464,7 +3464,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Eadgar's Ruse" Difficulty="Experienced">
     <Member>true</Member>
@@ -3519,7 +3519,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Eagles' Peak" Difficulty="Novice">
     <Member>true</Member>
@@ -3553,7 +3553,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Elder Kiln" Difficulty="Master">
     <Member>true</Member>
@@ -3644,7 +3644,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Elemental Workshop I" Difficulty="Novice">
     <Member>true</Member>
@@ -3687,7 +3687,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Elemental Workshop II" Difficulty="Intermediate">
     <Member>true</Member>
@@ -3724,7 +3724,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Elemental Workshop III" Difficulty="Intermediate">
     <Member>true</Member>
@@ -3773,7 +3773,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Elemental Workshop IV" Difficulty="Intermediate">
     <Member>true</Member>
@@ -3837,7 +3837,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Enakhra's Lament" Difficulty="Experienced">
     <Member>true</Member>
@@ -3907,7 +3907,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Enlightened Journey" Difficulty="Intermediate">
     <Member>true</Member>
@@ -3980,7 +3980,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Enter the Abyss" Difficulty="Miniquest">
     <Member>true</Member>
@@ -3999,7 +3999,7 @@
     <Rewards Name="Abyssal book" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Ernest the Chicken" Difficulty="Novice">
     <Member>false</Member>
@@ -4024,7 +4024,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Evil Dave's Big Day Out" Difficulty="Intermediate">
     <Member>true</Member>
@@ -4064,7 +4064,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Eyes of Glouphrie" Difficulty="Intermediate">
     <Member>true</Member>
@@ -4116,7 +4116,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Fairy Tale I - Growing Pains" Difficulty="Experienced">
     <Member>true</Member>
@@ -4156,7 +4156,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Fairy Tale II - Cure a Queen" Difficulty="Experienced">
     <Member>true</Member>
@@ -4202,7 +4202,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Fairy Tale III - Battle at Ork's Rift" Difficulty="Experienced">
     <Member>true</Member>
@@ -4287,7 +4287,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Family Crest" Difficulty="Experienced">
     <Member>true</Member>
@@ -4357,7 +4357,7 @@
     <Rewards Name="Can store gold/silver ore and bars in metal bank" Type="Literal" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Fate of the Gods" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -4421,7 +4421,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Feud" Difficulty="Intermediate">
     <Member>true</Member>
@@ -4467,7 +4467,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Fight Arena" Difficulty="Experienced">
     <Member>true</Member>
@@ -4504,7 +4504,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Firemaker's Curse" Difficulty="Master">
     <Member>true</Member>
@@ -4541,7 +4541,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Fishing Contest" Difficulty="Novice">
     <Member>true</Member>
@@ -4569,7 +4569,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Forgettable Tale of a Drunken Dwarf" Difficulty="Intermediate">
     <Member>true</Member>
@@ -4624,7 +4624,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Forgiveness of a Chaos Dwarf" Difficulty="Master">
     <Member>true</Member>
@@ -4664,7 +4664,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Fremennik Isles" Difficulty="Master">
     <Member>true</Member>
@@ -4734,7 +4734,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Fremennik Trials" Difficulty="Intermediate">
     <Member>true</Member>
@@ -4822,7 +4822,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Fur 'n Seek" Difficulty="Novice">
     <Member>true</Member>
@@ -4889,9 +4889,9 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Garden of Tranquility" Difficulty="Intermediate">
+  <Quests Title="Garden of Tranquillity" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Creature of Frankenstrain" Type="Quest" Enabled="false">
       <Amount>1</Amount>
@@ -4956,7 +4956,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Gertrude's Cat" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -4990,7 +4990,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Ghosts Ahoy" Difficulty="Intermediate">
     <Member>true</Member>
@@ -5060,7 +5060,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Giant Dwarf" Difficulty="Intermediate">
     <Member>true</Member>
@@ -5145,7 +5145,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Glorious Memories" Difficulty="Master">
     <Member>true</Member>
@@ -5240,7 +5240,7 @@
     <Rewards Name="Crafting" Type="Lamp" Enabled="false">
       <Amount>200</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Golem" Difficulty="Intermediate">
     <Member>true</Member>
@@ -5286,7 +5286,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Gower Quest" Difficulty="Experienced">
     <Member>false</Member>
@@ -5317,7 +5317,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Grand Tree" Difficulty="Experienced">
     <Member>true</Member>
@@ -5351,7 +5351,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Great Brain Robbery" Difficulty="Experienced">
     <Member>true</Member>
@@ -5433,7 +5433,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Grim Tales" Difficulty="Master">
     <Member>true</Member>
@@ -5497,7 +5497,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Gunnar's Ground" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -5522,7 +5522,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Hand in the Sand" Difficulty="Intermediate">
     <Member>true</Member>
@@ -5571,7 +5571,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Haunted Mine" Difficulty="Experienced">
     <Member>true</Member>
@@ -5602,7 +5602,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Hazeel Cult" Difficulty="Novice">
     <Member>true</Member>
@@ -5624,7 +5624,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Heart of Stone" Difficulty="Intermediate">
     <Member>true</Member>
@@ -5664,7 +5664,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Heartstealer" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -5680,7 +5680,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Heroes' Quest" Difficulty="Experienced">
     <Member>true</Member>
@@ -5786,7 +5786,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Hero's Welcome" Difficulty="Experienced">
     <Member>true</Member>
@@ -5871,7 +5871,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Holy Grail" Difficulty="Intermediate">
     <Member>true</Member>
@@ -5902,7 +5902,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Horror from the Deep" Difficulty="Experienced">
     <Member>true</Member>
@@ -5972,7 +5972,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Hunt for Red Raktuber" Difficulty="Intermediate">
     <Member>true</Member>
@@ -6033,7 +6033,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Hunt for Surok" Difficulty="Miniquest">
     <Member>true</Member>
@@ -6061,7 +6061,7 @@
     <Rewards Name="Femur bone" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Icthlarin's Little Helper" Difficulty="Intermediate">
     <Member>true</Member>
@@ -6128,7 +6128,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Imp Catcher" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -6150,7 +6150,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Impressing the Locals" Difficulty="Novice">
     <Member>true</Member>
@@ -6169,7 +6169,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="In Aid of the Myreque" Difficulty="Intermediate">
     <Member>true</Member>
@@ -6284,7 +6284,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="In Pyre Need" Difficulty="Experienced">
     <Member>true</Member>
@@ -6318,7 +6318,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="In Search of the Myreque" Difficulty="Intermediate">
     <Member>true</Member>
@@ -6388,7 +6388,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Jack of Spades" Difficulty="Novice">
     <Member>true</Member>
@@ -6419,7 +6419,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Jungle Potion" Difficulty="Intermediate">
     <Member>true</Member>
@@ -6444,7 +6444,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Kennith's Concerns" Difficulty="Intermediate">
     <Member>true</Member>
@@ -6472,7 +6472,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Kindred Spirits" Difficulty="Experienced">
     <Member>true</Member>
@@ -6512,7 +6512,7 @@
     <Rewards Name="Treasure hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="King of the Dwarves" Difficulty="Master">
     <Member>true</Member>
@@ -6558,7 +6558,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="King's Ransom" Difficulty="Experienced">
     <Member>true</Member>
@@ -6616,7 +6616,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Knight's Sword" Difficulty="Intermediate">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -6650,7 +6650,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Land of the Goblins" Difficulty="Experienced">
     <Member>true</Member>
@@ -6756,7 +6756,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Legacy of Seergaze" Difficulty="Experienced">
     <Member>true</Member>
@@ -6859,7 +6859,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Legends' Quest" Difficulty="Master">
     <Member>true</Member>
@@ -7016,7 +7016,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Let Them Eat Pie" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -7053,7 +7053,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Light Within" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -7162,7 +7162,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Lord of Vampyrium" Difficulty="Master">
     <Member>true</Member>
@@ -7232,7 +7232,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Lost City" Difficulty="Experienced">
     <Member>true</Member>
@@ -7263,7 +7263,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Lost Tribe" Difficulty="Intermediate">
     <Member>true</Member>
@@ -7306,7 +7306,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Love Story" Difficulty="Master">
     <Member>true</Member>
@@ -7388,7 +7388,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Lunar Diplomacy" Difficulty="Experienced">
     <Member>true</Member>
@@ -7485,7 +7485,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Making History" Difficulty="Intermediate">
     <Member>true</Member>
@@ -7534,7 +7534,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Meeting History" Difficulty="Intermediate">
     <Member>true</Member>
@@ -7559,7 +7559,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Merlin's Crystal" Difficulty="Intermediate">
     <Member>true</Member>
@@ -7590,7 +7590,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Mighty Fall" Difficulty="Master">
     <Member>true</Member>
@@ -7666,7 +7666,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Missing My Mummy" Difficulty="Intermediate">
     <Member>true</Member>
@@ -7766,7 +7766,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Missing, Presumed Death" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -7803,7 +7803,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Monkey Madness" Difficulty="Master">
     <Member>true</Member>
@@ -7852,7 +7852,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Monk's Friend" Difficulty="Novice">
     <Member>true</Member>
@@ -7874,7 +7874,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Mountain Daughter" Difficulty="Intermediate">
     <Member>true</Member>
@@ -7917,7 +7917,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Mourning's End Part I" Difficulty="Master">
     <Member>true</Member>
@@ -8008,7 +8008,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Mourning's End Part II" Difficulty="Master">
     <Member>true</Member>
@@ -8057,7 +8057,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Murder Mystery" Difficulty="Novice">
     <Member>true</Member>
@@ -8076,7 +8076,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="My Arm's Big Adventure" Difficulty="Intermediate">
     <Member>true</Member>
@@ -8149,7 +8149,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Myths of the White Lands" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -8168,7 +8168,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Nature Spirit" Difficulty="Novice">
     <Member>true</Member>
@@ -8226,7 +8226,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Needle Skips" Difficulty="Novice">
     <Member>true</Member>
@@ -8239,7 +8239,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Nomad's Elegy" Difficulty="Master">
     <Member>true</Member>
@@ -8312,7 +8312,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Nomad's Requiem" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -8361,7 +8361,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Observatory Quest" Difficulty="Novice">
     <Member>true</Member>
@@ -8392,7 +8392,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Olaf's Quest" Difficulty="Intermediate">
     <Member>true</Member>
@@ -8441,7 +8441,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Once Upon a Slime" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -8457,7 +8457,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Once Upon a Time in Gielinor" Difficulty="Novice">
     <Member>true</Member>
@@ -8479,7 +8479,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>true</Completed>
   </Quests>
   <Quests Title="Once Upon a Time in Gielinor: Finale" Difficulty="Novice">
     <Member>true</Member>
@@ -8492,7 +8492,7 @@
     <Rewards Name="Shadow Rip Teleport" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Once Upon a Time in Gielinor: Flashback" Difficulty="Novice">
     <Member>true</Member>
@@ -8505,7 +8505,7 @@
     <Rewards Name="Closure's ghost biography" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Once Upon a Time in Gielinor: Foreshadowing" Difficulty="Novice">
     <Member>true</Member>
@@ -8515,7 +8515,7 @@
     <Rewards Name="Relomia's party hat" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Once Upon a Time in Gielinor: Fortunes" Difficulty="Novice">
     <Member>true</Member>
@@ -8528,7 +8528,7 @@
     <Rewards Name="Relomia's wand" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="One of a Kind" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -8607,7 +8607,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="One Piercing Note" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -8629,7 +8629,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="One Small Favour" Difficulty="Experienced">
     <Member>true</Member>
@@ -8708,7 +8708,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Our Man in the North" Difficulty="Master">
     <Member>true</Member>
@@ -8736,7 +8736,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Path of Glouphrie" Difficulty="Experienced">
     <Member>true</Member>
@@ -8809,7 +8809,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Perils of Ice Mountain" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -8849,7 +8849,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="'Phite Club" Difficulty="Master">
     <Member>true</Member>
@@ -8883,7 +8883,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Pieces of Hate" Difficulty="Master">
     <Member>true</Member>
@@ -8968,7 +8968,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Pirate's Treasure" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -8993,7 +8993,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Plague City" Difficulty="Novice">
     <Member>true</Member>
@@ -9036,7 +9036,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Plague's End" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -9196,7 +9196,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Priest in Peril" Difficulty="Novice">
     <Member>false</Member>
@@ -9227,7 +9227,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Prisoner of Glouphrie" Difficulty="Master">
     <Member>true</Member>
@@ -9270,7 +9270,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Quiet Before the Swarm" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -9307,7 +9307,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Rag and Bone Man" Difficulty="Novice">
     <Member>true</Member>
@@ -9365,7 +9365,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Rat Catchers" Difficulty="Intermediate">
     <Member>true</Member>
@@ -9417,7 +9417,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster" Difficulty="Special">
     <Member>true</Member>
@@ -9451,7 +9451,7 @@
     <Requirements Name="Recipe for Disaster: Defeating the Culinaromancer" Type="Quest" Enabled="false">
       <Amount>1</Amount>
     </Requirements>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Another Cook's Quest" Difficulty="Novice">
     <Member>true</Member>
@@ -9485,7 +9485,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Defeating the Culinaromancer" Difficulty="Experienced">
     <Member>true</Member>
@@ -9555,7 +9555,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing Evil Dave" Difficulty="Intermediate">
     <Member>true</Member>
@@ -9592,7 +9592,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing King Awowogei" Difficulty="Experienced">
     <Member>true</Member>
@@ -9653,7 +9653,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing Pirate Pete" Difficulty="Intermediate">
     <Member>true</Member>
@@ -9714,7 +9714,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing Sir Amik Varze" Difficulty="Experienced">
     <Member>true</Member>
@@ -9781,7 +9781,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing Skrach Uglogwee" Difficulty="Intermediate">
     <Member>true</Member>
@@ -9851,7 +9851,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing the Goblin Generals" Difficulty="Novice">
     <Member>true</Member>
@@ -9900,7 +9900,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing the Lumbridge Sage" Difficulty="Intermediate">
     <Member>true</Member>
@@ -9952,7 +9952,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recipe for Disaster: Freeing the Mountain Dwarf" Difficulty="Novice">
     <Member>true</Member>
@@ -9998,7 +9998,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Recruitment Drive" Difficulty="Novice">
     <Member>true</Member>
@@ -10029,7 +10029,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Regicide" Difficulty="Master">
     <Member>true</Member>
@@ -10093,7 +10093,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Restless Ghost" Difficulty="Novice">
     <Member>false</Member>
@@ -10115,7 +10115,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Ritual of the Mahjarrat" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -10212,7 +10212,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="River of Blood" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -10324,7 +10324,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Rocking Out" Difficulty="Experienced">
     <Member>true</Member>
@@ -10409,7 +10409,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Roving Elves" Difficulty="Master">
     <Member>true</Member>
@@ -10446,7 +10446,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Royal Trouble" Difficulty="Experienced">
     <Member>true</Member>
@@ -10486,7 +10486,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Rum Deal" Difficulty="Experienced">
     <Member>true</Member>
@@ -10547,7 +10547,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Rune Mechanics" Difficulty="Novice">
     <Member>true</Member>
@@ -10605,7 +10605,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Rune Memories" Difficulty="Novice">
     <Member>true</Member>
@@ -10636,7 +10636,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Rune Mysteries" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -10667,7 +10667,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Salt in the Wound" Difficulty="Intermediate">
     <Member>true</Member>
@@ -10728,7 +10728,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Scorpion Catcher" Difficulty="Intermediate">
     <Member>true</Member>
@@ -10756,7 +10756,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Sea Slug" Difficulty="Intermediate">
     <Member>true</Member>
@@ -10781,9 +10781,9 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="Shades of Mor'ton" Difficulty="Intermediate">
+  <Quests Title="Shades of Mort'ton" Difficulty="Intermediate">
     <Member>true</Member>
     <Requirements Name="Crafting" Type="Level" Enabled="false">
       <Amount>20</Amount>
@@ -10827,7 +10827,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Shadow of the Storm" Difficulty="Intermediate">
     <Member>true</Member>
@@ -10876,7 +10876,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Shadow over Ashdale" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -10907,7 +10907,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Sheep Herder" Difficulty="Novice">
     <Member>true</Member>
@@ -10932,7 +10932,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Shield of Arrav" Difficulty="Novice">
     <Member>false</Member>
@@ -10954,7 +10954,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Shilo Village" Difficulty="Experienced">
     <Member>true</Member>
@@ -11006,7 +11006,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Sliske's Endgame" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -11085,7 +11085,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Slug Menace" Difficulty="Intermediate">
     <Member>true</Member>
@@ -11137,7 +11137,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Smoking Kills" Difficulty="Intermediate">
     <Member>true</Member>
@@ -11207,7 +11207,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Some Like It Cold" Difficulty="Experienced">
     <Member>true</Member>
@@ -11244,7 +11244,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Song from the Depths" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -11266,7 +11266,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Soul's Bane" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -11324,7 +11324,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Spirit of Summer" Difficulty="Intermediate">
     <Member>true</Member>
@@ -11400,7 +11400,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Spirits of the Elid" Difficulty="Intermediate">
     <Member>true</Member>
@@ -11470,7 +11470,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Stolen Hearts" Difficulty="Novice">
     <Member>false</Member>
@@ -11501,7 +11501,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Summer's End" Difficulty="Experienced">
     <Member>true</Member>
@@ -11568,7 +11568,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Swan Song" Difficulty="Master">
     <Member>true</Member>
@@ -11659,7 +11659,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Swept Away" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -11678,7 +11678,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Tai Bwo Wannai Trio" Difficulty="Intermediate">
     <Member>true</Member>
@@ -11748,7 +11748,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Tail of Two Cats" Difficulty="Intermediate">
     <Member>true</Member>
@@ -11806,9 +11806,9 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
-  <Quests Title="The Tale of Muspah" Difficulty="Novice">
+  <Quests Title="The Tale of the Muspah" Difficulty="Novice">
     <Member>true</Member>
     <Requirements Name="Firemaking" Type="Level" Enabled="false">
       <Amount>6</Amount>
@@ -11858,7 +11858,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Tears of Guthix" Difficulty="Intermediate">
     <Member>true</Member>
@@ -11901,7 +11901,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Temple at Senntisten" Difficulty="Master">
     <Member>true</Member>
@@ -11971,7 +11971,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Temple of Ikov" Difficulty="Experienced">
     <Member>true</Member>
@@ -12023,7 +12023,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Throne of Miscellania" Difficulty="Experienced">
     <Member>true</Member>
@@ -12063,7 +12063,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>1</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="TokTz-Ket-Dill" Difficulty="Experienced">
     <Member>true</Member>
@@ -12130,7 +12130,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Tourist Trap" Difficulty="Intermediate">
     <Member>true</Member>
@@ -12182,7 +12182,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Tower of Life" Difficulty="Novice">
     <Member>true</Member>
@@ -12210,7 +12210,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Tree Gnome Village" Difficulty="Intermediate">
     <Member>true</Member>
@@ -12235,7 +12235,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Tribal Totem" Difficulty="Intermediate">
     <Member>true</Member>
@@ -12254,7 +12254,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Troll Romance" Difficulty="Experienced">
     <Member>true</Member>
@@ -12321,7 +12321,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Troll Stronghold" Difficulty="Experienced">
     <Member>true</Member>
@@ -12364,7 +12364,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Underground Pass" Difficulty="Experienced">
     <Member>true</Member>
@@ -12431,7 +12431,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Vampyre Slayer" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -12450,7 +12450,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Vault of Shadows" Difficulty="Miniquest">
     <Member>true</Member>
@@ -12502,7 +12502,7 @@
     <Rewards Name="Vellum" Type="Item" Enabled="false">
       <Amount>80</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Violet is Blue" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -12521,7 +12521,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Violet is Blue Too" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -12543,7 +12543,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="A Void Dance" Difficulty="Experienced">
     <Member>true</Member>
@@ -12619,7 +12619,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The Void Stares Back" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -12707,7 +12707,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Wanted!" Difficulty="Intermediate">
     <Member>true</Member>
@@ -12753,7 +12753,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Watchtower" Difficulty="Intermediate">
     <Member>true</Member>
@@ -12826,7 +12826,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Waterfall Quest" Difficulty="Intermediate">
     <Member>true</Member>
@@ -12866,7 +12866,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="What Lies Below" Difficulty="Intermediate">
     <Member>true</Member>
@@ -12912,7 +12912,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="What's Mine is Yours" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -12940,7 +12940,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="While Guthix Sleeps" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -13118,7 +13118,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Witch's House" Difficulty="Intermediate">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -13149,7 +13149,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Within the Light" Difficulty="Master">
     <Member>true</Member>
@@ -13219,7 +13219,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Wolf Whistle" Difficulty="Novice">
     <Member d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
@@ -13235,7 +13235,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="The World Wakes" Difficulty="Grandmaster">
     <Member>true</Member>
@@ -13290,7 +13290,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="You Are It" Difficulty="Intermediate">
     <Member>true</Member>
@@ -13315,7 +13315,7 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
   <Quests Title="Zogre Flesh Eaters" Difficulty="Intermediate">
     <Member>true</Member>
@@ -13367,6 +13367,6 @@
     <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
       <Amount>2</Amount>
     </Rewards>
-    <Completed d3p1:nil="true" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance" />
+    <Completed>false</Completed>
   </Quests>
 </QuestLog>
