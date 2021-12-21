@@ -9,7 +9,7 @@ namespace RS3QuestFilter.src
 {
     public enum EType
     {
-        None,
+        Default,
         Area,
         Combat,
         Item,
@@ -100,7 +100,7 @@ namespace RS3QuestFilter.src
         {
             Name = "";
             Amount = 0;
-            Type = EType.None;
+            Type = EType.Default;
             Enabled = false;
         }
 
@@ -181,7 +181,7 @@ namespace RS3QuestFilter.src
                 case EType.XP:
                     return (this.Name.Equals(other.Name)) && (this.Type == other.Type);
                 case EType.Literal:
-                case EType.None:
+                case EType.Default:
                     return (this.Name.Equals(other.Name)) && (this.Type == other.Type) && (this.Amount == other.Amount);
                 default:
                     return false;

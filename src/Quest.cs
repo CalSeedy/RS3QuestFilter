@@ -21,7 +21,9 @@ namespace RS3QuestFilter.src
         [Display("Master")]
         Master = 4,
         [Display("Grandmaster")]
-        Grandmaster = 5
+        Grandmaster = 5,
+        [Display("Special")]
+        Special = 6
     }
 
     [XmlRoot("Quest"), XmlType("Quest")]
