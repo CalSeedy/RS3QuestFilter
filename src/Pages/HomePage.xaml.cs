@@ -28,6 +28,7 @@ namespace RS3QuestFilter.src.Pages
             base.OnNavigatedTo(e);
             DataContext = null;
             DataContext = App.ViewModel;
+
         }
     }
 }

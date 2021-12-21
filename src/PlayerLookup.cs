@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace RS3QuestFilter.src
 {
@@ -65,10 +66,43 @@ namespace RS3QuestFilter.src
                             return cached;
 
             Player p = await GetPlayer(player);
-
             cached = p;
             lastChecked = DateTime.UtcNow;
             return p;
+        }
+
+        public static async Task<Dictionary<string, bool>> GetQuests(string player)
+        {
+            string safePlayer = System.Web.HttpUtility.UrlEncode(player);
+
+            string uri = $"https://apps.runescape.com/runemetrics/quests?user={safePlayer}";
+
+            Dictionary<string, bool> result = new();
+
+            string response = await client.GetStringAsync(uri);
+
+            if (response is not null)
+            {
+                JObject jobj = JObject.Parse(response);
+                try
+                {
+                    foreach (var q in jobj["quests"])
+                    {
+                        string title = (string)q["title"];
+                        string status = (string)q["status"];
+
+                        bool bStatus = (status.Equals("COMPLETED") ? true : false);
+                        result.Add(title, bStatus);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("SKJFYGKUJGFJS");
+                    throw;
+                }
+            }
+
+            return result;
         }
 
         private static async Task<Player> GetPlayer(string player)

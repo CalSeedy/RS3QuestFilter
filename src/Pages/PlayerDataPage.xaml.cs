@@ -76,7 +76,7 @@ namespace RS3QuestFilter.src.Pages
 
             #endregion
 
-            /*
+            
             #region Skill Toggles
 
             foreach (StackPanel sp in skillGrid.Children)
@@ -95,8 +95,6 @@ namespace RS3QuestFilter.src.Pages
                 }
             }
             #endregion
-            
-             */
         }
 
         private void PagePlayer_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
@@ -202,7 +200,7 @@ namespace RS3QuestFilter.src.Pages
                     try
                     {
                         p = await PlayerLookup.Lookup(playerName.Text);
-                        /*
+                        
                         App.ViewModel.VMPlayer.PlayerData.Flags = p.Flags;
                         App.ViewModel.VMPlayer.PlayerData.Name = p.Name;
                         foreach (string k in App.ViewModel.VMPlayer.PlayerData.Skills.Keys)
@@ -211,7 +209,6 @@ namespace RS3QuestFilter.src.Pages
                             App.ViewModel.VMPlayer.PlayerData.Skills[k].Level = p.Skills[k].Level;
                             App.ViewModel.VMPlayer.PlayerData.Skills[k].Enabled = p.Skills[k].Enabled;
                         }
-                        */
                     }
                     catch (Exception ex)
                     {
@@ -267,6 +264,37 @@ namespace RS3QuestFilter.src.Pages
 
                     }
 
+                    Dictionary<string, bool> questStates = await PlayerLookup.GetQuests(playerName.Text);
+                    foreach (string title in questStates.Keys)
+                    {
+                        Quest q = App.ViewModel.VMQuests.QuestLog.Quests.FirstOrDefault(x =>
+                        {
+                            if (x.Difficulty == EDifficulty.Miniquest)
+                            {
+                                string tmp = x.Title + " (miniquest)";
+                                return title.Equals(tmp);
+                            }
+                            else
+                            {
+                                if (title.Equals("Once Upon a Time in Gielinor"))
+                                {
+                                    bool s = questStates[title];
+                                    foreach (var que in App.ViewModel.VMQuests.QuestLog.Quests.Where(a => a.Title.Contains("Gielinor:")))
+                                    {
+                                        que.Completed = s;
+                                    }
+                                    return s;
+                                }
+                                else
+                                    return x.Title.Equals(title);
+                            }
+                        });
+                        if (q is not null)
+                        {
+                            if (q.Completed != questStates[title])
+                                q.Completed = questStates[title];
+                        }
+                    }
                 }
             }
         }
