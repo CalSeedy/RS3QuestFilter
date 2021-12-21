@@ -33,7 +33,7 @@ namespace RS3QuestFilter.src.Pages
         public QuestListPage()
         {
             this.InitializeComponent();
-            App.ViewModel.VMQuests.Number = -1;
+            //App.ViewModel.VMQuests.Number = -1;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -42,25 +42,25 @@ namespace RS3QuestFilter.src.Pages
             DataContext = null;
             DataContext = App.ViewModel.VMQuests;
 
-            App.ViewModel.VMQuests.Number = CalculateTotalQP();
+            //App.ViewModel.VMQuests.Number = CalculateTotalQP();
 
             if (filterSwitch.IsOn)
                 App.ViewModel.VMQuests.FilterQuests(true);
 
         }
 
-        private int CalculateTotalQP()
-        {
-            int total = 0;
-            foreach (Quest q in App.ViewModel.VMQuests.QuestLog.Quests)
-            {
-                int? a = q.Rewards.FirstOrDefault(x => x.Type == EType.QP)?.Amount;
-                if (a.HasValue)
-                    total += a.Value;
-            }
+        //private int CalculateTotalQP()
+        //{
+        //    int total = 0;
+        //    foreach (Quest q in App.ViewModel.VMQuests.QuestLog.Quests)
+        //    {
+        //        int? a = q.Rewards.FirstOrDefault(x => x.Type == EType.QP)?.Amount;
+        //        if (a.HasValue)
+        //            total += a.Value;
+        //    }
 
-            return (total >= 0) ? total : -1;
-        }
+        //    return (total >= 0) ? total : -1;
+        //}
 
         private void dgQuests_SelectionChanged(object sender, SelectionChangedEventArgs e) => App.ViewModel.VMQuests.DG_OnSelectionChange(sender);
 
@@ -114,13 +114,11 @@ namespace RS3QuestFilter.src.Pages
                         App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex].Requirements.Add(new());
                         App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex].Rewards.Add(new());
                         dgQuests.ScrollIntoView(App.ViewModel.VMQuests.QuestLog.Quests[dgQuests.SelectedIndex], null);
-                        App.ViewModel.VMQuests.Number++;
                         break;
 
                     case "questDel":
                         DG_DelRow(App.ViewModel.VMQuests.QuestLog.Quests, dgQuests.SelectedIndex);
                         flyout = questDGCommandFlyout;
-                        App.ViewModel.VMQuests.Number--;
                         break;
 
                     case "reqAdd":

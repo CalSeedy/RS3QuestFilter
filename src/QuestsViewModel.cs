@@ -16,16 +16,16 @@ namespace RS3QuestFilter.src
     {
         private static List<string> cbt = new() { "Attack", "Strength", "Defence", "Constitution", "Ranged", "Prayer", "Magic", "Summoning" };
 
-        private int questNumber;
-        public int Number
-        {
-            get { return questNumber; }
-            set {
-                if (questNumber != value)
-                    questNumber = value;
-                NotifyPropertyChanged();
-            }
-        }
+        //private int questNumber;
+        //public int Number
+        //{
+        //    get { return questNumber; }
+        //    set {
+        //        if (questNumber != value)
+        //            questNumber = value;
+        //        NotifyPropertyChanged();
+        //    }
+        //}
 
         private bool isCumulative { get; set; }
 
@@ -321,9 +321,6 @@ namespace RS3QuestFilter.src
 
         private bool QueryQuest(Quest quest)
         {
-            {
-                return quest.Rewards.FirstOrDefault(x => x.Type == EType.QP) is null;
-            }
 
             if (!isMember && (quest.Member ?? false))
                 return false;
