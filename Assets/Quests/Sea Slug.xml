@@ -1,0 +1,26 @@
+<Quests Title="Sea Slug" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Swamp paste" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Fishing" Type="XP" Enabled="false">
+      <Amount>7175</Amount>
+    </Rewards>
+    <Rewards Name="Fishing Platform" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Oyster pearls" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

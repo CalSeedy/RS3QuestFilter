@@ -1,0 +1,11 @@
+<Quests Title="Once Upon a Time in Gielinor: Foreshadowing" Difficulty="Novice">
+    <Member>true</Member>
+    <Rewards Name="Any skill" Type="Lamp" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Relomia's party hat" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

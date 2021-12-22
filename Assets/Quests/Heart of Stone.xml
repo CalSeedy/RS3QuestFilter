@@ -1,0 +1,41 @@
+<Quests Title="Heart of Stone" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Carnillean Rising" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rune Memories" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Runecrafting" Type="Level" Enabled="false">
+      <Amount>25</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>80</Amount>
+    </Requirements>
+    <Requirements Name="BikKra's attendant (Lv. 32)" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="FulKra's attendant (Lv. 44)" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Prehistoric abyssal (Lv. 56)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Runecrafting" Type="Lamp" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="Lamp" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

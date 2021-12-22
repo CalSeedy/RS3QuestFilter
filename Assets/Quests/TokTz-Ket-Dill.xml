@@ -1,0 +1,68 @@
+<Quests Title="TokTz-Ket-Dill" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Strength" Type="Level" Enabled="false">
+      <Amount>45</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>43</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Adamant pickaxe" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Black of stone" Type="Item" Enabled="false">
+      <Amount>17</Amount>
+    </Requirements>
+    <Requirements Name="Oak plank" Type="Item" Enabled="false">
+      <Amount>14</Amount>
+    </Requirements>
+    <Requirements Name="Water spell runes" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ranged weapon" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Melee weapon" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="TokTz-Ket-Dill (Lv. 64)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Lava monster (Lv. 53)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Fire monster (Lv. 53)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Attack" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Strength" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>10000</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="TokTz-Ket-Dill mine" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

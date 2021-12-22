@@ -1,0 +1,50 @@
+<Quests Title="Mourning's End Part II" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Mourning's End Part I" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Gas mask" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner boots" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner cloak" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner gloves" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner top" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner trousers" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>2310</Amount>
+    </Requirements>
+    <Requirements Name="List of 50 other items" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Crystal trinket" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Death altar" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can kill Dark beasts" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

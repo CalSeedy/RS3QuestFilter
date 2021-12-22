@@ -1,0 +1,83 @@
+<Quests Title="Dishonour among Thieves" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Hazeel Cult" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Missing, Presumed Death" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>356</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>74</Amount>
+    </Requirements>
+    <Requirements Name="Morytania" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Invitation box" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Armoured zombie (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Foreshadow (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Moia apparition" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Jerrod apparition (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="General Khazard apparition (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Enakhra apparition" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Hazeel apparition" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zemouregal apparition" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Lord Daquarius apparition" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Nomad apparition" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Dungeoneering" Type="XP" Enabled="false">
+      <Amount>500</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Jerrod's cape" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Tiny Hazeel" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mask of Sliske upgrade" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Stalker dungeon" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

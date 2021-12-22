@@ -1,0 +1,47 @@
+<Quests Title="The Golem" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>66</Amount>
+    </Requirements>
+    <Requirements Name="Vial" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Soft clay" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Papyrus" Type="Item" Enabled="false">
+      <Amount>27</Amount>
+    </Requirements>
+    <Requirements Name="Phoenix feather" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Ruby" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Emerald" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Sapphire" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Magic carpet" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

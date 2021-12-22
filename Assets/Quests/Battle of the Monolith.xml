@@ -1,0 +1,38 @@
+<Quests Title="Battle of the Monolith" Difficulty="Miniquest">
+    <Member>true</Member>
+    <Requirements Name="Need to complete the Archaeology tutorial" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Archaeology" Type="Level" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Temple Knight (Lv. Scales)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Abyssal Prowlers (Lv. Scales)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Shadow Cacklers (Lv. 107)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Elite Shadow Cacklers (Lv. 111)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="TokHaar-Ket (Lv. 119)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="TokHaar-Mej (Lv. 119)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="TokHaar-Xil (Lv. 119)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="TokHaar-Yt-MejKots (Lv. 112)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Rewards Name="Shard of Erebus" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,71 @@
+<Quests Title="Family Crest" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>570</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>59</Amount>
+    </Requirements>
+    <Requirements Name="Cooking" Type="Level" Enabled="false">
+      <Amount>151</Amount>
+    </Requirements>
+    <Requirements Name="Fishing" Type="Level" Enabled="false">
+      <Amount>156</Amount>
+    </Requirements>
+    <Requirements Name="Shrimps" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Salmon" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Tuna" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bass" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Swordfish" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ruby" Type="Item" Enabled="false">
+      <Amount>67</Amount>
+    </Requirements>
+    <Requirements Name="Antipoison" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Air rune" Type="Item" Enabled="false">
+      <Amount>12</Amount>
+    </Requirements>
+    <Requirements Name="Water rune" Type="Item" Enabled="false">
+      <Amount>57</Amount>
+    </Requirements>
+    <Requirements Name="Earth rune" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Fire rune" Type="Item" Enabled="false">
+      <Amount>68</Amount>
+    </Requirements>
+    <Requirements Name="Chronozon (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Family gauntlets" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Can store gold/silver ore and bars in metal bank" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

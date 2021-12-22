@@ -1,0 +1,86 @@
+<Quests Title="Cold War" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Hunter" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>34</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>15</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Crafting table 3" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Oak plank" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Steel nails" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Plank" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mahogany plank" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Silk" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Clockwork mechanism" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Swamp tar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Feather" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Leather" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Raw cod" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Icelord (Lv. 42)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Penguin suit" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Penguin Agility Course" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,89 @@
+<Quests Title="The Void Stares Back" Difficulty="Grandmaster">
+    <Member>true</Member>
+    <Requirements Name="A Void Dance" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>80</Amount>
+    </Requirements>
+    <Requirements Name="Attack" Type="Level" Enabled="false">
+      <Amount>78</Amount>
+    </Requirements>
+    <Requirements Name="Strength" Type="Level" Enabled="false">
+      <Amount>78</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>71</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Summoning" Type="Level" Enabled="false">
+      <Amount>55</Amount>
+    </Requirements>
+    <Requirements Name="Defence" Type="Level" Enabled="false">
+      <Amount>25</Amount>
+    </Requirements>
+    <Requirements Name="Torcher (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Brawler (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Defiler (Lv. 49)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Shifter (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Spinner (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Elite defiler (Lv. 91)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Pest Queen (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Summoning" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Smithing" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>100000</Amount>
+    </Rewards>
+    <Rewards Name="Elite void knight sword" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Korasi's sword" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

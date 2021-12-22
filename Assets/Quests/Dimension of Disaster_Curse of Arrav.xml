@@ -1,0 +1,101 @@
+<Quests Title="Dimension of Disaster: Curse of Arrav" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Deminsion of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Deminsion of Disaster: Shield of Arrav" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Deminsion of Disaster: Demon Slayer" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Deminsion of Disaster: Defender of Varrock" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Curse of Arrav" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>61</Amount>
+    </Requirements>
+    <Requirements Name="Strength" Type="Level" Enabled="false">
+      <Amount>64</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>64</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>43</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>57</Amount>
+    </Requirements>
+    <Requirements Name="Standard spellbook" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ring of life" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Darklight" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zombie mask" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zombie shirt" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zombie trousers" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zombie gloves" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zombie boots" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Armoured zombie (Lv. 42)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Sharathteerk (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zemouregal (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>30000</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="Lamp" Enabled="false">
+      <Amount>14000</Amount>
+    </Rewards>
+    <Rewards Name="Ranged" Type="Lamp" Enabled="false">
+      <Amount>9000</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="Lamp" Enabled="false">
+      <Amount>9000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="Lamp" Enabled="false">
+      <Amount>9000</Amount>
+    </Rewards>
+    <Rewards Name="Farming" Type="Lamp" Enabled="false">
+      <Amount>4000</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Varying amount of Zemomarks" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,65 @@
+<Quests Title="Elemental Workshop IV" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Elemental Workshop III" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>41</Amount>
+    </Requirements>
+    <Requirements Name="Runecrafting" Type="Level" Enabled="false">
+      <Amount>39</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>39</Amount>
+    </Requirements>
+    <Requirements Name="Defence" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>42</Amount>
+    </Requirements>
+    <Requirements Name="Air rune" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Earth rune" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Fire rune" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Water rune" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Knife" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Elemental ore" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Coal" Type="Item" Enabled="false">
+      <Amount>8</Amount>
+    </Requirements>
+    <Requirements Name="Earth elemental (Lv. 44)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>9000</Amount>
+    </Rewards>
+    <Rewards Name="Runecrafting" Type="XP" Enabled="false">
+      <Amount>7500</Amount>
+    </Rewards>
+    <Rewards Name="Can make all elemental equipment" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Coal" Type="Item" Enabled="false">
+      <Amount>50</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

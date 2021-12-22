@@ -1,0 +1,44 @@
+<Quests Title="The Lost Tribe" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>13</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>42</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>13</Amount>
+    </Requirements>
+    <Requirements Name="Light source" Type="Item" Enabled="false">
+      <Amount>11</Amount>
+    </Requirements>
+    <Requirements Name="Goblin Diplomacy" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>3000</Amount>
+    </Rewards>
+    <Rewards Name="Ring of life" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-Kaan Mines" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Goblin bow emote" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Goblin salute emote" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Nardok's Bone Weapons" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

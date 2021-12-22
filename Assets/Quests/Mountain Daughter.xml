@@ -1,0 +1,44 @@
+<Quests Title="Mountain Daughter" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Plank" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Pole" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Leather gloves" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Muddy rock" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="The Kendal (Lv. 32)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Attack" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Bearhead" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mountain Camp" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

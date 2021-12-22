@@ -1,0 +1,59 @@
+<Quests Title="Rune Mechanics" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>27</Amount>
+    </Requirements>
+    <Requirements Name="Runecrafting" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>25</Amount>
+    </Requirements>
+    <Requirements Name="Fire/Water rune" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Access to respective altar" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mind rune" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Body rune" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Emerald" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Pure essence" Type="Item" Enabled="false">
+      <Amount>21</Amount>
+    </Requirements>
+    <Requirements Name="Progress hat" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>900</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>2300</Amount>
+    </Rewards>
+    <Rewards Name="Runecrafting" Type="XP" Enabled="false">
+      <Amount>1850</Amount>
+    </Rewards>
+    <Rewards Name="Rune guardian" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Fire/ Water talisman" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Binding necklace" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

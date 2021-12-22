@@ -1,0 +1,53 @@
+<Quests Title="Dream Mentor" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Eadgar's Ruse" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Lunar Diplomacy" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Combat" Type="Level" Enabled="false">
+      <Amount>85</Amount>
+    </Requirements>
+    <Requirements Name="Three different types of food" Type="Item" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Goutweed" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Astral rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Inadequacy (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Everlasting (Lv.93)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Untouchable (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Illusive (Lv. 88)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Constitution" Type="XP" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>10000</Amount>
+    </Rewards>
+    <Rewards Name="Combat skill" Type="Lamp" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can use additional spells in the Lunar Spellbook" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

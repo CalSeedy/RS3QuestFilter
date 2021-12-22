@@ -1,0 +1,50 @@
+<Quests Title="Monkey Madness" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="The Grand Tree" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Tree Gnome Village" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Gold bar" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Ball of wool" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Monkey bones" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Banana" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Jungle demon (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>10000</Amount>
+    </Rewards>
+    <Rewards Name="Diamond" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Ape Atoll" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ape Atoll Agility Course" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can weird dragon scimitar" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can make greegrees" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

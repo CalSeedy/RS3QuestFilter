@@ -1,0 +1,38 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="Let Them Eat Pie" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="Empty pot" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Raw potato" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Raw crayfish" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Wheat" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fishing bait" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Cooking" Type="XP" Enabled="false">
+      <Amount>100</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>150</Amount>
+    </Rewards>
+    <Rewards Name="Expensive spices" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Meat pie" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,50 @@
+<Quests Title="Shadow of the Storm" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Demon Slayer" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Golem" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Silverlight" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Silver bar" Type="Item" Enabled="false">
+      <Amount>60</Amount>
+    </Requirements>
+    <Requirements Name="Vial" Type="Item" Enabled="false">
+      <Amount>151</Amount>
+    </Requirements>
+    <Requirements Name="3 Pieces of a black outfit" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Strange implement" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agrith Naar (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="XP" Enabled="false">
+      <Amount>10000</Amount>
+    </Rewards>
+    <Rewards Name="Demonic sigil" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Demonic tome" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Darklight" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

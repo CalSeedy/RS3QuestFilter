@@ -1,0 +1,56 @@
+<Quests Title="Eadgar's Ruse" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Druidic Ritual" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Troll Stronghold" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Herblore" Type="Level" Enabled="false">
+      <Amount>144</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>356</Amount>
+    </Requirements>
+    <Requirements Name="Rescue Mad Eadgar" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Climbing boots" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Vodka" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Pineapple chunks" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Wheat" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Raw chicken" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ranarr potion (u)" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Herblore" Type="XP" Enabled="false">
+      <Amount>11000</Amount>
+    </Rewards>
+    <Rewards Name="Can grow Goutweed" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Burnt meat" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

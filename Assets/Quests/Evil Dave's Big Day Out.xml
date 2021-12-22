@@ -1,0 +1,41 @@
+<Quests Title="Evil Dave's Big Day Out" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Recipe for Disaster: Freeing Evil Dave" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Cooking" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Herblore" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Herblore" Type="Lamp" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="Lamp" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Cooking" Type="Lamp" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Can chip teletabs" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

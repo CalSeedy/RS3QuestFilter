@@ -1,0 +1,98 @@
+<Quests Title="The Curse of Arrav" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Defender of Varrock" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Missing My Mummy" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Shades of Mor'ton" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Tale of the Muspah" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Troll Romance" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fully restore Senliten" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Slayer" Type="Level" Enabled="false">
+      <Amount>37</Amount>
+    </Requirements>
+    <Requirements Name="Summoning" Type="Level" Enabled="false">
+      <Amount>41</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>61</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>59</Amount>
+    </Requirements>
+    <Requirements Name="Strength" Type="Level" Enabled="false">
+      <Amount>79</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>64</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>66</Amount>
+    </Requirements>
+    <Requirements Name="Fletching" Type="Level" Enabled="false">
+      <Amount>59</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>57</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>45</Amount>
+    </Requirements>
+    <Requirements Name="Dwellberries" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Sacred oil" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ring of life" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Some method to grapple" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Macaw" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Arrav (Lv. 91)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>30000</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>14000</Amount>
+    </Rewards>
+    <Rewards Name="Ranged" Type="XP" Enabled="false">
+      <Amount>9000</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>9000</Amount>
+    </Rewards>
+    <Rewards Name="Strength" Type="XP" Enabled="false">
+      <Amount>9000</Amount>
+    </Rewards>
+    <Rewards Name="Summoning" Type="XP" Enabled="false">
+      <Amount>4000</Amount>
+    </Rewards>
+    <Rewards Name="Slayer" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

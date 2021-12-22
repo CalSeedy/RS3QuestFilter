@@ -1,0 +1,80 @@
+<Quests Title="Sliske's Endgame" Difficulty="Grandmaster">
+    <Member>true</Member>
+    <Requirements Name="The Death of Chivalry" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Children of Mah" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Hero's Welcome" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Kindred Spirits" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Nomad's Elegy" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="One of a Kind" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Access to enter Black Knights' Fortress" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Wight footsoldier (Lv. 78)" Type="Combat" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Wight archer (Lv. 78)" Type="Combat" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Imbued wight footsoldier (Lv. 85)" Type="Combat" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Unstable wight footsoldier (Lv. 91)" Type="Combat" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Nomad (Lv. 799)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Linza the Disgraced (Lv. 150)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Gregorovic (Lv. 1000)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sliske" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Tiny Sliske bobblehead" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Any skill above level 85" Type="Lamp" Enabled="false">
+      <Amount>1250000</Amount>
+    </Rewards>
+    <Rewards Name="Hunter's Catalyst fragment" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Runecrafter's Catalyst fragment" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Farmer's Catalyst fragment" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ring of Whispers" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Necklace of Shadows" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Agent of the Eldest outfit" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

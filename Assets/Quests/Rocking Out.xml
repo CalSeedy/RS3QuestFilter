@@ -1,0 +1,86 @@
+<Quests Title="Rocking Out" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="The Great Brain Robbery" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>60</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>63</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>66</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>69</Amount>
+    </Requirements>
+    <Requirements Name="Pirate bandana" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Stripy pirate shirt" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Pirate leggings" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Book o' piracy" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fishbowl helmet" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Diving apparatus" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ghostspeak amulet" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Bronze wire" Type="Item" Enabled="false">
+      <Amount>93</Amount>
+    </Requirements>
+    <Requirements Name="Charcoal" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Hammer" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>615626</Amount>
+    </Requirements>
+    <Requirements Name="Customs Officer (Lv. 37)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>25000</Amount>
+    </Rewards>
+    <Rewards Name="Smithing" Type="XP" Enabled="false">
+      <Amount>25000</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>25000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>25000</Amount>
+    </Rewards>
+    <Rewards Name="Can use Brimhaven Agility Course for free" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Rock Island Prison" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can buy Braindeath 'rum'" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can catch pirate implings" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

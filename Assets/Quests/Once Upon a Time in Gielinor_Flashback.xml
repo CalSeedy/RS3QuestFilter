@@ -1,0 +1,14 @@
+<Quests Title="Once Upon a Time in Gielinor: Flashback" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="Once Upon a Time in Gielinor: Foreshadowing" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Any skill" Type="Lamp" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Closure's ghost biography" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

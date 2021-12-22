@@ -1,0 +1,59 @@
+<Quests Title="Blood Runs Deep" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Dream Mentor" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Glorious Memories" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Horror from the Deep" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Attack" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Strength" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Slayer" Type="Level" Enabled="false">
+      <Amount>105</Amount>
+    </Requirements>
+    <Requirements Name="Fremennik Sea Boots 3" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>11</Amount>
+    </Requirements>
+    <Requirements Name="All 3 combat styles" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="All 4 elemental spells" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Dagannoth (Lv. 78)" Type="Combat" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Dagannoth (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Dagannoth Mother (Lv. 102)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Balmung" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>450000</Amount>
+    </Rewards>
+    <Rewards Name="Dagannoth guardians" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,35 @@
+<Quests Title="In Pyre Need" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>55</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>52</Amount>
+    </Requirements>
+    <Requirements Name="Fletching" Type="Level" Enabled="false">
+      <Amount>53</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>14400</Amount>
+    </Rewards>
+    <Rewards Name="Fletching" Type="XP" Enabled="false">
+      <Amount>12500</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>11556</Amount>
+    </Rewards>
+    <Rewards Name="Phoenix quill" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Phoenix lair" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

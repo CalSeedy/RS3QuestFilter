@@ -1,0 +1,47 @@
+<Quests Title="A Fairy Tale II - Cure a Queen" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="A Fairy Tale I - Growing Pains" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Farming" Type="Level" Enabled="false">
+      <Amount>49</Amount>
+    </Requirements>
+    <Requirements Name="Herblore" Type="Level" Enabled="false">
+      <Amount>144</Amount>
+    </Requirements>
+    <Requirements Name="Dramen staff" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Vial of water" Type="Item" Enabled="false">
+      <Amount>12</Amount>
+    </Requirements>
+    <Requirements Name="Gorak (Lv. 74)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Herblore" Type="XP" Enabled="false">
+      <Amount>3500</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Any skill" Type="Lamp" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Fairy Ring network" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can make magic essence potions" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

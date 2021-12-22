@@ -1,0 +1,26 @@
+<Quests Title="Sheep Herder" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>15153474</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>4</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>3100</Amount>
+    </Rewards>
+    <Rewards Name="Plague jacket" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Plague trousers" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Cattleprod" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,86 @@
+<Quests Title="The Giant Dwarf" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>71</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>33</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>74</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>10000</Amount>
+    </Requirements>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Coal" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Iron bar" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Law rune" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Air rune" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Sapphire" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Redberry pie" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Myriad ores and bars from Clay to Mithril" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Smithing" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Mine cart system" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can work for company selected in quest" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Keldagrim" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can use members' Gravestones" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

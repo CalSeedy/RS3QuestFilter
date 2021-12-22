@@ -1,0 +1,32 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="A Shadow over Ashdale" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="Crassian scout" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Agoroth" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Attack" Type="Lamp" Enabled="false">
+      <Amount>300</Amount>
+    </Rewards>
+    <Rewards Name="Strength" Type="Lamp" Enabled="false">
+      <Amount>300</Amount>
+    </Rewards>
+    <Rewards Name="Defence" Type="Lamp" Enabled="false">
+      <Amount>300</Amount>
+    </Rewards>
+    <Rewards Name="Constitution" Type="Lamp" Enabled="false">
+      <Amount>300</Amount>
+    </Rewards>
+    <Rewards Name="Black pearl" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

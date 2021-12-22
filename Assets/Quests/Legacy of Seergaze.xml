@@ -1,0 +1,104 @@
+<Quests Title="Legacy of Seergaze" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="The Darkness of Hallowvale" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>1173</Amount>
+    </Requirements>
+    <Requirements Name="Slayer" Type="Level" Enabled="false">
+      <Amount>31</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>2239</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>1895</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>461</Amount>
+    </Requirements>
+    <Requirements Name="Teak pyre logs" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Cosmic rune" Type="Item" Enabled="false">
+      <Amount>33</Amount>
+    </Requirements>
+    <Requirements Name="Air rune" Type="Item" Enabled="false">
+      <Amount>492</Amount>
+    </Requirements>
+    <Requirements Name="Coal" Type="Item" Enabled="false">
+      <Amount>9</Amount>
+    </Requirements>
+    <Requirements Name="Mithril bar" Type="Item" Enabled="false">
+      <Amount>9</Amount>
+    </Requirements>
+    <Requirements Name="Silver bar" Type="Item" Enabled="false">
+      <Amount>9</Amount>
+    </Requirements>
+    <Requirements Name="Silver sickle (b)" Type="Item" Enabled="false">
+      <Amount>9</Amount>
+    </Requirements>
+    <Requirements Name="Emerald" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Must have 2 different combat styles" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fistandantilus (Lv. 77)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zaromark Sliver (Lv. 77)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Vyrewatch (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>3000</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>4000</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Slayer" Type="XP" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Any skill" Type="Lamp" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ivandis flail" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Blood talisman" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Meiyerditch Dungeon" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Paterdomus Columbarium" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

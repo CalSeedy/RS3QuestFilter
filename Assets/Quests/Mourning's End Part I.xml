@@ -1,0 +1,92 @@
+<Quests Title="Mourning's End Part I" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Big Chompy Bird Hunting" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sheep Herder" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Roving Elves" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>64</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Silk" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Bucket of water" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Feather" Type="Item" Enabled="false">
+      <Amount>751</Amount>
+    </Requirements>
+    <Requirements Name="Leather" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Toad crunchies" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Magic logs" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Barrel of naptha" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bear fur" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Blue dye" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Red dye" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Yellow dye" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Green dye" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Rotten apple" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Barrel" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ogre bellows" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner (Lv. 79)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Constitution" Type="Lamp" Enabled="false">
+      <Amount>25000</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="Lamp" Enabled="false">
+      <Amount>25000</Amount>
+    </Rewards>
+    <Rewards Name="Death Guard headquarters" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Lletya" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Crystal teleport seed" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mourner gear" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

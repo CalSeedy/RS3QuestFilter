@@ -1,0 +1,56 @@
+<Quests Title="Carnillean Rising" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>360</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>33</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>31</Amount>
+    </Requirements>
+    <Requirements Name="Hazeel Cult" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Blood Pact" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Any skill (above lvl 30)" Type="Lamp" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Purple sweets" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Oak plank" Type="Item" Enabled="false">
+      <Amount>100</Amount>
+    </Rewards>
+    <Rewards Name="Teak plank" Type="Item" Enabled="false">
+      <Amount>30</Amount>
+    </Rewards>
+    <Rewards Name="Mahogany plank" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Rewards>
+    <Rewards Name="Gold bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Phillipe's note" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

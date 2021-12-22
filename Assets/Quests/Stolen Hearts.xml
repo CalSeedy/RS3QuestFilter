@@ -1,0 +1,32 @@
+<Quests Title="Stolen Hearts" Difficulty="Novice">
+    <Member>false</Member>
+    <Requirements Name="Skulls mercenaries (Lv. 2)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Constitution" Type="Lamp" Enabled="false">
+      <Amount>250</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>250</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="Lamp" Enabled="false">
+      <Amount>250</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="Default" Enabled="false">
+      <Amount>250</Amount>
+    </Rewards>
+    <Rewards Name="Can choose a title from: Artful Dodger [name], [name] the Enforcer, Don [name], [name] the Swindler" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,32 @@
+<Quests Title="Holy Grail" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Merlin's Crystal" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Attack" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Excalibur" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Black Knight Titan (Lv. 28)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="XP" Enabled="false">
+      <Amount>11000</Amount>
+    </Rewards>
+    <Rewards Name="Defence" Type="XP" Enabled="false">
+      <Amount>15300</Amount>
+    </Rewards>
+    <Rewards Name="Fisher Realm" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

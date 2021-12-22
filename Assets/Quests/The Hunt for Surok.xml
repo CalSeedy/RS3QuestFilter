@@ -1,0 +1,29 @@
+<Quests Title="The Hunt for Surok" Difficulty="Miniquest">
+    <Member>true</Member>
+    <Requirements Name="What Lies Below" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Prayer" Type="Level" Enabled="false">
+      <Amount>43</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>42</Amount>
+    </Requirements>
+    <Requirements Name="Chaos talisman" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bork (Lv. 107)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Slayer" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Can wear Dagon'hai robes" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Femur bone" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

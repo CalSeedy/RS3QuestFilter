@@ -1,0 +1,20 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="Vampyre Slayer" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="Beer" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Count Draynor (Lv. 28)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>4825</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

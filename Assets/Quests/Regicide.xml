@@ -1,0 +1,65 @@
+<Quests Title="Regicide" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Underground Pass" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>56</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Bow" Type="Item" Enabled="false">
+      <Amount>97</Amount>
+    </Requirements>
+    <Requirements Name="Arrows" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Plank" Type="Item" Enabled="false">
+      <Amount>12</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>453</Amount>
+    </Requirements>
+    <Requirements Name="Limestone" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Coal" Type="Item" Enabled="false">
+      <Amount>26</Amount>
+    </Requirements>
+    <Requirements Name="Empty pot" Type="Item" Enabled="false">
+      <Amount>23</Amount>
+    </Requirements>
+    <Requirements Name="Strip of cloth" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Cooked rabbit" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Tyras guard (Lv. 54)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>13750</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="Isafdar" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Port Tyras" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can buy and use dragon haldberds" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

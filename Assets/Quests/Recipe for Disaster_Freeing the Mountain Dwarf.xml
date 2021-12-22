@@ -1,0 +1,47 @@
+<Quests Title="Recipe for Disaster: Freeing the Mountain Dwarf" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="Recipe for Disaster: Another Cook's Quest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fishing Contest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>309</Amount>
+    </Requirements>
+    <Requirements Name="Pot of flour" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Egg" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Bucket of milk" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Bowl of water" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ice Gloves" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Asgarnian ale" Type="Item" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Slayer" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Cooking" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Further access to Culinaromancer's chest" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

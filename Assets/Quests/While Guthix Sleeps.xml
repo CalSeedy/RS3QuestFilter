@@ -1,0 +1,179 @@
+<Quests Title="While Guthix Sleeps" Difficulty="Grandmaster">
+    <Member>true</Member>
+    <Requirements Name="Defender of Varrock" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Dream Mentor" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Hand in the Sand" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="King's Ransom" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Legends' Quest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Path of Glouphrie" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Tears of Guthix" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Wanted!" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Hunt for Surok" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>356</Amount>
+    </Requirements>
+    <Requirements Name="Summoning" Type="Level" Enabled="false">
+      <Amount>23</Amount>
+    </Requirements>
+    <Requirements Name="Hunter" Type="Level" Enabled="false">
+      <Amount>65</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>60</Amount>
+    </Requirements>
+    <Requirements Name="Defence" Type="Level" Enabled="false">
+      <Amount>72</Amount>
+    </Requirements>
+    <Requirements Name="Farming" Type="Level" Enabled="false">
+      <Amount>65</Amount>
+    </Requirements>
+    <Requirements Name="Herblore" Type="Level" Enabled="false">
+      <Amount>144</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>122</Amount>
+    </Requirements>
+    <Requirements Name="Can access Warriors' Guild" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Defeat Bork in Chaos Tunnels" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sapphire lantern" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Air rune" Type="Item" Enabled="false">
+      <Amount>483</Amount>
+    </Requirements>
+    <Requirements Name="Earth rune" Type="Item" Enabled="false">
+      <Amount>333</Amount>
+    </Requirements>
+    <Requirements Name="Fire rune" Type="Item" Enabled="false">
+      <Amount>69</Amount>
+    </Requirements>
+    <Requirements Name="Water rune" Type="Item" Enabled="false">
+      <Amount>260</Amount>
+    </Requirements>
+    <Requirements Name="Mind rune" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Law rune" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Death rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>27</Amount>
+    </Requirements>
+    <Requirements Name="Charcoal" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Papyrus" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Lantern lens" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Mort myre fungus" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Unpowered orb" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Ring of charos (a)" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>15037307</Amount>
+    </Requirements>
+    <Requirements Name="Access to Black Knights' Fortress" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Astral rune" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Cosmic rune" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Elemental rune of your choice" Type="Item" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Two separate attack styles" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Snapdragon seed" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Assassin (Lv. 42)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Mercenary mage (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mercenary axeman (Lv. 91)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Elite Black Knight (Lv. 100)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Balance Elemental (Lv. 117)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Tormented demon (Lv. 119)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Lump of dragon metal" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Elite balck armour" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dagon'hai robes" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Any skill above level 65" Type="Lamp" Enabled="false">
+      <Amount>400000</Amount>
+    </Rewards>
+    <Rewards Name="Broav pet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Black Knights' Catacombs" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Strange key teeth" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Strange key loop" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

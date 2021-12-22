@@ -1,0 +1,68 @@
+<Quests Title="Recipe for Disaster: Freeing Sir Amik Varze" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Recipe for Disaster: Another Cook's Quest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Lost City" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Legends' Quest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bucket of milk" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Pot of cream" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sweetcorn" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Empty pot" Type="Item" Enabled="false">
+      <Amount>31</Amount>
+    </Requirements>
+    <Requirements Name="Radimus notes" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Dramen staff" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Anti-dragonfire shield" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Raw chicken" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ice gloves" Type="Item" Enabled="false">
+      <Amount>13</Amount>
+    </Requirements>
+    <Requirements Name="Dramen branch" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Evil Chicken (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Black dragon (Lv. 100)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Cooking" Type="XP" Enabled="false">
+      <Amount>4000</Amount>
+    </Rewards>
+    <Rewards Name="Constitution" Type="XP" Enabled="false">
+      <Amount>4000</Amount>
+    </Rewards>
+    <Rewards Name="Evil Chicken's Lair" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="More access to Culinaromancer's chest" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,53 @@
+<Quests Title="The Vault of Shadows" Difficulty="Miniquest">
+    <Member>true</Member>
+    <Requirements Name="Desert Treasure" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Archaeology" Type="Level" Enabled="false">
+      <Amount>58</Amount>
+    </Requirements>
+    <Requirements Name="Divination" Type="Level" Enabled="false">
+      <Amount>60</Amount>
+    </Requirements>
+    <Requirements Name="Time Served Mystery" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Powered all Shadow Anchors" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Pontifex shadow rung" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="'Animate Dead' spell scroll" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="'Exsanguinate' spell scroll" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="'Incite Fear' spell scroll" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="'Smoke Cloud' spell scroll" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Ancient vis" Type="Item" Enabled="false">
+      <Amount>80</Amount>
+    </Rewards>
+    <Rewards Name="Blood of Orcus" Type="Item" Enabled="false">
+      <Amount>80</Amount>
+    </Rewards>
+    <Rewards Name="Samite silk" Type="Item" Enabled="false">
+      <Amount>80</Amount>
+    </Rewards>
+    <Rewards Name="Zarosian Insignia" Type="Item" Enabled="false">
+      <Amount>80</Amount>
+    </Rewards>
+    <Rewards Name="Third Age iron" Type="Item" Enabled="false">
+      <Amount>80</Amount>
+    </Rewards>
+    <Rewards Name="Vellum" Type="Item" Enabled="false">
+      <Amount>80</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,38 @@
+<Quests Title="Recipe for Disaster: Freeing Evil Dave" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Recipe for Disaster: Another Cook's Quest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Gertrude's Cat" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Shadow of the Storm" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Cat" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Stew" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Cooking" Type="Level" Enabled="false">
+      <Amount>151</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Cooking" Type="XP" Enabled="false">
+      <Amount>7000</Amount>
+    </Rewards>
+    <Rewards Name="Can catch hellcats" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Unlocks more of the Culinaromancer's chest" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

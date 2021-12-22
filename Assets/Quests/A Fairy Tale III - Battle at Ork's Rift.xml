@@ -1,0 +1,86 @@
+<Quests Title="A Fairy Tale III - Battle at Ork's Rift" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="A Fairy Tale II - Cure a Queen" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>59</Amount>
+    </Requirements>
+    <Requirements Name="Farming" Type="Level" Enabled="false">
+      <Amount>65</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>66</Amount>
+    </Requirements>
+    <Requirements Name="Summoning" Type="Level" Enabled="false">
+      <Amount>41</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>36</Amount>
+    </Requirements>
+    <Requirements Name="Bucket of milk" Type="Item" Enabled="false">
+      <Amount>17</Amount>
+    </Requirements>
+    <Requirements Name="Dramen staff" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Sacateurs" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Hammer" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="General Gromblod (Lv. 82)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="General Shredflesh (Lv. 82)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="General Bre'egth (Lv. 82)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ork warrior (Lv. 79)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Fairy Godfather (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Farming" Type="XP" Enabled="false">
+      <Amount>11000</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="XP" Enabled="false">
+      <Amount>11000</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>11000</Amount>
+    </Rewards>
+    <Rewards Name="Summoning" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>1000</Amount>
+    </Rewards>
+    <Rewards Name="Magic watering can" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Free access to Zanaris market" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can access Fairy Rings without a staff" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ork's Rift" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Mos Le' Harmless fairy ring" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

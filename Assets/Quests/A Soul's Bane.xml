@@ -1,0 +1,59 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="A Soul's Bane" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="Angry unicorn (Lv. 45)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Angry bear (Lv. 40)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Angry giant rat (Lv. 45)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Angry goblin (Lv. 45)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Fear reaper (Lv. 37)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Confusion beast (Lv. 39)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Hopeless creature (Lv. 35)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Tolna's head" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Defence" Type="Lamp" Enabled="false">
+      <Amount>500</Amount>
+    </Rewards>
+    <Rewards Name="Constitution" Type="Lamp" Enabled="false">
+      <Amount>500</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>500</Amount>
+    </Rewards>
+    <Rewards Name="Tolna's rift" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Anger maul" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Anger battleaxe" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Anger spear" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Anger sword" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

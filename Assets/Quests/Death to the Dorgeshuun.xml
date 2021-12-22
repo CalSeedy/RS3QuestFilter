@@ -1,0 +1,71 @@
+<Quests Title="Death to the Dorgeshuun" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>46</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>60</Amount>
+    </Requirements>
+    <Requirements Name="The Lost Tribe" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. hood" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. shirt" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. robe" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. gloves" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. boots" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. cloak" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="H.A.M. logo" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Light source" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Guard (Lv. 36)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Sigmund (Lv. 42)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Combat" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="H.A.M. Storerooms" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-Kaan" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dorgesh-Kaan South Dungeon" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Watermill tunnel" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can use Cave Goblim Technology" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

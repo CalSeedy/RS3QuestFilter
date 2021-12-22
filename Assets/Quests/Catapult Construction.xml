@@ -1,0 +1,50 @@
+<Quests Title="Catapult Construction" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Regicide" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fletching" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>44</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Mithril nails" Type="Item" Enabled="false">
+      <Amount>90</Amount>
+    </Requirements>
+    <Requirements Name="Mahogany plank" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="Fletching" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Teak plank" Type="Item" Enabled="false">
+      <Amount>30</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Adamant halberd" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Sailor's hat" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

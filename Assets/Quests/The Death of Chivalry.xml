@@ -1,0 +1,50 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="The Death of Chivalry" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="Black knight" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Fern" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Dawn" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Skeleton" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Sir Owen" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>3</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>250</Amount>
+    </Rewards>
+    <Rewards Name="Strength" Type="XP" Enabled="false">
+      <Amount>250</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>2500</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>500</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="Lamp" Enabled="false">
+      <Amount>250</Amount>
+    </Rewards>
+    <Rewards Name="Knightly titles unlocked: [player name] the Gallant/Pious/Brave/Valiant" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Sir Owen Sonde's shield" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Skull of Remembrance" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

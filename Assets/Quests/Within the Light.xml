@@ -1,0 +1,71 @@
+<Quests Title="Within the Light" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Mourning's End Part II" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>69</Amount>
+    </Requirements>
+    <Requirements Name="Fletching" Type="Level" Enabled="false">
+      <Amount>70</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Gas mask" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Mourner boots" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Mourner cloak" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Mourner gloves" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Mourner top" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Mourner trousers" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name=" New key" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Tarnished key" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Death talisman" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Colour wheel" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Crystal trinket" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>35000</Amount>
+    </Rewards>
+    <Rewards Name="Fletching" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Ranged" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Woodcutting" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

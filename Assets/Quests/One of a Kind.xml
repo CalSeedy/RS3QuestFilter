@@ -1,0 +1,80 @@
+<Quests Title="One of a Kind" Difficulty="Grandmaster">
+    <Member>true</Member>
+    <Requirements Name="A Tail of Two Cats" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The World Wakes" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="King's Ransom" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Missing, Presumed Death" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Divination" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Dungeoneering" Type="Level" Enabled="false">
+      <Amount>67</Amount>
+    </Requirements>
+    <Requirements Name="Summoning" Type="Level" Enabled="false">
+      <Amount>74</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>81</Amount>
+    </Requirements>
+    <Requirements Name="Emerald" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Catspeak amulet (e)" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ghostspeak amulet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>745229</Amount>
+    </Requirements>
+    <Requirements Name="Iron dragon (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Dragon-hunter archer (Lv. 93)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Dragon-hunter warrior (Lv. 94)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Dragon-hunter mage (Lv. 92)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Echo of Jas (Lv. 133)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="Lamp" Enabled="false">
+      <Amount>90000</Amount>
+    </Rewards>
+    <Rewards Name="Summoning" Type="Lamp" Enabled="false">
+      <Amount>80000</Amount>
+    </Rewards>
+    <Rewards Name="Dungeoneering" Type="Lamp" Enabled="false">
+      <Amount>45000</Amount>
+    </Rewards>
+    <Rewards Name="Divination" Type="Lamp" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Dragon Rider amulet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Dragontooth Island dungeon" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

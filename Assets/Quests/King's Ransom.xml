@@ -1,0 +1,59 @@
+<Quests Title="King's Ransom" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Holy Grail" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Murder Mystery" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="One Small Favour" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>45</Amount>
+    </Requirements>
+    <Requirements Name="Defence" Type="Level" Enabled="false">
+      <Amount>65</Amount>
+    </Requirements>
+    <Requirements Name="Granite" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Air rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Law rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Animate rock scroll" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Iron chainbody" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bronze med helm" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Defence" Type="XP" Enabled="false">
+      <Amount>33000</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Any skill above level 50" Type="Lamp" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Hair clip" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Access to Court Cases D&amp;D and Knight Waves Training" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

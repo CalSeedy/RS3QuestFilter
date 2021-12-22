@@ -1,0 +1,65 @@
+<Quests Title="Birthright of the Dwarves" Difficulty="Grandmaster">
+    <Member>true</Member>
+    <Requirements Name="King of the Dwarves" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>208</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>212</Amount>
+    </Requirements>
+    <Requirements Name="Strength" Type="Level" Enabled="false">
+      <Amount>231</Amount>
+    </Requirements>
+    <Requirements Name="Chaos Dwarf (Lv. 47)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Red Axe director (Lv. 90)" Type="Combat" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Ikadia the Exile (Lv. 126)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Hreidmar (Lv. 111)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Colonel Grimsson (Lv. 111)" Type="Combat" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="XP" Enabled="false">
+      <Amount>100000</Amount>
+    </Rewards>
+    <Rewards Name="Smithing" Type="XP" Enabled="false">
+      <Amount>100000</Amount>
+    </Rewards>
+    <Rewards Name="Strength" Type="XP" Enabled="false">
+      <Amount>200000</Amount>
+    </Rewards>
+    <Rewards Name="Rune bar" Type="Item" Enabled="false">
+      <Amount>30</Amount>
+    </Rewards>
+    <Rewards Name="Adamant bar" Type="Item" Enabled="false">
+      <Amount>30</Amount>
+    </Rewards>
+    <Rewards Name="Mithril bar" Type="Item" Enabled="false">
+      <Amount>30</Amount>
+    </Rewards>
+    <Rewards Name="Barendir" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Lava Flow Mine - Lava Geyser" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ability to obtain Dragon thrown axes, staff, and warhammers" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

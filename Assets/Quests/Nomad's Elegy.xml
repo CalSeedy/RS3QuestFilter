@@ -1,0 +1,74 @@
+<Quests Title="Nomad's Elegy" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Dishonour among Thieves" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Heart of Stone" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Mighty Fall" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Throne of Miscellania" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Nomad's Requiem" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Void Stares Back" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Nomad (Lv. 799)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bandosian" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Order of Ascension members" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Shame (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Guilt (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Woodcutting" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Soul-in-a-box blueprint" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Urn enhancer blueprint" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Memory of Nomad" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

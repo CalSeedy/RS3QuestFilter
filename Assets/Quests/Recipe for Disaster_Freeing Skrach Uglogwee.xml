@@ -1,0 +1,71 @@
+<Quests Title="Recipe for Disaster: Freeing Skrach Uglogwee" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Recipe for Disaster: Another Cook's Quest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Big Chompy Bird Hunting" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Cooking" Type="Level" Enabled="false">
+      <Amount>151</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>50</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>52</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Raw chompy" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ball of wool" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Iron spit" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>19</Amount>
+    </Requirements>
+    <Requirements Name="Ogre bellows" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ogre bow" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ogre arrows" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Jubbly bird (Lv. 16)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Woodcutting" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Cooking" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Ranged" Type="XP" Enabled="false">
+      <Amount>1500</Amount>
+    </Rewards>
+    <Rewards Name="Can travel between Karamja and Feldip Hills" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="More access to Culinaromancer's chest" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

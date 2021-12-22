@@ -1,0 +1,32 @@
+<Quests Title="Dimension of Disaster" Difficulty="Special">
+    <Member>true</Member>
+    <Requirements Name="Deminsion of Disaster: Shield of Arrav" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Deminsion of Disaster: Demon Slayer" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Deminsion of Disaster: Defender of Varrock" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Deminsion of Disaster: Curse of Arrav" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Deminsion of Disaster: Coin of the Realm" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Cosmetic overrides to be used in replays" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Silver penny" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Rewards>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

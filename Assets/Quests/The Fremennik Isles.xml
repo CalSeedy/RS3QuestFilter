@@ -1,0 +1,71 @@
+<Quests Title="The Fremennik Isles" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="The Fremennik Trials" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>46</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>56</Amount>
+    </Requirements>
+    <Requirements Name="Mithril ore" Type="Item" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Raw tuna" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>8</Amount>
+    </Requirements>
+    <Requirements Name="Split log" Type="Item" Enabled="false">
+      <Amount>8</Amount>
+    </Requirements>
+    <Requirements Name="Yak-hide armour" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fremennik round shield" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ice troll (Lv. 68)" Type="Combat" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Ice Troll King (Lv. 91)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="XP" Enabled="false">
+      <Amount>5000</Amount>
+    </Rewards>
+    <Rewards Name="Woodcutting" Type="XP" Enabled="false">
+      <Amount>10000</Amount>
+    </Rewards>
+    <Rewards Name="Choice: Attack, Strength, Defence, Constitution" Type="XP" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Helm of neitiznot" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Drakolith mining island" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Jatizso mine" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

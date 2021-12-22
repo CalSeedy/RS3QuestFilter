@@ -1,0 +1,29 @@
+<Quests Title="All Fired Up" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="Logs" Type="Item" Enabled="false">
+      <Amount>45</Amount>
+    </Requirements>
+    <Requirements Name="Priest in Peril" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>43</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="GP" Type="Item" Enabled="false">
+      <Amount>20000</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>5500</Amount>
+    </Rewards>
+    <Rewards Name="Access to All Fired Up Minigame" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

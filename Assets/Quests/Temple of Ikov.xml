@@ -1,0 +1,53 @@
+<Quests Title="Temple of Ikov" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>48</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>64</Amount>
+    </Requirements>
+    <Requirements Name="Light source" Type="Item" Enabled="false">
+      <Amount>77</Amount>
+    </Requirements>
+    <Requirements Name="Bow" Type="Item" Enabled="false">
+      <Amount>34</Amount>
+    </Requirements>
+    <Requirements Name="Limpwurt roots" Type="Item" Enabled="false">
+      <Amount>20</Amount>
+    </Requirements>
+    <Requirements Name="Fire Warrior of Lesarkus (Lv. 77)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Ranged" Type="XP" Enabled="false">
+      <Amount>10500</Amount>
+    </Rewards>
+    <Rewards Name="Fletching" Type="XP" Enabled="false">
+      <Amount>8000</Amount>
+    </Rewards>
+    <Rewards Name="Boots of lightness" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Pendant of Lucien" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Armadyl pendant" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Shiny key" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Symbol of Armadyl gravestone" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Kudos" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

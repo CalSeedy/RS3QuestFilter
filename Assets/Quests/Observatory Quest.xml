@@ -1,0 +1,32 @@
+<Quests Title="Observatory Quest" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="Plank" Type="Item" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Bronze bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Molten glass" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="Lamp" Enabled="false">
+      <Amount>2250</Amount>
+    </Rewards>
+    <Rewards Name="Choice: Attack,Defence,Constitution,Strength" Type="Lamp" Enabled="false">
+      <Amount>875</Amount>
+    </Rewards>
+    <Rewards Name="Varying reward depending on constellation seen" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Kudos" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

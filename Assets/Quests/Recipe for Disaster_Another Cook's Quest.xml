@@ -1,0 +1,35 @@
+<Quests Title="Recipe for Disaster: Another Cook's Quest" Difficulty="Novice">
+    <Member>true</Member>
+    <Requirements Name="Cook's Assistant" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Cooking" Type="Level" Enabled="false">
+      <Amount>151</Amount>
+    </Requirements>
+    <Requirements Name="Eye of newt" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Greenman's ale" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rotten tomato" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Ashes" Type="Item" Enabled="false">
+      <Amount>37</Amount>
+    </Requirements>
+    <Requirements Name="Fruit blast" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Point" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Culinaromancer's Chest" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

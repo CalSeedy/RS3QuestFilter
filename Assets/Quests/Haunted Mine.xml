@@ -1,0 +1,32 @@
+<Quests Title="Haunted Mine" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Priest in Peril" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>15</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>35</Amount>
+    </Requirements>
+    <Requirements Name="Treus Dayth (Lv. 63)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Strength" Type="Lamp" Enabled="false">
+      <Amount>22000</Amount>
+    </Rewards>
+    <Rewards Name="Crystal-mine key" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Lair of Tarn Razorlor" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

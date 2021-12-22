@@ -1,0 +1,41 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="Perils of Ice Mountain" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="Farming" Type="Level" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Hunter" Type="Level" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Watering can" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Compost" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Plank" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Nails" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="All of: Farming, Hunter, Construction, Thieving" Type="Lamp" Enabled="false">
+      <Amount>500</Amount>
+    </Rewards>
+    <Rewards Name="Can get sigils attached to blessed spirit shields for GP" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

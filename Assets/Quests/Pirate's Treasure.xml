@@ -1,0 +1,26 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="Pirate's Treasure" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="White apron" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Banana" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Casket" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can fill banana crates for GP" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

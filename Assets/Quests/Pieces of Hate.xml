@@ -1,0 +1,86 @@
+<Quests Title="Pieces of Hate" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Gertrude's Cat" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="A Clockwork Syringe" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>81</Amount>
+    </Requirements>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>82</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>83</Amount>
+    </Requirements>
+    <Requirements Name="Thieving" Type="Level" Enabled="false">
+      <Amount>85</Amount>
+    </Requirements>
+    <Requirements Name="Leather" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Gold bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Blurberry Special" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Drunk Dragon" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Chocolate Saturday" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zogoth" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="DKS (Lv. 98)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Barrelchest (Lv. 93)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Zombie captain (Lv. 49)" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Zombie pirate (Lv. 49)" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Rabid Jack (Lv. 200)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Thieving" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Black pearl" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Rabid Jack overrides" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Big Book o' Piracy" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Holy wrench" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

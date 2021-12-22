@@ -1,0 +1,11 @@
+<Quests Title="Bar Crawl" Difficulty="Miniquest">
+    <Member>true</Member>
+    <Requirements Name="GP" Type="Item" Enabled="false">
+      <Amount>208</Amount>
+    </Requirements>
+    <Rewards Name="Barbarian Outpost Agility Course" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

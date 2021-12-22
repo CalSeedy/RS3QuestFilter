@@ -1,0 +1,38 @@
+<Quests Title="The Firemaker's Curse" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Firemaking" Type="Level" Enabled="false">
+      <Amount>74</Amount>
+    </Requirements>
+    <Requirements Name="Constitution" Type="Level" Enabled="false">
+      <Amount>76</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>64</Amount>
+    </Requirements>
+    <Requirements Name="Char (Lv. 160)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Firemaking" Type="XP" Enabled="false">
+      <Amount>80000</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="XP" Enabled="false">
+      <Amount>30000</Amount>
+    </Rewards>
+    <Rewards Name="Constitution" Type="XP" Enabled="false">
+      <Amount>76000</Amount>
+    </Rewards>
+    <Rewards Name="Book of Char" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Char's training cave" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

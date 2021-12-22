@@ -1,0 +1,23 @@
+<Quests Title="The Restless Ghost" Difficulty="Novice">
+    <Member>false</Member>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="Lamp" Enabled="false">
+      <Amount>125</Amount>
+    </Rewards>
+    <Rewards Name="Ancient bones" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Ghostspeak amulet" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Access to Gravestone upgrades via Father Aereck" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

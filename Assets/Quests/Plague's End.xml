@@ -1,0 +1,161 @@
+<Quests Title="Plague's End" Difficulty="Grandmaster">
+    <Member>true</Member>
+    <Requirements Name="Making History" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Catapult Construction" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Within the Light" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Construction" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Dungeoneering" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Herblore" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>110</Amount>
+    </Requirements>
+    <Requirements Name="Prayer" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Ranged" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Summoning" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>75</Amount>
+    </Requirements>
+    <Requirements Name="Gas mask" Type="Item" Enabled="false">
+      <Amount>9</Amount>
+    </Requirements>
+    <Requirements Name="Mourner boots" Type="Item" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Mourner cloak" Type="Item" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Mourner gloves" Type="Item" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Mourner top" Type="Item" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Mourner trousers" Type="Item" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Rune bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Plant cure" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Magic logs" Type="Item" Enabled="false">
+      <Amount>24</Amount>
+    </Requirements>
+    <Requirements Name="Spirit shard" Type="Item" Enabled="false">
+      <Amount>200</Amount>
+    </Requirements>
+    <Requirements Name="Gold charm" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Green charm" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Crimson charm" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Blue charm" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Pouch" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Super defence (3)" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mourner (Lv. 83)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Head Mourner (Lv. 100)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sir Hugo (Lv. 107)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Trahaearn automaton" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Shadow (Lv. 107)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Greater Shadow (Lv. 107)" Type="Combat" Enabled="false">
+      <Amount>3</Amount>
+    </Requirements>
+    <Requirements Name="Dark Lord (Lv. 107)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Agility" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Construction" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Dungeoneering" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Herblore" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Mining" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Ranged" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Summoning" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Woodcutting" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Prifddinas" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="[player name] of the Elves title" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Trahaearn exoskeleton set" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can enter Mourner headquarters without Mourner gear" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

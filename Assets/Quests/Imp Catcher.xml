@@ -1,0 +1,23 @@
+<Quests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Title="Imp Catcher" Difficulty="Novice">
+    <Member xsi:nil="true" />
+    <Requirements Name="Bowl of hot water" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Choleric imp (Lv. 5)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Amulet of accuracy" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Magic" Type="Lamp" Enabled="false">
+      <Amount>875</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

@@ -1,0 +1,59 @@
+<Quests Title="Curse of the Black Stone" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Impressing the Locals" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Agility" Type="Level" Enabled="false">
+      <Amount>12</Amount>
+    </Requirements>
+    <Requirements Name="Woodcutting" Type="Level" Enabled="false">
+      <Amount>34</Amount>
+    </Requirements>
+    <Requirements Name="Complete each of the Elite Dungeons in any mode" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Uncute dragonstone" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Raw fish" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Law rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Any equipment to get into Black Knights Fortress" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Pat of butter" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Crassian warrior (Lv. 7)" Type="Combat" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Requirements Name="Crassian scout" Type="Combat" Enabled="false">
+      <Amount>6</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>4</Amount>
+    </Rewards>
+    <Rewards Name="Any Skill" Type="Lamp" Enabled="false">
+      <Amount>15000</Amount>
+    </Rewards>
+    <Rewards Name="10% damage reduction in all Elite Dungeons" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Moonlight mead (m)" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can upgrade Elite Dungeon chests" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

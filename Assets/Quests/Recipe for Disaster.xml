@@ -1,0 +1,35 @@
+<Quests Title="Recipe for Disaster" Difficulty="Special">
+    <Member>true</Member>
+    <Requirements Name="Recipe for Disaster: Another Cook's Quest" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing the Goblin Generals" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing the Mountain Dwarf" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing Evil Dave" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing the Lumbridge Sage" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing Pirate Pete" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing Skrach Uglogwee" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing Sir Amik Varze" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Freeing King Awowogei" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Recipe for Disaster: Defeating the Culinaromancer" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Completed>false</Completed>
+  </Quests>
+  

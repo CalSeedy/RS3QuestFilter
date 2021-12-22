@@ -1,0 +1,116 @@
+<Quests Title="In Aid of the Myreque" Difficulty="Intermediate">
+    <Member>true</Member>
+    <Requirements Name="In Search of the Myreque" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>25</Amount>
+    </Requirements>
+    <Requirements Name="Magic" Type="Level" Enabled="false">
+      <Amount>7</Amount>
+    </Requirements>
+    <Requirements Name="Mining" Type="Level" Enabled="false">
+      <Amount>30</Amount>
+    </Requirements>
+    <Requirements Name="Smithing" Type="Level" Enabled="false">
+      <Amount>550</Amount>
+    </Requirements>
+    <Requirements Name="Food" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Bucket" Type="Item" Enabled="false">
+      <Amount>2329</Amount>
+    </Requirements>
+    <Requirements Name="Plank" Type="Item" Enabled="false">
+      <Amount>11</Amount>
+    </Requirements>
+    <Requirements Name="Swamp paste" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Nails" Type="Item" Enabled="false">
+      <Amount>45</Amount>
+    </Requirements>
+    <Requirements Name="Bronze hatchet" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Raw mackerel" Type="Item" Enabled="false">
+      <Amount>10</Amount>
+    </Requirements>
+    <Requirements Name="Tinderbox" Type="Item" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Requirements Name="Steel bar" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Requirements>
+    <Requirements Name="Coal" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Soft clay" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Silver bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Mithril bar" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Sapphire" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Water rune" Type="Item" Enabled="false">
+      <Amount>172</Amount>
+    </Requirements>
+    <Requirements Name="Cosmic rune" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Rope" Type="Item" Enabled="false">
+      <Amount>1055</Amount>
+    </Requirements>
+    <Requirements Name="Gadderanks (Lv. 58)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Vampyre Juvinate (Lv. 58)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Vampyre Juvinate (Lv. 63)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Vampyre Juvinate (Lv. 60)" Type="Combat" Enabled="false">
+      <Amount>4</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Attack" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Strength" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Crafting" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Defence" Type="Lamp" Enabled="false">
+      <Amount>2000</Amount>
+    </Rewards>
+    <Rewards Name="Burgh de Rott" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Temple Trekking" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Gadderhammer" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Can make Rod of Ivandis and Guthix balance potions" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Kudos" Type="Item" Enabled="false">
+      <Amount>5</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

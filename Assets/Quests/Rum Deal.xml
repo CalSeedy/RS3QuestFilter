@@ -1,0 +1,62 @@
+<Quests Title="Rum Deal" Difficulty="Experienced">
+    <Member>true</Member>
+    <Requirements Name="Priest in Peril" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Zogre Flesh Eaters" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Farming" Type="Level" Enabled="false">
+      <Amount>40</Amount>
+    </Requirements>
+    <Requirements Name="Crafting" Type="Level" Enabled="false">
+      <Amount>42</Amount>
+    </Requirements>
+    <Requirements Name="Prayer" Type="Level" Enabled="false">
+      <Amount>47</Amount>
+    </Requirements>
+    <Requirements Name="Fishing" Type="Level" Enabled="false">
+      <Amount>156</Amount>
+    </Requirements>
+    <Requirements Name="Slayer" Type="Level" Enabled="false">
+      <Amount>56</Amount>
+    </Requirements>
+    <Requirements Name="Combat gear" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Slayer gloves" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Evil Spirit (Lv. 56)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Fever spider (Lv. 70)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Farming" Type="Lamp" Enabled="false">
+      <Amount>7000</Amount>
+    </Rewards>
+    <Rewards Name="Fishing" Type="Lamp" Enabled="false">
+      <Amount>7000</Amount>
+    </Rewards>
+    <Rewards Name="Prayer" Type="Lamp" Enabled="false">
+      <Amount>7000</Amount>
+    </Rewards>
+    <Rewards Name="Holy wrench" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Braindeath Island" Type="Area" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Fishbowl and net" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  

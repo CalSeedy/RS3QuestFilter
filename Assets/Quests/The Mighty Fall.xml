@@ -1,0 +1,77 @@
+<Quests Title="The Mighty Fall" Difficulty="Master">
+    <Member>true</Member>
+    <Requirements Name="Missing, Presumed Death" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Chosen Commander" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="My Arm's Big Adventure" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="The Hunt for Surok" Type="Quest" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Slayer" Type="Level" Enabled="false">
+      <Amount>69</Amount>
+    </Requirements>
+    <Requirements Name="Defence" Type="Level" Enabled="false">
+      <Amount>72</Amount>
+    </Requirements>
+    <Requirements Name="Constitution" Type="Level" Enabled="false">
+      <Amount>78</Amount>
+    </Requirements>
+    <Requirements Name="Attack" Type="Level" Enabled="false">
+      <Amount>79</Amount>
+    </Requirements>
+    <Requirements Name="Strength" Type="Level" Enabled="false">
+      <Amount>79</Amount>
+    </Requirements>
+    <Requirements Name="Light source" Type="Item" Enabled="false">
+      <Amount>36</Amount>
+    </Requirements>
+    <Requirements Name="Human infiltrator (Lv. 112)" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Yelps (Lv. 84)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="Yelp's bodyguard (Lv. 112)" Type="Combat" Enabled="false">
+      <Amount>5</Amount>
+    </Requirements>
+    <Requirements Name="Lol (Lv. 110)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Requirements Name="General Graardor (Lv. 210)" Type="Combat" Enabled="false">
+      <Amount>1</Amount>
+    </Requirements>
+    <Rewards Name="Quest Points" Type="QP" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill above level 79" Type="Lamp" Enabled="false">
+      <Amount>75000</Amount>
+    </Rewards>
+    <Rewards Name="Any combat skill above level 69" Type="Lamp" Enabled="false">
+      <Amount>50000</Amount>
+    </Rewards>
+    <Rewards Name="Kyzaj" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="[player name] the Champion title" Type="Literal" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Bandos' Memories" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Yelps' very own cash bag" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Expired spin ticket" Type="Item" Enabled="false">
+      <Amount>1</Amount>
+    </Rewards>
+    <Rewards Name="Treasure Hunter Key" Type="Item" Enabled="false">
+      <Amount>2</Amount>
+    </Rewards>
+    <Completed>false</Completed>
+  </Quests>
+  
