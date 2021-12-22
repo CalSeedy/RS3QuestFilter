@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Pages - Edit Mode/SettingsPage.xaml.cs
+/Pages - Edit Mode/SettingsPage.xaml
+/Pages - Edit Mode/QuestListPage.xaml.cs
+/Pages - Edit Mode/QuestListPage.xaml
+/Pages - Edit Mode/PlayerDataPage.xaml.cs
+/Pages - Edit Mode/PlayerDataPage.xaml
+/Pages - Edit Mode/HomePage.xaml.cs
+/Pages - Edit Mode/HomePage.xaml
