@@ -24,13 +24,13 @@ namespace RS3QuestFilter.src.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class QuestListPage : Page
+    public sealed partial class QuestListDevPage : Page
     {
 
         public readonly Array difficultySource = Enum.GetValues(typeof(EDifficulty));
         public readonly Array typeSource = Enum.GetValues(typeof(EType));
 
-        public QuestListPage()
+        public QuestListDevPage()
         {
             this.InitializeComponent();
             //App.ViewModel.VMQuests.Number = -1;
@@ -70,7 +70,7 @@ namespace RS3QuestFilter.src.Pages
                 DataContext = App.ViewModel.VMQuests;
         }
 
-        private void PageQuests_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private void PageQuestsDev_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             OnLoad();
         }
@@ -119,6 +119,63 @@ namespace RS3QuestFilter.src.Pages
                     case "questDel":
                         DG_DelRow(App.ViewModel.VMQuests.QuestLog.Quests, dgQuests.SelectedIndex);
                         flyout = questDGCommandFlyout;
+                        break;
+
+                    case "reqAdd":
+                        flyout = reqsDGCommandFlyout;
+                        goto case "reqAddDef";
+
+                    case "reqAddEmpty":
+                        flyout = emptyReqsFlyout;
+                        goto case "reqAddDef";
+
+                    case "reqAddDef":
+                        if (dgQuests.SelectedItem is not null)
+                        {
+                            DG_AddRow((dgQuests.SelectedItem as Quest).Requirements);
+                            if (dgReqs.SelectedItem as Item is not null)
+                            {
+                                dgReqs.SelectedIndex = (dgQuests.SelectedItem as Quest).Requirements.Count - 1;
+                                dgReqs.ScrollIntoView((dgQuests.SelectedItem as Quest).Requirements[dgReqs.SelectedIndex], null);
+                            }
+                        }
+                        else 
+                        {
+                            await MainPage.ShowAlert("You need to select a quest before you try to add a requirement!");
+                        }
+                        break;
+
+                    case "reqDel":
+                        DG_DelRow((dgQuests.SelectedItem as Quest).Requirements, dgReqs.SelectedIndex);
+                        flyout = reqsDGCommandFlyout;
+                        break;
+
+                    case "rewAdd":
+                        flyout = rewsDGCommandFlyout;
+                        goto case "rewAddDef";
+                    case "rewAddEmpty":
+                        flyout = emptyRewsFlyout;
+                        goto case "rewAddDef";
+
+                    case "rewAddDef":
+                        if (dgQuests.SelectedItem is not null)
+                        {
+                            DG_AddRow((dgQuests.SelectedItem as Quest).Rewards);
+                            if (dgRews.SelectedItem is not null)
+                            {
+                                dgRews.SelectedIndex = (dgQuests.SelectedItem as Quest).Rewards.Count - 1;
+                                dgRews.ScrollIntoView((dgQuests.SelectedItem as Quest).Rewards[dgRews.SelectedIndex], null);
+                            }
+                        }
+                        else
+                        {
+                            await MainPage.ShowAlert("You need to select a quest before you try to add a reward!");
+                        }
+                        break;
+
+                    case "rewDel":
+                        DG_DelRow((dgQuests.SelectedItem as Quest).Rewards, dgRews.SelectedIndex);
+                        flyout = rewsDGCommandFlyout;
                         break;
                 }
 
@@ -187,4 +244,68 @@ namespace RS3QuestFilter.src.Pages
             }
         }
     }
+
+    public class EnumToArrayConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            if (value == null || value is not Enum)
+                return null;
+
+            return Enum.GetValues(targetType);
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class EnumToStringConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            if (value == null || value is not Enum)
+                return null;
+
+            var @enum = value as Enum;
+            var description = @enum.ToString();
+
+            var attrib = this.GetAttribute<DisplayAttribute>(@enum);
+            if (attrib != null)
+                description = attrib.Name;
+
+            return description;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+
+        private T GetAttribute<T>(Enum enumValue) where T : Attribute
+        {
+            return enumValue.GetType().GetTypeInfo().GetDeclaredField(enumValue.ToString()).GetCustomAttribute<T>();
+        }
+    }
+
+    public class StringConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, string language)
+        {
+            if (value is null)
+                return "Error";
+
+            if (parameter is null)
+                return (string)value;
+
+            return String.Format((string)parameter, value);
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
 }

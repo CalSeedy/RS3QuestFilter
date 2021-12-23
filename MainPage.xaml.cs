@@ -35,9 +35,12 @@ namespace RS3QuestFilter
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
             ("Home_Page", typeof(src.Pages.HomePage)),
+            ("Quests_Page_Dev", typeof(src.Pages.QuestListDevPage)),
             ("Quests_Page", typeof(src.Pages.QuestListPage)),
             ("Player_Page", typeof(src.Pages.PlayerDataPage))
         };
+
+        private string _lastPage = "Home_Page";
 
         #region Events
 
@@ -107,13 +110,38 @@ namespace RS3QuestFilter
             if (NavView.IsPaneOpen && (NavView.DisplayMode == NavigationViewDisplayMode.Compact || NavView.DisplayMode == NavigationViewDisplayMode.Minimal))
                 return;
 
-            ContentFrame.GoBack();
+            if (_lastPage.Equals("Quests_Page_Dev") && !App.ViewModel.IsDevMode)
+            {
+                var item = _pages.FirstOrDefault(p => p.Tag.Equals("Quests_Page"));
+                Type _page = item.Page;
+                var preNavPageType = ContentFrame.CurrentSourcePageType;
+
+                // Only navigate if the selected page isn't currently loaded.
+                if (_page is not null && !Type.Equals(preNavPageType, _page))
+                {
+                    ContentFrame.Navigate(_page, null, null);
+                }
+            }
+            else if (_lastPage.Equals("Quests_Page") && App.ViewModel.IsDevMode)
+            {
+                var item = _pages.FirstOrDefault(p => p.Tag.Equals("Quests_Page_Dev"));
+                Type _page = item.Page;
+                var preNavPageType = ContentFrame.CurrentSourcePageType;
+
+                // Only navigate if the selected page isn't currently loaded.
+                if (_page is not null && !Type.Equals(preNavPageType, _page))
+                {
+                    ContentFrame.Navigate(_page, null, null);
+                }
+            }
+            else
+                ContentFrame.GoBack();
         }
 
         private void NavView_Navigate(string navItemTag, NavigationTransitionInfo transitionInfo)
         {
             Type _page = null;
-            if (navItemTag == "Settings_Page")
+            if (navItemTag.Equals("Settings_Page"))
             {
                 _page = typeof(src.Pages.SettingsPage);
             }
@@ -122,12 +150,18 @@ namespace RS3QuestFilter
                 if (navItemTag.Equals("Quests_Page"))
                 {
                     App.ViewModel.IsQuestPage = true;
+                    if (App.ViewModel.IsDevMode)
+                    {
+                        navItemTag += ("_Dev");
+                    }
                 }
                 else
                     App.ViewModel.IsQuestPage = false;
                 
                 var item = _pages.FirstOrDefault(p => p.Tag.Equals(navItemTag));
                 _page = item.Page;
+
+                _lastPage = navItemTag;
             }
             // Get the page type before navigation so you can prevent duplicate
             // entries in the backstack.
@@ -154,7 +188,17 @@ namespace RS3QuestFilter
             {
                 var item = _pages.FirstOrDefault(p => p.Page == e.SourcePageType);
 
-                NavView.SelectedItem = NavView.MenuItems.OfType<NavigationViewItem>().First(n => n.Tag.Equals(item.Tag));
+                NavView.SelectedItem = NavView.MenuItems.OfType<NavigationViewItem>().First(n => {
+                    if (item.Tag.Equals("Quests_Page_Dev"))
+                    {
+                        return n.Tag.Equals("Quests_Page");
+                    } 
+                    else 
+                    {
+                        return n.Tag.Equals(item.Tag);
+                    }
+                        
+                    });
 
                 //NavView.Header = ((NavigationViewItem)NavView.SelectedItem)?.Content?.ToString();
             }

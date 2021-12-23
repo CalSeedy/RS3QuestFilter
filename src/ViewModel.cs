@@ -54,6 +54,12 @@ namespace RS3QuestFilter.src
             set { State.isQuestPage = value; NotifyPropertyChanged(); }
         }
 
+        public bool IsDevMode
+        {
+            get { return State.isDevMode; }
+            set { State.isDevMode = value; NotifyPropertyChanged(); }
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
@@ -66,5 +72,6 @@ namespace RS3QuestFilter.src
     {
         public static bool isQuestPage = false;
         public static bool isQuestSelected = false;
+        public static bool isDevMode = false;
     }
 }

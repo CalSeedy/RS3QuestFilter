@@ -25,6 +25,8 @@ namespace RS3QuestFilter.src.Pages
         public SettingsPage()
         {
             this.InitializeComponent();
+            DataContext = App.ViewModel;
         }
+
     }
 }
