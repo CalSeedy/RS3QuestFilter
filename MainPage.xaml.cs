@@ -41,6 +41,7 @@ namespace RS3QuestFilter
         };
 
         private string _lastPage = "Home_Page";
+        private string _currentPage = "Home_Page";
 
         #region Events
 
@@ -190,17 +191,13 @@ namespace RS3QuestFilter
 
                 NavView.SelectedItem = NavView.MenuItems.OfType<NavigationViewItem>().First(n => {
                     if (item.Tag.Equals("Quests_Page_Dev"))
-                    {
                         return n.Tag.Equals("Quests_Page");
-                    } 
-                    else 
-                    {
+                    else
                         return n.Tag.Equals(item.Tag);
-                    }
-                        
-                    });
+                });
 
                 //NavView.Header = ((NavigationViewItem)NavView.SelectedItem)?.Content?.ToString();
+                _currentPage = item.Tag.Equals("Quests_Page_Dev") ? "Quests_Page" : item.Tag;
             }
         }
 
@@ -230,9 +227,24 @@ namespace RS3QuestFilter
             await src.FileHandler.Export();
         }
 
-        private void ImportCommand_ExecuteRequested(XamlUICommand sender, ExecuteRequestedEventArgs args)
+        private async void ImportCommand_ExecuteRequested(XamlUICommand sender, ExecuteRequestedEventArgs args)
         {
-
+            try
+            {
+                App.ViewModel.VMPlayer.PlayerData = await src.FileHandler.Import();
+                App.ViewModel.VMPlayer.PlayerData.SelfCheckup();
+            }
+            catch (FileNotFoundException ex)
+            {
+                Console.WriteLine($"Unable to deserialize 'PlayerData.xml'. Reason: {ex.Message}\nUsing default initialisers instead...");
+                App.ViewModel.VMPlayer.PlayerData = new();
+            }
+            catch (FileLoadException ex)
+            {
+                Console.WriteLine($"Unable to deserialize 'PlayerData.xml'. Reason: {ex.Message}\nUsing default initialisers instead...");
+                App.ViewModel.VMPlayer.PlayerData = new();
+            }
+            
         }
 
         private void ExitCommand_ExecuteRequested(XamlUICommand sender, ExecuteRequestedEventArgs args) => App.Current.Exit();
@@ -290,6 +302,22 @@ namespace RS3QuestFilter
             if (App.ViewModel.VMQuests.QuestLog.Quests.Count == 0)
             {
                 App.ViewModel.VMQuests.QuestLog.CreateTestLog();
+            }
+        }
+
+        private void Reset_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is null)
+                return;
+
+            MenuFlyoutItem item = (sender as MenuFlyoutItem);
+            if (item is null)
+                return;
+
+            if (item.Text.Equals("Reset"))
+            {
+                App.ViewModel.VMPlayer.PlayerData = new();
+                App.ViewModel.VMPlayer.PlayerData.SelfCheckup();
             }
         }
     }

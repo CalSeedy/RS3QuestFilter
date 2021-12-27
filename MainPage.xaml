@@ -96,6 +96,7 @@
                             <MenuFlyoutItem x:Name="add_Req" Text="Requirement" IsEnabled="{Binding IsSubDatagridEditable, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
                             <MenuFlyoutItem x:Name="add_Rew" Text="Reward" IsEnabled="{Binding IsSubDatagridEditable, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"/>
                         </MenuFlyoutSubItem>
+                        <MenuFlyoutItem Text="Reset" Click="Reset_Click"/>
                     </MenuBarItem.Items>
                 </MenuBarItem>
             </MenuBar.Items>

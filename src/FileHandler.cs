@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 using System.Xml.Serialization;
+using Windows.Storage.AccessCache;
+using Windows.Storage.Streams;
 
 namespace RS3QuestFilter.src
 {
@@ -37,6 +39,10 @@ namespace RS3QuestFilter.src
             if (!IsSetup)
             {
                 await GenerateFolder(ContextType.Local);
+                
+                //foreach (string s in LocalSettings.Values.Keys)
+                //    LocalSettings.Values.Remove(s);
+                
                 GenerateSettings(ContextType.Local);
             }
             IsSetup = true;
@@ -64,8 +70,9 @@ namespace RS3QuestFilter.src
                 default:
                     throw new InvalidOperationException("Unable to generate settings: Invalid context.");
             }
+            context.Values.TryAdd("UserSavePath", "");
             context.Values.TryAdd("UserSaveFolder", "");
-            context.Values.TryAdd("PlayerDataPath", "");
+            context.Values.TryAdd("UserSaveFilename", "");
 
         }
 
@@ -79,7 +86,7 @@ namespace RS3QuestFilter.src
             
             if (folder == null) return null;
 
-            Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.AddOrReplace("PickedFolderToken", folder);
+            RememberFolder(folder, "UserSaveFolder");
             return folder;
         }
 
@@ -108,29 +115,22 @@ namespace RS3QuestFilter.src
         
         }
 
-        private static async Task SaveData(ContextType contextType)
+        private static async Task SaveData()
         {
-            StorageFolder context = GetContextType(contextType);
-            if (context != null)
-            {
-                StorageFile quests = await context.CreateFileAsync("QuestLog.xml", CreationCollisionOption.ReplaceExisting);
-                string questXML = MyIO.SerialiseToXML(App.ViewModel.VMQuests.QuestLog);
-                await FileIO.WriteTextAsync(quests, questXML);
+
+            StorageFile quests = await LocalFolder.CreateFileAsync("QuestLog.xml", CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(quests, MyIO.SerialiseToXML(App.ViewModel.VMQuests.QuestLog));
 
 
-                string playerdatapath = GetSetting<string>("PlayerDataPath", contextType);
-                StorageFile player = await context.CreateFileAsync("PlayerData.xml", CreationCollisionOption.ReplaceExisting);
-                App.ViewModel.VMPlayer.PlayerData.PrepareSerialisable();
-                await FileIO.WriteTextAsync(player, MyIO.SerialiseToXML(App.ViewModel.VMPlayer.PlayerData));
-
-            }
+            App.ViewModel.VMPlayer.PlayerData.PrepareSerialisable();
+            StorageFile player = await LocalFolder.CreateFileAsync("PlayerData.xml", CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(player, MyIO.SerialiseToXML(App.ViewModel.VMPlayer.PlayerData));
 
         }
 
         private static T GetSetting<T>(string key, ContextType contextType)
         {
-            ApplicationDataContainer settings = null;
-
+            ApplicationDataContainer settings;
             switch (contextType)
             {
                 case ContextType.Local:
@@ -140,7 +140,7 @@ namespace RS3QuestFilter.src
                     settings = RoamingSettings;
                     break;
                 default:
-                    throw new InvalidOperationException($"Unknown context {contextType.ToString()}. Expected either Local or Roaming.");
+                    throw new InvalidOperationException($"Unknown context {contextType}. Expected either Local or Roaming.");
             }
 
             if (settings.Values.ContainsKey(key))
@@ -148,6 +148,26 @@ namespace RS3QuestFilter.src
             
             throw new KeyNotFoundException("Key not found in settings: " + key);
         }
+
+        public static void RememberFolder(StorageFolder folder, string tokenName) => StorageApplicationPermissions.FutureAccessList.AddOrReplace(tokenName, folder);
+        
+
+        public static void RememberFile(StorageFile file, string tokenName) => StorageApplicationPermissions.FutureAccessList.AddOrReplace(tokenName, file);
+
+
+        private static string GetFileFolderPath(StorageFile file)
+        {
+            if (file == null)
+                return null;
+
+            return file.Path.Substring(0, file.Path.Length - file.Name.Length);
+        }
+
+        public static async Task<StorageFile> GetFileForToken(string token)
+        {
+            if (!StorageApplicationPermissions.FutureAccessList.ContainsItem(token)) return null;
+            return await StorageApplicationPermissions.FutureAccessList.GetFileAsync(token);
+        }        
 
         private static async Task<StorageFile?> ExportUserFile()
         {
@@ -158,28 +178,31 @@ namespace RS3QuestFilter.src
             };
             
             savePicker.FileTypeChoices.Add("Player Data File", new List<string>() { ".xml" });
-
             StorageFile file = await savePicker.PickSaveFileAsync();
             if (file != null)
             {
-                CachedFileManager.DeferUpdates(file);
+                RememberFile(file, "UserSaveFile");
+                
+                UpdateLocalSetting("UserSavePath", file.Path);
+                UpdateLocalSetting("UserSaveFolder", GetFileFolderPath(file));
+                UpdateLocalSetting("UserSaveFilename", file.Name);
 
                 App.ViewModel.VMPlayer.PlayerData.PrepareSerialisable();
                 string data = MyIO.SerialiseToXML(App.ViewModel.VMPlayer.PlayerData);
-                await FileIO.WriteTextAsync(file, data);
-                Windows.Storage.Provider.FileUpdateStatus status = await CachedFileManager.CompleteUpdatesAsync(file);
-                if (status == Windows.Storage.Provider.FileUpdateStatus.Complete)
+                try
                 {
-                    //StorageFolder userStore = await StorageFolder.GetFolderFromPathAsync(file.Path);
-                    //UpdateOrAddSetting("UserSaveFolder", userStore.Path.ToString(), ContextType.Local);
-                    UpdateOrAddSetting("PlayerDataPath", file.Path.ToString(), ContextType.Local);
-                    Debug.WriteLine("Successfully saved file: " + file.Path);
-                    return file;
+                    await FileIO.WriteTextAsync(file, data);
                 }
-                else
+                catch (Exception ex)
                 {
-                    throw new Exception($"Could not save file to path '{file.Path}'");
+                    await MainPage.ShowAlert(ex.Message);
+                    throw;
                 }
+                finally
+                {
+                    Debug.WriteLine($"File ({file.Name}) saved successfully at: '{file.Path}'");
+                }
+                return file;
             }
             else
             {
@@ -196,13 +219,21 @@ namespace RS3QuestFilter.src
             };
             picker.FileTypeFilter.Add(".xml");
 
-            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
+            StorageFile file = await picker.PickSingleFileAsync();
             if (file != null)
             {
+                if (!file.Path.Equals(GetSetting<string>("UserSavePath", ContextType.Local)))
+                {
+                    RememberFile(file, "UserSaveFilename");
+                    UpdateOrAddSetting("UserSavePath", file.Path, ContextType.Local);
+                    UpdateOrAddSetting("UserSaveFilename", file.Name, ContextType.Local);
+                    UpdateOrAddSetting("UserSaveFolder", GetFileFolderPath(file), ContextType.Local);
+                }
+
                 Player player = null;
                 try
                 {
-                    player = MyIO.DeserialiseFromXML<Player>(file.Path.ToString());
+                    player = await MyIO.DeserialiseFromXML<Player>(file);
                 }
                 catch (Exception e)
                 {
@@ -210,16 +241,7 @@ namespace RS3QuestFilter.src
                     throw;
                 }
 
-                if (player != null)
-                {
-                    UpdateLocalSetting("UserSaveFolder", (await file.GetParentAsync()).Path.ToString());
-                    UpdateLocalSetting("PlayerDataPath", file.Name);
-                    return player;
-                }
-                else
-                {
-                    return null;
-                }
+                return player ?? null;
             }   
             else
             {
@@ -262,20 +284,20 @@ namespace RS3QuestFilter.src
 
                     StorageFile? file = null;
 
-                    if (LocalSettings.Values.ContainsKey("PlayerDataPath"))
+                    if (LocalSettings.Values.ContainsKey("UserSavePath"))
                     {
-                        if (!LocalSettings.Values["PlayerDataPath"].Equals(""))
+                        if (!LocalSettings.Values["UserSavePath"].Equals(""))
                         {
-                            file = await StorageFile.GetFileFromPathAsync((string)LocalSettings.Values["PlayerDataPath"]);
+                            file = await StorageFile.GetFileFromPathAsync((string)LocalSettings.Values["UserSavePath"]);
                         }
                         else
                         {
-                            file = await context.GetFileAsync("PlayerData.xml");
+                            file = await LocalFolder.GetFileAsync("PlayerData.xml");
                         }
                     }
                     else
                     {
-                        file = await context.GetFileAsync("PlayerData.xml");
+                        file = await LocalFolder.GetFileAsync("PlayerData.xml");
                     }
 
                     if (file != null)
@@ -284,7 +306,6 @@ namespace RS3QuestFilter.src
                         try
                         {
                             player = MyIO.DeserialiseFromXML<Player>(file.Path.ToString()) as T;
-                            //(player as Player).Skills = (player as Player).serialisableSkills;
                         }
                         catch (Exception e)
                         {
@@ -293,8 +314,9 @@ namespace RS3QuestFilter.src
 
                         if (player != null)
                         {
-                            UpdateLocalSetting("UserSaveFolder", (await file.GetParentAsync()).Path.ToString());
-                            UpdateLocalSetting("PlayerDataPath", file.Path);
+                            UpdateLocalSetting("UserSaveFolder", GetFileFolderPath(file));
+                            UpdateLocalSetting("UserSaveFilename", file.Name);
+                            UpdateLocalSetting("UserSavePath", file.Path);
                             (player as Player).PrepareSkills();
                             return player;
                         }
@@ -425,14 +447,14 @@ namespace RS3QuestFilter.src
             return await LoadData<Player>(ContextType.Local);
         }
 
-        public static async Task SaveAll() => await SaveData(ContextType.Local);
+        public static async Task SaveAll() => await SaveData();
         
         public static async Task Export() => await ExportUserFile();
         
-        public static async Task Import() => await ImportUserFile();
+        public static async Task<Player> Import() => await ImportUserFile();
 
         public static async Task Init() => await init();
 
-        public static string GetPlayerDataPath() => GetSetting<string>("PlayerDataPath", ContextType.Local);
+        public static string GetPlayerDataPath() => GetSetting<string>("UserSavePath", ContextType.Local);
     }
 }
