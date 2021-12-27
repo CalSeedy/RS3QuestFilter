@@ -78,9 +78,15 @@ namespace RS3QuestFilter.src
             string uri = $"https://apps.runescape.com/runemetrics/quests?user={safePlayer}";
 
             Dictionary<string, bool> result = new();
-
-            string response = await client.GetStringAsync(uri);
-
+            string response = null;
+            try
+            {
+                response = await client.GetStringAsync(uri);
+            }
+            catch (Exception ex)
+            {
+                await MainPage.ShowAlert(ex.Message + "\nWill try again in 5 seconds.");
+            }
             if (response is not null)
             {
                 JObject jobj = JObject.Parse(response);
@@ -97,7 +103,7 @@ namespace RS3QuestFilter.src
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine("SKJFYGKUJGFJS");
+                    await MainPage.ShowAlert(ex.Message);
                     throw;
                 }
             }
