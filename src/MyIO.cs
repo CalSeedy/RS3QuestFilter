@@ -4,8 +4,10 @@ using System.Diagnostics;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
+using Windows.Storage;
 
 namespace RS3QuestFilter.src
 {
@@ -62,6 +64,39 @@ namespace RS3QuestFilter.src
                 }
 
                 return t;
+            }
+        }
+
+        public static async Task<T?> DeserialiseFromXML<T>(StorageFile file) where T : class
+        {
+            string text = await FileIO.ReadTextAsync(file);
+
+            using (StringReader strReader = new (text))
+            {
+                using (XmlReader? reader = XmlReader.Create(strReader))
+                {
+                    XmlSerializer? serializer = new(typeof(T));
+                    T? t;
+                    try
+                    {
+                        t = serializer.Deserialize(reader) as T;
+                    }
+                    catch (InvalidOperationException e)
+                    {
+                        string s = "Parsing error with deserialisation! Reason: " + e.InnerException.Message;
+                        Debug.WriteLine(s);
+
+                        throw new InvalidOperationException(s);
+                    }
+                    catch (NullReferenceException e)
+                    {
+                        string s = "Cannot parse an empty file! Reason: " + e.Message;
+                        Debug.WriteLine(s);
+                        throw new NullReferenceException(s);
+                    }
+
+                    return t;
+                }
             }
         }
     }
