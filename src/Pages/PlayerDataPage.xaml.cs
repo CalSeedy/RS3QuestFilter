@@ -36,6 +36,26 @@ namespace RS3QuestFilter.src.Pages
             base.OnNavigatedTo(e);
             DataContext = null;
             DataContext = App.ViewModel.VMPlayer;
+            CheckToggles();
+        }
+
+        private void CheckToggles()
+        {
+            foreach (StackPanel sp in skillGrid.Children)
+            {
+                ToggleButton tb = (ToggleButton)sp.Children.First(b => b is ToggleButton);
+
+                if (tb == null)
+                    break;
+
+                if (tb.Tag == null)
+                    break;
+
+                if (App.ViewModel.VMPlayer.PlayerData.Skills.ContainsKey(tb.Tag as string))
+                {
+                    tb.IsChecked = App.ViewModel.VMPlayer.PlayerData.Skills[tb.Tag as string].Enabled;
+                }
+            }
         }
 
         private void skill_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
@@ -76,25 +96,7 @@ namespace RS3QuestFilter.src.Pages
 
             #endregion
 
-            
-            #region Skill Toggles
-
-            foreach (StackPanel sp in skillGrid.Children)
-            {
-                ToggleButton tb = (ToggleButton)sp.Children.First(b => b is ToggleButton);
-
-                if (tb == null)
-                    break;
-
-                if (tb.Tag == null)
-                    break;
-
-                if (App.ViewModel.VMPlayer.PlayerData.Skills.ContainsKey(tb.Tag as string))
-                {
-                    tb.IsChecked = App.ViewModel.VMPlayer.PlayerData.Skills[tb.Tag as string].Enabled;
-                }
-            }
-            #endregion
+            CheckToggles();
         }
 
         private void PagePlayer_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
@@ -302,6 +304,7 @@ namespace RS3QuestFilter.src.Pages
         private void btnResetStats_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
             App.ViewModel.VMPlayer.PlayerData = new();
+            CheckToggles();
         }
 
         private void playerName_KeyDown(object sender, KeyRoutedEventArgs e)
